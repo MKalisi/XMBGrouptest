@@ -1,0 +1,29 @@
+Personalverleih zu IT Contracting unbenenne
+XMB Group AG Logo oben links im Menüband vergrössern. Links im Menüband wenn man Menpband noch nicht geöffnet hat soll nur das Logo angezeigt werden ohne Text unten
+"Ihre digitale Transformation" ish ke passende Text unbennen bitte
+Text im Home ist noch zu klein, das muss grösser gemacht werden mehr von Bildschirm nutzen
+Bereit für Ihr nächstes Projekt unbenennen in Bereit um Ihr nächstes Vorhaben gemeinsam anzugehen ändern
+Kontaktoformular anderes design ist nicht schön jetzt
+Nummer auch hervorheben mit Text "doch lieber Mail, dann erreichen sie uns hier" irgendsowas
+Menüband text auch zu klein
+Bei Home ein Symbol machen für scroll for more, damit leute checken das man runterscrollen kann entweder das oder eine Animation das die leute einfach checken das man runterscrollen kann
+Links im Menüband statt symbole 01, 02, 03 verwenden damit es passt
+
+/Personalverleih Anpassen wie folgt:
+
+Personalverleih kleine Einführung zum Dienst selber textlich (Evtl expertise einfach beibehalten)
+Anschliessend bei Abschnitt Services, statt services sind 2 Buttons zu sehen mit dem Text „Fur unsere kunden“ und „Für IT Spezialisten“, dort kann man drauf klicken und dann erscheinen 2 weitere Unterseiten für diese Buttons
+
+Menüband anpassen und diese 2 Unterseiten auch reinnehmen unter Personalverleih
+
+/managed-services anpassen und als Vorlage bisschen itnetx nehmen. Aber hier bitte auch selber recherchieren was sinn ergibt und am besten passt, bitte auch schauen was andere Firmen so gemacht haben
+
+/Softwarenentwicklung geht benefits weg sieht nicht gut aus. Bitte auch wieder an anderen firmen inspirieren und erweitern
+
+
+Über uns sauberen text schreiben mit Hintergrund: Wir waren 3 Unternehmen mit Schwerpunkt Recruitung, Softwaredevelopment und Managed services und haben uns entschlossen uns zusammenzuschliessen usw. Sowas sauberes schreiben und dort rein
+
+/ueber uns allgemeint bitte komplett von kiwi inspirieren dort ist es top
+
+Mehr Animationen einbauen beim klicken usw. Schriftart auch verbessern und allgemein alles vergrössern als jetzt
+
