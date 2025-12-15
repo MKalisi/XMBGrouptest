@@ -1,4 +1,4 @@
-import { Shield, Lock, Eye, AlertTriangle, CheckCircle, Clock, FileCheck, Key, Server, Cloud, Activity, Zap } from "lucide-react";
+import { Shield, Lock, Eye, AlertTriangle, CheckCircle, FileCheck, Key, Zap } from "lucide-react";
 import { Footer } from "./Footer";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
@@ -122,9 +122,9 @@ export function CybersecurityPage() {
             <span className="absolute inset-0 bg-gradient-to-r from-[#921bb2]/0 via-[#cd20b2]/10 to-[#921bb2]/0 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </h2>
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
-            {challenges.map((challenge, index) => (
+            {challenges.map((challenge) => (
               <div
-                key={index}
+                key={challenge.title}
                 className="group relative bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-500 shadow-sm hover:shadow-xl card-animated stagger-item overflow-hidden"
               >
                 {/* Background gradient on hover */}
@@ -203,11 +203,11 @@ export function CybersecurityPage() {
           
           {/* Benefits Grid */}
           <div className="grid gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {advantages.map((advantage, index) => {
+            {advantages.map((advantage) => {
               const IconComponent = advantage.icon;
               return (
                 <div
-                  key={index}
+                  key={advantage.title}
                   className="group relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-white/30 hover:border-white/50 hover:bg-white/20 transition-all duration-500 shadow-lg hover:shadow-xl card-animated stagger-item overflow-hidden"
                 >
                   <div className="relative z-10">
@@ -274,11 +274,11 @@ export function CybersecurityPage() {
                 description: "Unterstützung bei DSGVO, ISO 27001, BSI-Grundschutz und branchenspezifischen Compliance-Anforderungen.",
                 icon: FileCheck
               }
-            ].map((service, index) => {
+            ].map((service) => {
               const IconComponent = service.icon;
               return (
                 <div
-                  key={index}
+                  key={service.title}
                   className="group relative bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-500 shadow-sm hover:shadow-xl card-animated stagger-item overflow-hidden"
                 >
                   {/* Background gradient on hover */}
@@ -324,7 +324,7 @@ export function CybersecurityPage() {
             Expertise, Verantwortung und Steuerung aus einer Hand – modular kombinierbar.
           </p>
           <div className="grid gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {serviceModules.map((card, index) => (
+            {serviceModules.map((card) => (
               <article
                 key={card.title}
                 className="group relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-7 md:p-8 lg:p-10 border-2 border-white/30 hover:border-white/50 hover:bg-white/20 transition-all duration-500 shadow-lg hover:shadow-xl card-animated stagger-item overflow-hidden"
