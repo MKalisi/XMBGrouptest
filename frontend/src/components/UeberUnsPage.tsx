@@ -159,7 +159,7 @@ export function UeberUnsPage() {
               {/* Timeline Container */}
               <div className="relative">
                 {/* Vertical Line */}
-                <div className="absolute left-16 sm:left-20 md:left-24 lg:left-28 xl:left-32 top-0 bottom-6 w-0.5 bg-gradient-to-b from-[#921bb2]/20 via-[#cd20b2]/40 to-[#921bb2]/20" style={{ transform: 'translateX(-50%)' }}></div>
+                <div className="absolute left-20 sm:left-24 md:left-28 lg:left-32 xl:left-36 top-0 bottom-6 w-0.5 bg-gradient-to-b from-[#921bb2]/20 via-[#cd20b2]/40 to-[#921bb2]/20" style={{ transform: 'translateX(-50%)' }}></div>
                 
                 {/* Timeline Items */}
                 <div className="space-y-6 sm:space-y-8 md:space-y-10">
@@ -181,7 +181,7 @@ export function UeberUnsPage() {
                         </div>
                         
                         {/* Icon Circle on Line */}
-                        <div className="absolute left-16 sm:left-20 md:left-24 lg:left-28 xl:left-32 z-20 flex-shrink-0" style={{ transform: 'translateX(-50%)' }}>
+                        <div className="absolute left-20 sm:left-24 md:left-28 lg:left-32 xl:left-36 z-20 flex-shrink-0" style={{ transform: 'translateX(-50%)' }}>
                           <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-gradient-to-br from-[#921bb2] to-[#cd20b2] border-2 sm:border-3 md:border-4 border-white shadow-lg flex items-center justify-center group hover:scale-110 transition-all duration-300">
                             <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-white" />
                           </div>
