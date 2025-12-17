@@ -58,190 +58,170 @@ const contactChannels = [
 export function KontaktPage() {
   return (
     <div className="bg-white text-slate-900">
-      <section className="relative overflow-hidden px-4 sm:px-6 py-20 md:py-24 text-center text-white">
+      <section className="relative overflow-hidden text-white">
         <ImageWithFallback
           src="contact-us-hero.jpg"
           alt="Kontakt und Kommunikation"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-[#921bb2] opacity-40"></div>
-        <div className="relative w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 space-y-3 sm:space-y-4">
-          <p className="uppercase tracking-[0.4em] text-xs sm:text-sm">Kontakt</p>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight whitespace-normal relative group max-w-[95vw] sm:max-w-[80vw] mx-auto">
-            <span className="relative z-10 text-white tracking-tight">
-              Bereit um Ihr nächstes Vorhaben gemeinsam anzugehen?
-            </span>
-            <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 blur-2xl group-hover:via-white/20 transition-all duration-500"></span>
-            <span className="absolute -inset-1 bg-gradient-to-r from-[#921bb2]/20 via-[#cd20b2]/30 to-[#921bb2]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+        <div className="absolute inset-0 bg-[#921bb2]/60"></div>
+        <div className="relative max-w-4xl mx-auto px-6 md:px-8 py-16 md:py-20 text-center">
+          <p className="uppercase tracking-wider text-sm text-white/80 font-medium mb-4">Kontakt</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-6">
+            Bereit für Ihr nächstes Vorhaben?
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-4xl mx-auto 2xl:text-2xl">
-            Wir beraten persönlich und koordinieren das passende Team für Ihr
-            Vorhaben.
+          <p className="text-white/90 max-w-2xl mx-auto mb-8" style={{ lineHeight: '1.7' }}>
+            Wir beraten persönlich und koordinieren das passende Team für Ihr Projekt.
           </p>
           <a
             href="mailto:info@xmb-group.ch"
-            className="inline-flex rounded-full border-2 border-white px-8 sm:px-10 py-3.5 sm:py-4 text-base sm:text-lg font-semibold btn-animated hover:bg-white hover:text-[#921bb2] mt-4 sm:mt-6"
+            className="inline-block px-6 py-3 bg-white text-[#921bb2] font-medium rounded-lg hover:bg-white/90 transition-colors"
           >
-            Direkt schreiben
+            E-Mail schreiben
           </a>
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 py-16 bg-gradient-to-b from-white to-slate-50">
-        <div className="w-full grid gap-10 sm:gap-12 items-start lg:grid-cols-2 px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
+      <section className="py-12 lg:py-16 bg-slate-50">
+        <div className="max-w-6xl mx-auto px-6 md:px-8 grid gap-8 lg:gap-12 lg:grid-cols-2">
           {/* Kontaktinformationen */}
-          <div className="space-y-5 sm:space-y-6">
+          <div className="space-y-6">
             <div>
-              <p className="uppercase tracking-[0.3em] text-[#921bb2] text-sm font-semibold mb-4">
+              <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4">
                 Kontaktinformationen
-              </p>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] bg-clip-text text-transparent leading-snug">
-                Lassen Sie uns ins Gespräch kommen
               </h2>
-            </div>
-            <div className="mb-8">
-              <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] bg-clip-text text-transparent">
-                Schreiben Sie uns
-              </h3>
-              <p className="text-slate-600 text-sm sm:text-base 2xl:text-lg leading-relaxed">
-                Am einfachsten erreichen Sie uns über dieses Formular oder per E-Mail. So können wir Ihr Anliegen direkt aufnehmen und Ihnen schnell und gezielt weiterhelfen.
-                Wenn Ihnen ein persönliches Gespräch lieber ist, sind wir selbstverständlich auch telefonisch für Sie da.
+              <p className="text-slate-600" style={{ lineHeight: '1.7' }}>
+                Erreichen Sie uns per E-Mail, Telefon oder besuchen Sie uns vor Ort.
               </p>
             </div>
-            <div className="space-y-4 sm:space-y-6">
+            
+            <div className="space-y-4">
               {contactChannels.map((channel) => (
-                <article key={channel.label} className="flex gap-4 sm:gap-6 p-4 sm:p-5 md:p-6 rounded-2xl hover:bg-white transition-all card-animated">
-                  <div className="flex size-12 sm:size-14 md:size-16 items-center justify-center rounded-xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] text-white shadow-lg flex-shrink-0">
+                <div key={channel.label} className="flex items-start gap-4 p-4 bg-white rounded-lg border border-slate-200">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center flex-shrink-0 text-white">
                     {channel.icon}
                   </div>
-                  <div className="flex-1">
-                    <p className="uppercase tracking-[0.2em] text-slate-500 text-xs font-semibold mb-1">
-                      {channel.label}
-                    </p>
-                    <p className="text-slate-900 font-semibold text-base sm:text-lg">{channel.value}</p>
-                    <p className="text-slate-500 text-xs sm:text-sm md:text-base mt-1 2xl:text-lg">{channel.hint}</p>
+                  <div>
+                    <p className="text-sm text-slate-500 mb-0.5">{channel.label}</p>
+                    <p className="font-medium text-slate-900">{channel.value}</p>
+                    <p className="text-sm text-slate-500 mt-1">{channel.hint}</p>
                   </div>
-                </article>
+                </div>
               ))}
-              <div className="rounded-2xl bg-gradient-to-br from-[#921bb2]/5 to-[#cd20b2]/5 p-4 sm:p-6 border border-[#921bb2]/10">
-                <p className="uppercase tracking-[0.2em] text-slate-500 text-xs font-semibold mb-2">
-                  Öffnungszeiten
-                </p>
-                <p className="text-slate-900 font-semibold">Montag – Freitag, 08:00 – 18:00 Uhr</p>
-              </div>
+            </div>
+
+            <div className="p-4 bg-white rounded-lg border border-slate-200">
+              <p className="text-sm text-slate-500 mb-1">Öffnungszeiten</p>
+              <p className="font-medium text-slate-900">Montag – Freitag, 08:00 – 18:00 Uhr</p>
             </div>
           </div>
 
           {/* Kontaktformular */}
-          <div className="bg-white rounded-3xl shadow-xl border border-slate-200/50 p-6 sm:p-8 lg:p-10">
-            <div className="mb-6 sm:mb-8">
-              <h3 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-3 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] bg-clip-text text-transparent">
-                Schreiben Sie uns
-              </h3>
-              <p className="text-slate-600 text-sm sm:text-base md:text-lg 2xl:text-2xl">
-                Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen zurück.
-              </p>
-            </div>
-            <form className="space-y-6">
-              <div className="grid gap-6 md:grid-cols-2">
-                <div className="space-y-2">
-                  <label className="block text-sm font-semibold text-slate-700">
+          <div className="bg-white rounded-lg border border-slate-200 p-6 lg:p-8">
+            <h3 className="text-xl font-semibold text-slate-900 mb-2">Schreiben Sie uns</h3>
+            <p className="text-slate-600 text-sm mb-6">Wir melden uns schnellstmöglich bei Ihnen.</p>
+            
+            <form className="space-y-5">
+              <div className="grid gap-5 md:grid-cols-2">
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-medium text-slate-700">
                     Name <span className="text-[#921bb2]">*</span>
                   </label>
                   <input
                     type="text"
                     required
-                    className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 placeholder:text-slate-400 transition-all focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02]"
+                    className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
                     placeholder="Vor- und Nachname"
                   />
                 </div>
-                <div className="space-y-2">
-                  <label className="block text-sm font-semibold text-slate-700">
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-medium text-slate-700">
                     E-Mail <span className="text-[#921bb2]">*</span>
                   </label>
                   <input
                     type="email"
                     required
-                    className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 placeholder:text-slate-400 transition-all focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02]"
+                    className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
                     placeholder="name@firma.com"
                   />
                 </div>
-                <div className="space-y-2">
-                  <label className="block text-sm font-semibold text-slate-700">
-                    Telefon
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-medium text-slate-700">
+                    Telefon <span className="text-slate-400 text-xs font-normal">(optional)</span>
                   </label>
                   <input
                     type="tel"
-                    className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 placeholder:text-slate-400 transition-all focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02]"
+                    className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
                     placeholder="+41 XX XXX XX XX"
                   />
                 </div>
-                <div className="space-y-2">
-                  <label className="block text-sm font-semibold text-slate-700">
-                    Firma
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-medium text-slate-700">
+                    Firma <span className="text-slate-400 text-xs font-normal">(optional)</span>
                   </label>
                   <input
                     type="text"
-                    className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 placeholder:text-slate-400 transition-all focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02]"
+                    className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
                     placeholder="Unternehmensname"
                   />
                 </div>
               </div>
-              <div className="space-y-2">
-                <label className="block text-sm font-semibold text-slate-700">
+              <div className="space-y-1.5">
+                <label className="block text-sm font-medium text-slate-700">
                   Betreff <span className="text-[#921bb2]">*</span>
                 </label>
                 <select 
                   required
-                  className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 transition-all focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02]"
+                  className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
                 >
-                  <option value="">Bitte wählen Sie einen Betreff</option>
-                  <option>Anfrage</option>
-                  <option>Projektstart</option>
-                  <option>Partnerschaft</option>
+                  <option value="">Bitte wählen</option>
+                  <option>Allgemeine Anfrage</option>
                   <option>IT Contracting</option>
                   <option>Cybersecurity</option>
                   <option>Softwareentwicklung</option>
+                  <option>Partnerschaft</option>
                 </select>
               </div>
-              <div className="space-y-2">
-                <label className="block text-sm font-semibold text-slate-700">
+              <div className="space-y-1.5">
+                <label className="block text-sm font-medium text-slate-700">
                   Nachricht <span className="text-[#921bb2]">*</span>
                 </label>
                 <textarea
                   required
-                  rows={5}
-                  className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 placeholder:text-slate-400 transition-all resize-none focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02]"
-                  placeholder="Beschreiben Sie Ihr Anliegen oder Projekt..."
+                  rows={4}
+                  className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 placeholder:text-slate-400 resize-none focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
+                  placeholder="Beschreiben Sie Ihr Anliegen..."
                 />
               </div>
               <button
                 type="submit"
-                className="w-full rounded-xl bg-gradient-to-r from-[#921bb2] to-[#cd20b2] px-8 py-4 sm:py-5 text-white font-semibold text-lg sm:text-xl shadow-lg hover:shadow-xl btn-animated"
+                className="w-full rounded-lg bg-gradient-to-r from-[#921bb2] to-[#cd20b2] px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
               >
                 Nachricht senden
               </button>
               <p className="text-xs text-slate-500 text-center">
-                Mit dem Absenden stimmen Sie unserer Datenschutzerklärung zu.
+                Mit dem Absenden stimmen Sie unserer <a href="#/datenschutz" className="underline hover:text-[#921bb2]">Datenschutzerklärung</a> zu.
               </p>
             </form>
           </div>
         </div>
       </section>
 
-      <section className="px-4 sm:px-6 pb-16">
-        <div className="w-full max-w-6xl mx-auto overflow-hidden rounded-2xl sm:rounded-3xl border border-slate-200 px-0 sm:px-4 md:px-6">
-          <div className="aspect-[4/3] sm:aspect-[16/9] w-full">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706.7061896011965!2d7.711772612290987!3d47.28099771028456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791d36ecda12f25%3A0xc7ca674e9d073569!2sEichengasse%203%2C%204702%20Oensingen!5e0!3m2!1sde!2sch!4v1764335987238!5m2!1sde!2sch"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="XMB Group AG Standort"
-            />
+      <section className="py-12 lg:py-16 bg-white">
+        <div className="max-w-5xl mx-auto px-6 md:px-8">
+          <div className="overflow-hidden rounded-lg border border-slate-200">
+            <div className="aspect-[16/9] w-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706.7061896011965!2d7.711772612290987!3d47.28099771028456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791d36ecda12f25%3A0xc7ca674e9d073569!2sEichengasse%203%2C%204702%20Oensingen!5e0!3m2!1sde!2sch!4v1764335987238!5m2!1sde!2sch"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="XMB Group AG Standort"
+              />
+            </div>
           </div>
         </div>
       </section>

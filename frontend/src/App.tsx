@@ -240,9 +240,9 @@ export default function App() {
       
 
       {/* IT Contracting Section */}
-      <section className={`bg-white ${isMobile ? 'py-12' : 'py-24'}`} id="personalverleih">
-        <div className="w-full px-6 md:px-8 lg:px-12 xl:px-16">
-          <div className={`grid grid-cols-1 lg:grid-cols-2 items-stretch ${isMobile ? 'gap-8' : 'gap-16'}`}>
+      <section className={`bg-white ${isMobile ? 'py-12' : 'py-16 lg:py-24'}`} id="personalverleih">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className={`grid grid-cols-1 lg:grid-cols-2 items-stretch ${isMobile ? 'gap-8' : 'gap-12'}`}>
             <div className="relative overflow-hidden rounded-lg h-full">
               <ImageWithFallback
                 src="/it-contracting-section.jpg"
@@ -251,44 +251,36 @@ export default function App() {
               />
             </div>
 
-            <div className="space-y-6">
-              <p className="uppercase tracking-wider text-sm 2xl:text-base" style={{ color: '#921bb2' }}>
-                Professionelles IT Contracting
+            <div className="space-y-4">
+              <p className="uppercase tracking-wider text-sm text-[#921bb2] font-medium">
+                IT Contracting
               </p>
 
-              <h2 className={`${isMobile ? 'text-3xl' : 'text-4xl lg:text-4xl xl:text-5xl'} 2xl:text-6xl ${screenWidth >= 1920 ? 'whitespace-nowrap' : ''} relative group`}>
-                <span className="relative z-10 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] bg-clip-text text-transparent tracking-tight">
-                  Qualifiziertes Personal für Ihr Projekt
-                </span>
-                <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] transition-all duration-500 group-hover:w-24"></span>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 leading-tight">
+                Qualifiziertes Personal für Ihr Projekt
               </h2>
 
-              <p className="text-lg 2xl:text-2xl">
-                XMB Group AG begleitet Ihre Projekte und stellt Ihnen sorgfältig ausgewählte IT-Fachkräfte zur Verfügung – präzise abgestimmt auf Ihre Anforderungen.
-              </p>
+              <div className="max-w-prose space-y-4 text-slate-600" style={{ lineHeight: '1.7' }}>
+                <p>
+                  XMB Group AG begleitet Ihre Projekte und stellt Ihnen sorgfältig ausgewählte IT-Fachkräfte zur Verfügung – präzise abgestimmt auf Ihre Anforderungen.
+                </p>
 
-              <p className="text-black text-lg 2xl:text-2xl">
-                Wir vermitteln erfahrene IT-Spezialisten, Entwickler und Projektmanager, die Ihre Teams zuverlässig verstärken und Verantwortung übernehmen. Ob kurzfristige Unterstützung oder gezielte Expertise für ein wichtiges Projekt – wir sorgen dafür, dass Sie die richtigen Fachkräfte erhalten, um Ihre Ziele sicher zu erreichen.
-              </p>
+                <p>
+                  Wir vermitteln erfahrene IT-Spezialisten, Entwickler und Projektmanager, die Ihre Teams zuverlässig verstärken und Verantwortung übernehmen.
+                </p>
 
-              <p className="text-black font-semibold text-lg 2xl:text-2xl">Unser Ansatz ist klar:</p>
+                <p className="font-medium text-slate-800">Unser Ansatz ist klar:</p>
 
-              <p className="text-black text-lg 2xl:text-2xl">
-                Wir analysieren den Bedarf, wählen passende Profile aus und kümmern uns um die gesamte organisatorische Abwicklung. So können Sie sich auf das Wesentliche konzentrieren, während wir die passende Verstärkung bereitstellen.
-              </p>
-
-              <p className="text-black text-lg 2xl:text-2xl">
-                Gemeinsam sorgen wir dafür, dass Ihre Projekte erfolgreich vorankommen – strukturiert, professionell und mit verlässlicher Qualität.
-              </p>
+                <p>
+                  Wir analysieren den Bedarf, wählen passende Profile aus und kümmern uns um die gesamte organisatorische Abwicklung. So können Sie sich auf das Wesentliche konzentrieren.
+                </p>
+              </div>
 
               <button
                 onClick={() => navigateTo('personalverleih')}
-                className={`mt-4 text-white uppercase tracking-wider rounded-full transition-all duration-300 hover:opacity-90 ${
-                  isMobile ? 'px-6 py-3 text-sm' : 'px-8 py-4'
-                } 2xl:px-10 2xl:py-5 2xl:text-lg`}
-                style={{ backgroundColor: '#921bb2' }}
+                className="mt-6 px-6 py-3 text-white font-medium rounded-lg bg-gradient-to-r from-[#921bb2] to-[#cd20b2] hover:opacity-90 transition-opacity"
               >
-                Mehr über IT Contracting
+                Mehr erfahren
               </button>
             </div>
           </div>
@@ -296,164 +288,78 @@ export default function App() {
       </section>
 
       {/* Cybersecurity Section */}
-      <section className={`${isMobile ? 'py-12' : 'py-24'}`} style={{ backgroundColor: '#921bb2' }} id="cybersecurity">
-        <div className="w-full px-6 md:px-8 lg:px-12 xl:px-16">
-          <div className={`grid grid-cols-1 lg:grid-cols-2 ${isMobile ? 'gap-8' : 'gap-16'}`}>
-            <div className="text-white space-y-6">
-              <p className="uppercase tracking-wider text-sm opacity-90 2xl:text-base">Das XMB Angebot</p>
+      <section className={`${isMobile ? 'py-12' : 'py-16 lg:py-24'} bg-gradient-to-br from-[#921bb2] to-[#cd20b2]`} id="cybersecurity">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className={`grid grid-cols-1 lg:grid-cols-2 ${isMobile ? 'gap-8' : 'gap-12'}`}>
+            <div className="text-white space-y-4">
+              <p className="uppercase tracking-wider text-sm text-white/80 font-medium">IT-Beratung</p>
 
-              <h2 className={`${isMobile ? 'text-3xl' : 'text-4xl lg:text-4xl xl:text-5xl'} 2xl:text-6xl`}>
-                IT-Beratung und<br />Begleitung.
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
+                IT-Beratung und Begleitung
               </h2>
 
-              <p className="text-white/90 leading-relaxed text-lg 2xl:text-2xl">
+              <p className="text-white/90 max-w-prose" style={{ lineHeight: '1.7' }}>
                 XMB begleitet Unternehmen in digitalen Transformationsprozessen. Mit der gebündelten
-                Expertise und Erfahrung unserer Consultants steuern wir die strategisch entscheidenden
-                Faktoren Ihrer IT-Vorhaben. Ob klassisch, agil, hybrid oder nach einem gewünschten Ansatz –
-                XMB liefert die richtigen Impulse und Vorhaben.
+                Expertise unserer Consultants steuern wir die strategisch entscheidenden
+                Faktoren Ihrer IT-Vorhaben.
               </p>
 
               <button
                 onClick={() => navigateTo('cybersecurity')}
-                className={`mt-6 bg-transparent border-2 border-white text-white uppercase tracking-wider rounded-full font-semibold btn-animated hover:bg-white hover:text-[#921bb2] ${
-                  isMobile ? 'px-6 py-3 text-base' : 'px-10 py-5 text-lg'
-                } 2xl:px-12 2xl:py-6 2xl:text-xl`}
+                className="mt-6 px-6 py-3 bg-white text-[#921bb2] font-medium rounded-lg hover:bg-white/90 transition-colors"
               >
-                Zum Angebot
+                Angebot ansehen
               </button>
             </div>
 
-            <div className="grid grid-cols-1 gap-4">
-              <div className={`group relative bg-white rounded-3xl border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-500 shadow-sm hover:shadow-xl card-animated overflow-hidden ${
-                isMobile ? 'p-5' : 'p-8'
-              }`}>
-                <div className="absolute inset-0 bg-gradient-to-br from-[#921bb2]/5 to-[#cd20b2]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className={`relative z-10 flex items-start ${isMobile ? 'gap-4' : 'gap-6'}`}>
-                  <div className={`rounded-2xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg ${
-                    isMobile ? 'w-14 h-14' : 'w-20 h-20'
-                  }`}>
-                    <Search className={`text-white ${isMobile ? 'w-7 h-7' : 'w-10 h-10'}`} />
+            <div className="grid grid-cols-1 gap-3">
+              {[
+                { icon: Search, title: 'Business Consulting', desc: 'Business Analyse und Product Management.' },
+                { icon: Settings, title: 'Projekt- und Agile Consulting', desc: 'Scrum Master, Release Train Engineer, Projektleitung.' },
+                { icon: Network, title: 'Technologie Consulting', desc: 'IT-Architektur, Requirements Engineering, Cloud-Beratung.' },
+                { icon: BarChart3, title: 'Management Consulting', desc: 'Transformation, Digitalisierung und Sourcing.' },
+              ].map((item, i) => (
+                <div key={i} className="bg-white rounded-lg border border-slate-200 p-5 flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center flex-shrink-0">
+                    <item.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h3 className={`font-bold mb-3 text-slate-900 group-hover:text-[#921bb2] transition-colors duration-300 ${
-                      isMobile ? 'text-lg' : 'text-2xl'
-                    } 2xl:text-3xl`}>Business Consulting</h3>
-                    <p className={`text-black group-hover:text-slate-700 transition-colors duration-300 ${
-                      isMobile ? 'text-sm' : 'text-base'
-                    } 2xl:text-xl`}>
-                      Wir sind Ihre Spezialist:innen in der Business Analyse und im Product Management.
-                    </p>
+                    <h3 className="font-semibold text-slate-900 mb-1">{item.title}</h3>
+                    <p className="text-slate-600 text-sm">{item.desc}</p>
                   </div>
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-3xl"></div>
-              </div>
-
-              <div className={`group relative bg-white rounded-3xl border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-500 shadow-sm hover:shadow-xl card-animated overflow-hidden ${
-                isMobile ? 'p-5' : 'p-8'
-              }`}>
-                <div className="absolute inset-0 bg-gradient-to-br from-[#921bb2]/5 to-[#cd20b2]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className={`relative z-10 flex items-start ${isMobile ? 'gap-4' : 'gap-6'}`}>
-                  <div className={`rounded-2xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg ${
-                    isMobile ? 'w-14 h-14' : 'w-20 h-20'
-                  }`}>
-                    <Settings className={`text-white ${isMobile ? 'w-7 h-7' : 'w-10 h-10'}`} />
-                  </div>
-                  <div>
-                    <h3 className={`font-bold mb-3 text-slate-900 group-hover:text-[#921bb2] transition-colors duration-300 ${
-                      isMobile ? 'text-lg' : 'text-2xl'
-                    } 2xl:text-3xl`}>Projekt- und Agile Consulting</h3>
-                    <p className={`text-black group-hover:text-slate-700 transition-colors duration-300 ${
-                      isMobile ? 'text-sm' : 'text-base'
-                    } 2xl:text-xl`}>
-                      Wir begleiten Sie als Scrum Master, Release Train Engineer, Projekt- und Programmleiter:innen.
-                    </p>
-                  </div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-3xl"></div>
-              </div>
-
-              <div className={`group relative bg-white rounded-3xl border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-500 shadow-sm hover:shadow-xl card-animated overflow-hidden ${
-                isMobile ? 'p-5' : 'p-8'
-              }`}>
-                <div className="absolute inset-0 bg-gradient-to-br from-[#921bb2]/5 to-[#cd20b2]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className={`relative z-10 flex items-start ${isMobile ? 'gap-4' : 'gap-6'}`}>
-                  <div className={`rounded-2xl bg-gradient-to-br from-[#cd20b2] to-[#921bb2] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg ${
-                    isMobile ? 'w-14 h-14' : 'w-20 h-20'
-                  }`}>
-                    <Network className={`text-white ${isMobile ? 'w-7 h-7' : 'w-10 h-10'}`} />
-                  </div>
-                  <div>
-                    <h3 className={`font-bold mb-3 text-slate-900 group-hover:text-[#921bb2] transition-colors duration-300 ${
-                      isMobile ? 'text-lg' : 'text-2xl'
-                    } 2xl:text-3xl`}>Technologie Consulting</h3>
-                    <p className={`text-black group-hover:text-slate-700 transition-colors duration-300 ${
-                      isMobile ? 'text-sm' : 'text-base'
-                    } 2xl:text-xl`}>
-                      Wir setzen unsere Expertise als IT-Architekten, Requirements und Software Engineer und in der Cloud-Beratung für Sie ein.
-                    </p>
-                  </div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-3xl"></div>
-              </div>
-
-              <div className={`group relative bg-white rounded-3xl border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-500 shadow-sm hover:shadow-xl card-animated overflow-hidden ${
-                isMobile ? 'p-5' : 'p-8'
-              }`}>
-                <div className="absolute inset-0 bg-gradient-to-br from-[#921bb2]/5 to-[#cd20b2]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className={`relative z-10 flex items-start ${isMobile ? 'gap-4' : 'gap-6'}`}>
-                  <div className={`rounded-2xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-lg ${
-                    isMobile ? 'w-14 h-14' : 'w-20 h-20'
-                  }`}>
-                    <BarChart3 className={`text-white ${isMobile ? 'w-7 h-7' : 'w-10 h-10'}`} />
-                  </div>
-                  <div>
-                    <h3 className={`font-bold mb-3 text-slate-900 group-hover:text-[#921bb2] transition-colors duration-300 ${
-                      isMobile ? 'text-lg' : 'text-2xl'
-                    } 2xl:text-3xl`}>Management Consulting</h3>
-                    <p className={`text-black group-hover:text-slate-700 transition-colors duration-300 ${
-                      isMobile ? 'text-sm' : 'text-base'
-                    } 2xl:text-xl`}>
-                      Wir beraten Sie auf strategischer Ebene in den Themen Transformation, Digitalisierung und Sourcing.
-                    </p>
-                  </div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-3xl"></div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* Softwareentwicklung Section */}
-      <section className={`bg-white ${isMobile ? 'py-12' : 'py-24'}`} id="softwareentwicklung">
-        <div className="w-full px-6 md:px-8 lg:px-12 xl:px-16">
-          <div className={`grid grid-cols-1 lg:grid-cols-2 ${isMobile ? 'gap-8' : 'gap-16'}`}>
-            <div className="space-y-6">
-              <p className="uppercase tracking-wider text-sm 2xl:text-base" style={{ color: '#cd20b2' }}>
-                Unsere Leistung - Für Sie
+      <section className={`bg-white ${isMobile ? 'py-12' : 'py-16 lg:py-24'}`} id="softwareentwicklung">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className={`grid grid-cols-1 lg:grid-cols-2 ${isMobile ? 'gap-8' : 'gap-12'}`}>
+            <div className="space-y-4">
+              <p className="uppercase tracking-wider text-sm text-[#921bb2] font-medium">
+                Softwareentwicklung
               </p>
 
-              <h2 className={`${isMobile ? 'text-3xl' : 'text-4xl lg:text-4xl xl:text-5xl'} 2xl:text-6xl relative group`}>
-                <span className="bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] bg-clip-text text-transparent tracking-tight">
-                  Solide Softwareentwicklung für eine stabile digitale Zukunft
-                </span>
-                <span className="absolute bottom-[-8px] left-0 w-0 h-0.5 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] transition-all duration-500 group-hover:w-24"></span>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 leading-tight">
+                Solide Software für eine stabile digitale Zukunft
               </h2>
 
-              <p className="text-lg 2xl:text-2xl">
-                Wir entwickeln Software, die sich an bewährten Abläufen orientiert und Unternehmen zuverlässig unterstützt. Unsere Lösungen fügen sich sauber in bestehende Strukturen ein, schaffen klare Prozesse und ermöglichen es, tägliche Aufgaben effizienter und transparenter zu gestalten.
-              </p>
+              <div className="max-w-prose space-y-4 text-slate-600" style={{ lineHeight: '1.7' }}>
+                <p>
+                  Wir entwickeln Software, die sich an bewährten Abläufen orientiert und Unternehmen zuverlässig unterstützt. Unsere Lösungen fügen sich sauber in bestehende Strukturen ein.
+                </p>
 
-              <p className="text-black leading-relaxed text-lg 2xl:text-2xl">
-                Mit technischer Kompetenz und einem tiefen Verständnis für gewachsene Systeme sorgen wir dafür, dass Digitalisierung nicht zum Umbruch wird, sondern zur nachhaltigen Weiterentwicklung Ihrer Arbeitswelt.
-              </p>
+                <p>
+                  Mit technischer Kompetenz sorgen wir dafür, dass Digitalisierung zur nachhaltigen Weiterentwicklung Ihrer Arbeitswelt wird.
+                </p>
+              </div>
 
               <button
                 onClick={() => navigateTo('softwareentwicklung')}
-                className={`mt-6 text-white uppercase tracking-wider rounded-full font-semibold btn-animated ${
-                  isMobile ? 'px-6 py-3 text-base' : 'px-10 py-5 text-lg'
-                } 2xl:px-12 2xl:py-6 2xl:text-xl`}
-                style={{ backgroundColor: '#cd20b2' }}
+                className="mt-6 px-6 py-3 text-white font-medium rounded-lg bg-gradient-to-r from-[#921bb2] to-[#cd20b2] hover:opacity-90 transition-opacity"
               >
                 Mehr erfahren
               </button>
@@ -468,21 +374,17 @@ export default function App() {
                     e.preventDefault();
                     window.location.hash = `#/tools/${tool.id}`;
                   }}
-                  className="group relative bg-white border-2 border-slate-200 hover:border-[#cd20b2] rounded-3xl p-6 flex items-start justify-between card-animated cursor-pointer overflow-hidden transition-all duration-500 shadow-sm hover:shadow-xl 2xl:p-8"
+                  className="group bg-white border border-slate-200 hover:border-[#921bb2] rounded-lg p-5 flex items-start justify-between transition-colors"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#cd20b2]/5 to-[#921bb2]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-
-                  <div className="relative z-10 pr-6 flex-1">
-                    <p className="text-xl font-bold group-hover:text-[#cd20b2] transition-colors duration-300 2xl:text-2xl" style={{ color: tool.color }}>
+                  <div className="pr-4 flex-1">
+                    <p className="font-semibold text-[#921bb2] group-hover:text-[#7a1696] transition-colors">
                       {tool.title}
                     </p>
-                    <p className="text-base text-black/70 mt-2 group-hover:text-slate-700 transition-colors duration-300 2xl:text-xl">
+                    <p className="text-slate-600 text-sm mt-1">
                       {tool.description}
                     </p>
                   </div>
-                  <ChevronRight className="w-5 h-5 text-black/50 group-hover:text-[#cd20b2] transition-colors mt-1 flex-shrink-0 relative z-10 2xl:w-6 2xl:h-6" />
-
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#cd20b2] via-[#921bb2] to-[#cd20b2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-3xl"></div>
+                  <ChevronRight className="w-5 h-5 text-slate-400 group-hover:text-[#921bb2] transition-colors mt-0.5 flex-shrink-0" />
                 </a>
               ))}
             </div>
@@ -491,159 +393,152 @@ export default function App() {
       </section>
 
       {/* Contact Section */}
-      <section className={`${isMobile ? 'py-12' : 'py-24'}`} style={{ backgroundColor: '#921bb2' }} id="kontakt">
-        <div className="w-full px-6 md:px-8 lg:px-12 xl:px-16">
-          <div className={`grid grid-cols-1 lg:grid-cols-2 items-center ${isMobile ? 'gap-8' : 'gap-16'}`}>
+      <section className={`${isMobile ? 'py-12' : 'py-16 lg:py-24'} bg-gradient-to-br from-[#921bb2] to-[#cd20b2]`} id="kontakt">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className={`grid grid-cols-1 lg:grid-cols-2 items-start ${isMobile ? 'gap-8' : 'gap-12'}`}>
             <div className="text-white space-y-6">
-              <p className="uppercase tracking-wider text-sm opacity-90 2xl:text-base">Kontakt</p>
+              <p className="uppercase tracking-wider text-sm text-white/80 font-medium">Kontakt</p>
 
-              <h2 className={`${isMobile ? 'text-3xl' : 'text-4xl lg:text-4xl xl:text-5xl'} 2xl:text-6xl`}>
-                Bereit um Ihr<br />nächstes Vorhaben gemeinsam anzugehen?
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold leading-tight">
+                Bereit für Ihr nächstes Vorhaben?
               </h2>
 
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold 2xl:text-3xl">Schreiben Sie uns</h3>
-                <p className="text-white/90 leading-relaxed text-lg 2xl:text-2xl">
-                  Am einfachsten erreichen Sie uns über dieses Formular oder per E-Mail. So können wir Ihr Anliegen direkt aufnehmen und Ihnen schnell und gezielt weiterhelfen.
-                  Wenn Ihnen ein persönliches Gespräch lieber ist, sind wir selbstverständlich auch telefonisch für Sie da.
-                </p>
-              </div>
+              <p className="text-white/90 max-w-prose" style={{ lineHeight: '1.7' }}>
+                Am einfachsten erreichen Sie uns über das Formular oder per E-Mail. Wir melden uns zeitnah bei Ihnen.
+              </p>
 
-              <div className="space-y-4 pt-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 2xl:w-14 2xl:h-14">
-                    <svg className="w-6 h-6 text-white 2xl:w-7 2xl:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="space-y-4 pt-4">
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm opacity-80 2xl:text-base">E-Mail</p>
-                    <p className="text-lg 2xl:text-xl">info@xmb-group.ch</p>
+                    <p className="text-sm text-white/70">E-Mail</p>
+                    <p>info@xmb-group.ch</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 2xl:w-14 2xl:h-14">
-                    <svg className="w-6 h-6 text-white 2xl:w-7 2xl:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm opacity-80 2xl:text-base">Telefon</p>
-                    <p className="text-lg 2xl:text-xl">+41 44 123 45 67</p>
+                    <p className="text-sm text-white/70">Telefon</p>
+                    <p>+41 44 123 45 67</p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center flex-shrink-0 2xl:w-14 2xl:h-14">
-                    <svg className="w-6 h-6 text-white 2xl:w-7 2xl:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm opacity-80 2xl:text-base">Adresse</p>
-                    <p className="text-lg 2xl:text-xl">Eichengasse 3<br />4702 Oensingen</p>
+                    <p className="text-sm text-white/70">Adresse</p>
+                    <p>Eichengasse 3, 4702 Oensingen</p>
                   </div>
                 </div>
               </div>
 
               <button
                 onClick={() => navigateTo('kontakt')}
-                className={`mt-6 bg-white text-[#921bb2] uppercase tracking-wider rounded-full font-semibold btn-animated ${
-                  isMobile ? 'px-6 py-3 text-base' : 'px-10 py-5 text-lg'
-                } 2xl:px-12 2xl:py-6 2xl:text-xl`}
+                className="mt-4 px-6 py-3 bg-white text-[#921bb2] font-medium rounded-lg hover:bg-white/90 transition-colors"
               >
                 Zur Kontaktseite
               </button>
             </div>
 
-            <div className={`bg-white rounded-3xl shadow-xl border border-slate-200/50 ${isMobile ? 'p-6' : 'p-8 lg:p-10'}`}>
-              <form className="space-y-6">
-                <div className="grid gap-6 md:grid-cols-2">
-                  <div className="space-y-2">
-                    <label className="block text-sm font-semibold text-slate-700 2xl:text-base">
+            <div className="bg-white rounded-lg border border-slate-200 p-6 lg:p-8">
+              <form className="space-y-5">
+                <div className="grid gap-5 md:grid-cols-2">
+                  <div className="space-y-1.5">
+                    <label className="block text-sm font-medium text-slate-700">
                       Name <span className="text-[#921bb2]">*</span>
                     </label>
                     <input
                       type="text"
                       required
-                      className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 placeholder:text-slate-400 transition-all focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02] 2xl:px-6 2xl:py-5 2xl:text-xl"
+                      className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
                       placeholder="Vor- und Nachname"
                     />
                   </div>
-                  <div className="space-y-2">
-                    <label className="block text-sm font-semibold text-slate-700 2xl:text-base">
+                  <div className="space-y-1.5">
+                    <label className="block text-sm font-medium text-slate-700">
                       E-Mail <span className="text-[#921bb2]">*</span>
                     </label>
                     <input
                       type="email"
                       required
-                      className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 placeholder:text-slate-400 transition-all focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02] 2xl:px-6 2xl:py-5 2xl:text-xl"
+                      className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
                       placeholder="name@firma.com"
                     />
                   </div>
-                  <div className="space-y-2">
-                    <label className="block text-sm font-semibold text-slate-700 2xl:text-base">
-                      Telefon
+                  <div className="space-y-1.5">
+                    <label className="block text-sm font-medium text-slate-700">
+                      Telefon <span className="text-slate-400 text-xs font-normal">(optional)</span>
                     </label>
                     <input
                       type="tel"
-                      className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 placeholder:text-slate-400 transition-all focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02] 2xl:px-6 2xl:py-5 2xl:text-xl"
+                      className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
                       placeholder="+41 XX XXX XX XX"
                     />
                   </div>
-                  <div className="space-y-2">
-                    <label className="block text-sm font-semibold text-slate-700 2xl:text-base">
-                      Firma
+                  <div className="space-y-1.5">
+                    <label className="block text-sm font-medium text-slate-700">
+                      Firma <span className="text-slate-400 text-xs font-normal">(optional)</span>
                     </label>
                     <input
                       type="text"
-                      className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 placeholder:text-slate-400 transition-all focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02] 2xl:px-6 2xl:py-5 2xl:text-xl"
+                      className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
                       placeholder="Unternehmensname"
                     />
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <label className="block text-sm font-semibold text-slate-700 2xl:text-base">
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-medium text-slate-700">
                     Betreff <span className="text-[#921bb2]">*</span>
                   </label>
                   <select
                     required
-                    className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 transition-all focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02] 2xl:px-6 2xl:py-5 2xl:text-xl"
+                    className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
                   >
-                    <option value="">Bitte wählen Sie einen Betreff</option>
-                    <option>Anfrage</option>
-                    <option>Projektstart</option>
-                    <option>Partnerschaft</option>
+                    <option value="">Bitte wählen</option>
+                    <option>Allgemeine Anfrage</option>
                     <option>IT Contracting</option>
                     <option>Cybersecurity</option>
                     <option>Softwareentwicklung</option>
+                    <option>Partnerschaft</option>
                   </select>
                 </div>
 
-                <div className="space-y-2">
-                  <label className="block text-sm font-semibold text-slate-700 2xl:text-base">
+                <div className="space-y-1.5">
+                  <label className="block text-sm font-medium text-slate-700">
                     Nachricht <span className="text-[#921bb2]">*</span>
                   </label>
                   <textarea
                     required
-                    rows={5}
-                    className="w-full rounded-xl border-2 border-slate-200 bg-slate-50 px-5 py-4 text-lg text-slate-900 placeholder:text-slate-400 transition-all resize-none focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-2 focus:ring-[#921bb2]/20 focus:scale-[1.02] 2xl:px-6 2xl:py-5 2xl:text-xl"
-                    placeholder="Beschreiben Sie Ihr Anliegen oder Projekt..."
+                    rows={4}
+                    className="w-full rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 placeholder:text-slate-400 resize-none focus:border-[#921bb2] focus:bg-white focus:outline-none focus:ring-1 focus:ring-[#921bb2]"
+                    placeholder="Beschreiben Sie Ihr Anliegen..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full rounded-xl bg-gradient-to-r from-[#921bb2] to-[#cd20b2] px-8 py-5 text-white font-semibold text-xl shadow-lg hover:shadow-xl btn-animated 2xl:px-10 2xl:py-6 2xl:text-2xl"
+                  className="w-full rounded-lg bg-gradient-to-r from-[#921bb2] to-[#cd20b2] px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
                 >
                   Nachricht senden
                 </button>
 
-                <p className="text-xs text-slate-500 text-center 2xl:text-sm">
-                  Mit dem Absenden stimmen Sie unserer Datenschutzerklärung zu.
+                <p className="text-xs text-slate-500 text-center">
+                  Mit dem Absenden stimmen Sie unserer <a href="#/datenschutz" className="underline hover:text-[#921bb2]">Datenschutzerklärung</a> zu.
                 </p>
               </form>
             </div>
@@ -740,7 +635,7 @@ export default function App() {
           <a
             href="#/"
             className="flex items-center gap-4 px-3 py-3 rounded-lg transition-all duration-300 group"
-            style={{ backgroundColor: activeMenu === 'home' ? '#cd20b2' : 'transparent' }}
+            style={{ backgroundColor: activeMenu === 'home' ? '#921bb2' : 'transparent' }}
             onClick={(e) => {
               e.preventDefault();
               navigateTo('home');
@@ -898,7 +793,7 @@ export default function App() {
             style={{
               backgroundColor:
                 activeMenu === 'softwareentwicklung' || currentPage === 'tool-detail'
-                  ? '#cd20b2'
+                  ? '#921bb2'
                   : 'transparent',
             }}
           >
@@ -946,7 +841,7 @@ export default function App() {
                     key={tool.id}
                     href={`#/tools/${tool.id}`}
                     className="flex items-center gap-3 px-3 py-2 rounded-lg transition-all duration-300 text-sm hover:bg-white/5"
-                    style={{ backgroundColor: isActive ? 'rgba(205, 32, 178, 0.3)' : 'transparent' }}
+                    style={{ backgroundColor: isActive ? 'rgba(146, 27, 178, 0.3)' : 'transparent' }}
                     onClick={(e) => {
                       e.preventDefault();
                       window.location.hash = `#/tools/${tool.id}`;

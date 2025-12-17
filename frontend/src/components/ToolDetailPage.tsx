@@ -315,35 +315,24 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
       </section>
 
       {/* Call-to-Action */}
-      <section className="bg-white px-4 sm:px-6 py-16 sm:py-20">
-        <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
-          <div className="mx-auto max-w-7xl flex flex-col gap-5 sm:gap-6 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-[#921bb2] via-[#921bb2] to-[#cd20b2] p-6 sm:p-7 md:p-8 lg:p-12 text-white lg:flex-row lg:items-center">
-            <div className="flex-1 space-y-3 sm:space-y-4">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block group leading-snug">
-                <span className="relative z-10 text-white tracking-tight">
-                  Jetzt Demo anfragen
-                </span>
-                <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 blur-2xl group-hover:via-white/20 transition-all duration-500"></span>
-                <span className="absolute -inset-1 bg-gradient-to-r from-[#921bb2]/20 via-[#cd20b2]/30 to-[#921bb2]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-              </h2>
-              <p className="text-base sm:text-lg md:text-xl text-white/90 2xl:text-2xl">
-                Wir zeigen Live Use-Cases und binden Ihre Integrationen mit ein.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-3 sm:gap-4">
-              <a
-                href="#/kontakt"
-                className="rounded-full bg-white px-8 sm:px-10 py-4 sm:py-5 text-[#921bb2] font-semibold text-base sm:text-lg btn-animated"
-              >
-                Kontakt aufnehmen
-              </a>
-              <a
-                href="#/softwareentwicklung"
-                className="rounded-full border-2 border-white/30 px-8 sm:px-10 py-4 sm:py-5 text-white font-semibold text-base sm:text-lg btn-animated hover:border-white/50 hover:bg-white/10"
-              >
-                Weitere Tools
-              </a>
-            </div>
+      <section className="bg-white py-16 sm:py-20">
+        <div className="w-full flex flex-col gap-5 sm:gap-6 text-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block group max-w-[95vw] sm:max-w-[80vw] mx-auto px-2 leading-snug">
+            <span className="relative z-10 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] bg-clip-text text-transparent tracking-tight">
+              Jetzt Demo anfragen
+            </span>
+            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-[#921bb2] to-[#cd20b2] group-hover:w-40 transition-all duration-500"></span>
+          </h2>
+          <p className="mx-auto max-w-4xl text-base sm:text-lg md:text-xl text-slate-700 2xl:text-2xl px-2">
+            Wir zeigen Live Use-Cases und binden Ihre Integrationen mit ein.
+          </p>
+          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-3 sm:mt-4">
+            <a
+              href="#/kontakt"
+              className="rounded-full bg-gradient-to-r from-[#921bb2] to-[#cd20b2] px-8 sm:px-10 py-4 sm:py-5 text-white font-semibold text-base sm:text-lg btn-animated"
+            >
+              Kontakt aufnehmen
+            </a>
           </div>
         </div>
       </section>

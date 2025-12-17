@@ -33,64 +33,133 @@ export function HeroSwiper({
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
-  // Parallax-Wert ähnlich wie bei Imagemedia (0.75 * Breite)
   const parallaxOffset = useMemo(() => {
     if (typeof window === "undefined") return 600;
     return Math.round(window.innerWidth * 0.75);
   }, []);
 
+  // Mobile: Alle 3 Sektionen zusammen = 100vh
+  if (isMobile) {
+    return (
+      <div className="relative w-full h-screen">
+        {/* Logo oben rechts */}
+        {!showIntro && (
+          <div className="absolute top-16 right-4 z-50">
+            <img
+              src="/Logo/logotransp_big.png"
+              alt="XMB Group AG Logo"
+              className="h-12 w-auto drop-shadow-lg"
+            />
+          </div>
+        )}
+
+        {/* Alle 3 Sektionen - je 1/3 der Höhe */}
+        <div className="flex flex-col h-full">
+          {sections.map((section) => (
+            <div
+              key={section.id}
+              className="relative flex-1 flex items-center"
+            >
+              {/* Hintergrundbild pro Sektion */}
+              <div
+                className="absolute inset-0"
+                style={{
+                  backgroundImage: `url(${section.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              />
+              <div className="absolute inset-0 bg-black/50" />
+
+              {/* Content */}
+              <div className="relative z-10 px-6 w-full">
+                <div
+                  className="font-bold mb-1"
+                  style={{
+                    fontSize: "3.5rem",
+                    lineHeight: "1",
+                    WebkitTextStroke: "1px rgba(255,255,255,0.3)",
+                    WebkitTextFillColor: "transparent",
+                    color: "transparent",
+                  }}
+                >
+                  {section.number}
+                </div>
+                <h2 className="text-white uppercase tracking-wider text-sm font-semibold mb-3">
+                  {section.title}
+                </h2>
+                <button
+                  onClick={() => onNavigate(section.route)}
+                  className="border border-white text-white uppercase tracking-wider text-xs px-4 py-2 hover:bg-white hover:text-black transition-colors rounded-full"
+                >
+                  Mehr erfahren
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
+          <div className="flex flex-col items-center gap-1 cursor-pointer" onClick={() => {
+            window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+          }}>
+            <span className="text-white/80 text-xs uppercase tracking-wider font-semibold">Scroll</span>
+            <ChevronDown className="w-5 h-5 text-white/80 animate-pulse" />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Desktop: Swiper wie bisher
   return (
-    <div className={`relative w-full overflow-hidden ${isMobile ? "min-h-screen" : "h-screen"}`}>
+    <div className="relative w-full overflow-hidden h-screen">
       {/* MAIN / Background Swiper */}
       <Swiper
         modules={[Thumbs, Parallax]}
         className="absolute inset-0 bg-black"
         speed={900}
         parallax
-        allowTouchMove={true} // ✅ damit Wischen geht
+        allowTouchMove={true}
         onSwiper={setMainSwiper}
         onSlideChange={(s) => setActiveIndex(s.activeIndex)}
         thumbs={{
-          // wichtig: Swiper kann "destroyed" sein, deshalb absichern
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }}
       >
         {sections.map((section) => (
           <SwiperSlide key={section.id}>
             <div className="relative w-full h-full bg-black overflow-hidden">
-              {/* Hintergrundbild */}
               <div
                 className="absolute top-0 bottom-0"
                 data-swiper-parallax={`-${parallaxOffset}`}
                 style={{
-                    left: "-10%",
-                    width: "120%",
-                    backgroundImage: `url(${section.image})`,
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    transform: "scale(1.05) translateZ(0)",
-                    willChange: "transform",
-  }}
-/>
-
-              {/* Overlay */}
+                  left: "-10%",
+                  width: "120%",
+                  backgroundImage: `url(${section.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  transform: "scale(1.05) translateZ(0)",
+                  willChange: "transform",
+                }}
+              />
               <div className="absolute inset-0 bg-black/50" />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* Content / “Thumbs” unten */}
+      {/* Content / Thumbs */}
       <div className="relative z-10 flex h-full">
-        {/* damit du weiterhin deine 3 Spalten-Optik hast */}
-        <div className={`w-full ${isMobile ? "flex flex-col" : "flex"} h-full`}>
+        <div className="w-full flex h-full">
           <Swiper
             modules={[Thumbs]}
             onSwiper={setThumbsSwiper}
-            className={`${isMobile ? "w-full h-full" : "w-full h-full"}`}
-            slidesPerView={isMobile ? 1 : 3}
+            className="w-full h-full"
+            slidesPerView={3}
             watchSlidesProgress
-            allowTouchMove={isMobile} // Desktop: du willst eher hover/click, Mobile: wischen ok
+            allowTouchMove={false}
           >
             {sections.map((section, index) => {
               const isActive = index === activeIndex;
@@ -98,21 +167,18 @@ export function HeroSwiper({
               return (
                 <SwiperSlide key={`thumb-${section.id}`}>
                   <div
-                    className={`relative cursor-pointer h-full flex flex-col items-center justify-end transition-all duration-500 ${
-                      isMobile ? "p-6 justify-center" : "p-8 pb-32"
-                    }`}
+                    className="relative cursor-pointer h-full flex flex-col items-center justify-end transition-all duration-500 p-8 pb-32"
                     onClick={() => onNavigate(section.route)}
                     onMouseEnter={() => {
-                        if (!isMobile && mainSwiper && !mainSwiper.destroyed) {
-                          mainSwiper.slideTo(index);      // ✅ Hauptslider bewegen
-                        }
-                      }}                      
-                     >
-                    {/* Number */}
+                      if (mainSwiper && !mainSwiper.destroyed) {
+                        mainSwiper.slideTo(index);
+                      }
+                    }}
+                  >
                     <div
                       className="font-bold transition-all duration-500"
                       style={{
-                        fontSize: isMobile ? "4rem" : isLargeScreen ? "8rem" : "6rem",
+                        fontSize: isLargeScreen ? "8rem" : "6rem",
                         lineHeight: "1",
                         WebkitTextStroke: isActive ? "2px white" : "1px rgba(255,255,255,0.4)",
                         WebkitTextFillColor: isActive ? "rgba(255,255,255,0.15)" : "transparent",
@@ -124,11 +190,10 @@ export function HeroSwiper({
                       {section.number}
                     </div>
 
-                    {/* Title */}
                     <h2
                       className="text-white uppercase tracking-wider text-center mb-4 transition-all duration-500"
                       style={{
-                        fontSize: isMobile ? "1rem" : isLargeScreen ? "1.25rem" : "1rem",
+                        fontSize: isLargeScreen ? "1.25rem" : "1rem",
                         opacity: isActive ? 1 : 0.6,
                         fontWeight: isActive ? 600 : 400,
                       }}
@@ -136,19 +201,17 @@ export function HeroSwiper({
                       {section.title}
                     </h2>
 
-                    {/* Button */}
                     <button
                       className="border-2 border-white text-white uppercase tracking-wider text-sm hover:bg-white hover:text-black transition-all duration-500 px-6 py-3"
                       style={{
-                        opacity: isMobile ? 1 : isActive ? 1 : 0,
-                        transform: isMobile ? "translateY(0)" : isActive ? "translateY(0)" : "translateY(20px)",
-                        pointerEvents: isMobile ? "auto" : isActive ? "auto" : "none",
+                        opacity: isActive ? 1 : 0,
+                        transform: isActive ? "translateY(0)" : "translateY(20px)",
+                        pointerEvents: isActive ? "auto" : "none",
                       }}
                     >
                       Mehr erfahren
                     </button>
 
-                    {/* Active line */}
                     <div
                       className="h-0.5 mt-6 transition-all duration-500"
                       style={{
@@ -158,8 +221,7 @@ export function HeroSwiper({
                     />
                   </div>
 
-                  {/* Divider (nur Desktop) */}
-                  {!isMobile && index < sections.length - 1 && (
+                  {index < sections.length - 1 && (
                     <div className="absolute top-0 right-0 h-full w-px bg-white/20" />
                   )}
                 </SwiperSlide>
@@ -169,13 +231,13 @@ export function HeroSwiper({
         </div>
       </div>
 
-      {/* optional: Logo erst nach Intro */}
+      {/* Logo */}
       {!showIntro && (
-        <div className={`absolute z-[100] ${isMobile ? "top-20 right-4" : "top-8 right-8"} ${isLargeScreen ? "2xl:top-12 2xl:right-12" : ""}`}>
+        <div className={`absolute z-[100] top-8 right-8 ${isLargeScreen ? "2xl:top-12 2xl:right-12" : ""}`}>
           <img
             src="/Logo/logotransp_big.png"
             alt="XMB Group AG Logo"
-            className={`${isMobile ? "h-20" : "h-36"} ${isLargeScreen ? "2xl:h-44" : ""} w-auto drop-shadow-lg`}
+            className={`h-36 ${isLargeScreen ? "2xl:h-44" : ""} w-auto drop-shadow-lg`}
           />
         </div>
       )}

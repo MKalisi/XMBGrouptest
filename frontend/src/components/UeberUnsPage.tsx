@@ -209,14 +209,12 @@ export function UeberUnsPage() {
             {milestones.map((milestone, index) => (
               <div
                 key={index}
-                className="group relative bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-300 hover:shadow-xl transform hover:-translate-y-2"
+                className="relative bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border-2 border-slate-200 shadow-sm"
               >
                 <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full mt-1.5 sm:mt-2 flex-shrink-0 bg-gradient-to-br from-[#921bb2] to-[#cd20b2] group-hover:scale-150 transition-transform duration-300"></div>
-                  <p className="text-slate-700 text-sm sm:text-base leading-relaxed group-hover:text-slate-900 transition-colors">{milestone}</p>
+                  <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full mt-1.5 sm:mt-2 flex-shrink-0 bg-gradient-to-br from-[#921bb2] to-[#cd20b2]"></div>
+                  <p className="text-slate-700 text-sm sm:text-base leading-relaxed">{milestone}</p>
                 </div>
-                {/* Bottom accent line */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#921bb2] to-[#cd20b2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-b-xl sm:rounded-b-2xl"></div>
               </div>
             ))}
           </div>
@@ -416,32 +414,26 @@ export function UeberUnsPage() {
               return (
                 <div
                   key={index}
-                  className="group relative bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-500 shadow-sm hover:shadow-xl text-center"
+                  className="relative bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 border-2 border-slate-200 shadow-sm text-center"
                 >
-                  {/* Background gradient on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#921bb2]/5 to-[#cd20b2]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl sm:rounded-3xl"></div>
-                  
                   <div className="relative z-10">
                     {/* Icon Circle */}
                     <div className="mb-4 sm:mb-5 md:mb-6 flex justify-center">
-                      <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg border-2 sm:border-3 md:border-4 border-white">
+                      <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center shadow-lg border-2 sm:border-3 md:border-4 border-white">
                         <IconComponent className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
                       </div>
                     </div>
                     
                     {/* Title */}
-                    <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 group-hover:text-[#921bb2] transition-colors duration-300 bg-gradient-to-r from-slate-900 via-[#921bb2] to-slate-900 bg-clip-text text-transparent leading-snug">
+                    <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-slate-900 via-[#921bb2] to-slate-900 bg-clip-text text-transparent leading-snug">
                       {value.title}
                     </h3>
                     
                     {/* Description */}
-                    <p className="text-slate-600 text-base sm:text-lg leading-relaxed group-hover:text-slate-700 transition-colors duration-300 2xl:text-xl">
+                    <p className="text-slate-600 text-base sm:text-lg leading-relaxed 2xl:text-xl">
                       {value.description}
                     </p>
                   </div>
-                  
-                  {/* Animated bottom border */}
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center rounded-b-2xl sm:rounded-b-3xl"></div>
               </div>
               );
             })}

@@ -91,29 +91,26 @@ export function FuerITSpezialistenPage() {
               return (
                 <div
                   key={index}
-                  className="group relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 lg:p-10 border-2 border-white/30 hover:border-white/50 hover:bg-white/20 transition-all duration-500 shadow-lg hover:shadow-xl card-animated stagger-item overflow-hidden"
+                  className="relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 lg:p-10 border-2 border-white/30 shadow-lg stagger-item overflow-hidden"
                 >
                   <div className="relative z-10">
                     {/* Icon and Number */}
                     <div className="flex items-start justify-between mb-4 sm:mb-5 md:mb-6">
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center shadow-lg">
                         <IconComponent className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                       </div>
-                      <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center group-hover:bg-white/30 transition-all duration-300">
-                        <span className="text-white font-bold text-base sm:text-lg md:text-xl transition-colors duration-300">
+                      <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                        <span className="text-white font-bold text-base sm:text-lg md:text-xl">
                           {item.number}
                         </span>
                       </div>
                     </div>
                     
                     {/* Text */}
-                    <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed transition-colors duration-300 2xl:text-xl">
+                    <p className="text-sm sm:text-base md:text-lg text-white/90 leading-relaxed 2xl:text-xl">
                       {item.text}
                     </p>
                   </div>
-
-                  {/* Animated bottom border */}
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl sm:rounded-b-3xl"></div>
                 </div>
               );
             })}
@@ -139,73 +136,49 @@ export function FuerITSpezialistenPage() {
             <span className="absolute inset-0 bg-gradient-to-r from-[#921bb2]/0 via-[#cd20b2]/10 to-[#921bb2]/0 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </h2>
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="group relative bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-500 shadow-sm hover:shadow-xl card-animated stagger-item overflow-hidden">
-              {/* Background gradient on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#921bb2]/5 to-[#cd20b2]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
+            <div className="relative bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-slate-200 shadow-sm stagger-item overflow-hidden">
               <div className="relative z-10">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center mb-4 sm:mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center mb-4 sm:mb-5 md:mb-6 shadow-lg">
                   <Briefcase className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                 </div>
-                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 break-words group-hover:text-[#921bb2] transition-colors duration-300 bg-gradient-to-r from-slate-900 via-[#921bb2] to-slate-900 bg-clip-text text-transparent leading-snug">Spannende Projekte</h3>
-                <p className="text-slate-600 text-sm sm:text-base group-hover:text-slate-700 transition-colors duration-300 2xl:text-xl break-words">
+                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 break-words bg-gradient-to-r from-slate-900 via-[#921bb2] to-slate-900 bg-clip-text text-transparent leading-snug">Spannende Projekte</h3>
+                <p className="text-slate-600 text-sm sm:text-base 2xl:text-xl break-words">
                   Sie erhalten Zugang zu ausgewählten Einsätzen bei Unternehmen, die auf zuverlässige IT-Expertise angewiesen sind. Wir achten darauf, dass Projekte fachlich anspruchsvoll und zugleich klar strukturiert sind.
                 </p>
               </div>
-              
-              {/* Animated bottom border */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl sm:rounded-b-3xl"></div>
             </div>
-            <div className="group relative bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-500 shadow-sm hover:shadow-xl card-animated stagger-item overflow-hidden">
-              {/* Background gradient on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#921bb2]/5 to-[#cd20b2]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
+            <div className="relative bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-slate-200 shadow-sm stagger-item overflow-hidden">
               <div className="relative z-10">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center mb-4 sm:mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center mb-4 sm:mb-5 md:mb-6 shadow-lg">
                   <TrendingUp className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                 </div>
-                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 break-words group-hover:text-[#921bb2] transition-colors duration-300 bg-gradient-to-r from-slate-900 via-[#921bb2] to-slate-900 bg-clip-text text-transparent leading-snug">Karriereentwicklung</h3>
-                <p className="text-slate-600 text-sm sm:text-base group-hover:text-slate-700 transition-colors duration-300 2xl:text-xl break-words">
+                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 break-words bg-gradient-to-r from-slate-900 via-[#921bb2] to-slate-900 bg-clip-text text-transparent leading-snug">Karriereentwicklung</h3>
+                <p className="text-slate-600 text-sm sm:text-base 2xl:text-xl break-words">
                   Wir unterstützen Sie dabei, Ihre berufliche Entwicklung bewusst voranzutreiben – mit Projekten, die Ihren Fähigkeiten entsprechen und Ihr Profil nachhaltig stärken.
                 </p>
               </div>
-              
-              {/* Animated bottom border */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl sm:rounded-b-3xl"></div>
             </div>
-            <div className="group relative bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-500 shadow-sm hover:shadow-xl card-animated stagger-item overflow-hidden">
-              {/* Background gradient on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#921bb2]/5 to-[#cd20b2]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
+            <div className="relative bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-slate-200 shadow-sm stagger-item overflow-hidden">
               <div className="relative z-10">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center mb-4 sm:mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center mb-4 sm:mb-5 md:mb-6 shadow-lg">
                   <Heart className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                 </div>
-                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 break-words group-hover:text-[#921bb2] transition-colors duration-300 bg-gradient-to-r from-slate-900 via-[#921bb2] to-slate-900 bg-clip-text text-transparent leading-snug">Persönliche Betreuung</h3>
-                <p className="text-slate-600 text-sm sm:text-base group-hover:text-slate-700 transition-colors duration-300 2xl:text-xl break-words">
+                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 break-words bg-gradient-to-r from-slate-900 via-[#921bb2] to-slate-900 bg-clip-text text-transparent leading-snug">Persönliche Betreuung</h3>
+                <p className="text-slate-600 text-sm sm:text-base 2xl:text-xl break-words">
                   Bei uns haben Sie feste Ansprechpartner, die Ihre Situation kennen und Sie während des gesamten Einsatzes begleiten. Wir stehen für Transparenz, klare Kommunikation und zügige Abläufe.
                 </p>
               </div>
-              
-              {/* Animated bottom border */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl sm:rounded-b-3xl"></div>
             </div>
-            <div className="group relative bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-slate-200 hover:border-[#921bb2] transition-all duration-500 shadow-sm hover:shadow-xl card-animated stagger-item overflow-hidden">
-              {/* Background gradient on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#921bb2]/5 to-[#cd20b2]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              
+            <div className="relative bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-slate-200 shadow-sm stagger-item overflow-hidden">
               <div className="relative z-10">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center mb-4 sm:mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center mb-4 sm:mb-5 md:mb-6 shadow-lg">
                   <Star className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                 </div>
-                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 break-words group-hover:text-[#921bb2] transition-colors duration-300 bg-gradient-to-r from-slate-900 via-[#921bb2] to-slate-900 bg-clip-text text-transparent leading-snug">Flexible Gestaltung</h3>
-                <p className="text-slate-600 text-sm sm:text-base group-hover:text-slate-700 transition-colors duration-300 2xl:text-xl break-words">
+                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 break-words bg-gradient-to-r from-slate-900 via-[#921bb2] to-slate-900 bg-clip-text text-transparent leading-snug">Flexible Gestaltung</h3>
+                <p className="text-slate-600 text-sm sm:text-base 2xl:text-xl break-words">
                   Ob kurzfristige Einsätze oder langfristige Projektaufträge – wir bieten Ihnen verschiedene Modelle, die sich an Ihre Lebenssituation und Ihre beruflichen Ziele anpassen.
                 </p>
               </div>
-              
-              {/* Animated bottom border */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl sm:rounded-b-3xl"></div>
             </div>
           </div>
         </div>

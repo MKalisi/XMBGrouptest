@@ -67,61 +67,49 @@ export function FuerUnsereKundenPage() {
             <span className="absolute -inset-1 bg-gradient-to-r from-[#921bb2]/20 via-[#cd20b2]/30 to-[#921bb2]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </h2>
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="group relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-white/30 hover:border-white/50 hover:bg-white/20 transition-all duration-500 shadow-lg hover:shadow-xl card-animated stagger-item overflow-hidden">
+            <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-white/30 shadow-lg stagger-item overflow-hidden">
               <div className="relative z-10">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4 sm:mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4 sm:mb-5 md:mb-6 shadow-lg">
                   <Clock className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                 </div>
-                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-white transition-colors duration-300 leading-snug">Schnelle Vermittlung</h3>
-                <p className="text-white/90 text-sm sm:text-base transition-colors duration-300 2xl:text-xl">
+                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-white leading-snug">Schnelle Vermittlung</h3>
+                <p className="text-white/90 text-sm sm:text-base 2xl:text-xl">
                   Wir liefern innerhalb kurzer Zeit passende Kandidaten – strukturiert, abgestimmt und mit aussagekräftigen Profilen.
                 </p>
               </div>
-              
-              {/* Animated bottom border */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl sm:rounded-b-3xl"></div>
             </div>
-            <div className="group relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-white/30 hover:border-white/50 hover:bg-white/20 transition-all duration-500 shadow-lg hover:shadow-xl card-animated stagger-item overflow-hidden">
+            <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-white/30 shadow-lg stagger-item overflow-hidden">
               <div className="relative z-10">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4 sm:mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4 sm:mb-5 md:mb-6 shadow-lg">
                   <CheckCircle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                 </div>
-                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-white transition-colors duration-300 leading-snug">Geprüfte Qualität</h3>
-                <p className="text-white/90 text-sm sm:text-base transition-colors duration-300 2xl:text-xl">
+                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-white leading-snug">Geprüfte Qualität</h3>
+                <p className="text-white/90 text-sm sm:text-base 2xl:text-xl">
                   Alle Fachkräfte werden hinsichtlich Qualifikation, Erfahrung und Eignung sorgfältig bewertet.
                 </p>
               </div>
-              
-              {/* Animated bottom border */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl sm:rounded-b-3xl"></div>
             </div>
-            <div className="group relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-white/30 hover:border-white/50 hover:bg-white/20 transition-all duration-500 shadow-lg hover:shadow-xl card-animated stagger-item overflow-hidden">
+            <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-white/30 shadow-lg stagger-item overflow-hidden">
               <div className="relative z-10">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4 sm:mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4 sm:mb-5 md:mb-6 shadow-lg">
                   <Users className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                 </div>
-                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-white transition-colors duration-300 leading-snug">Breites Portfolio</h3>
-                <p className="text-white/90 text-sm sm:text-base transition-colors duration-300 2xl:text-xl">
+                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-white leading-snug">Breites Portfolio</h3>
+                <p className="text-white/90 text-sm sm:text-base 2xl:text-xl">
                   Von Entwicklern über Engineers bis hin zu Projektleitern – wir decken alle wesentlichen IT-Bereiche ab.
                 </p>
               </div>
-              
-              {/* Animated bottom border */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl sm:rounded-b-3xl"></div>
             </div>
-            <div className="group relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-white/30 hover:border-white/50 hover:bg-white/20 transition-all duration-500 shadow-lg hover:shadow-xl card-animated stagger-item overflow-hidden">
+            <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 border-2 border-white/30 shadow-lg stagger-item overflow-hidden">
               <div className="relative z-10">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4 sm:mb-5 md:mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-4 sm:mb-5 md:mb-6 shadow-lg">
                   <Shield className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-white" />
                 </div>
-                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-white transition-colors duration-300 leading-snug">Compliance & Rechtssicherheit</h3>
-                <p className="text-white/90 text-sm sm:text-base transition-colors duration-300 2xl:text-xl">
+                <h3 className="font-bold text-lg sm:text-xl mb-2 sm:mb-3 text-white leading-snug">Compliance & Rechtssicherheit</h3>
+                <p className="text-white/90 text-sm sm:text-base 2xl:text-xl">
                   Wir übernehmen die gesamte Vertragsabwicklung und sorgen für klare, regelkonforme Prozesse.
                 </p>
               </div>
-              
-              {/* Animated bottom border */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left rounded-b-2xl sm:rounded-b-3xl"></div>
             </div>
           </div>
         </div>

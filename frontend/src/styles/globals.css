@@ -3,6 +3,38 @@
 @tailwind utilities;
 
 :root {
+  /* ========================================
+     DESIGN SYSTEM - Professionell & Ruhig
+     ======================================== */
+  
+  /* Spacing Scale (8px base) */
+  --space-1: 0.5rem;   /* 8px */
+  --space-2: 1rem;     /* 16px */
+  --space-3: 1.5rem;   /* 24px */
+  --space-4: 2rem;     /* 32px */
+  --space-6: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+  --space-12: 6rem;    /* 96px */
+  --space-16: 8rem;    /* 128px */
+  
+  /* Typography */
+  --font-size-base: 1rem;        /* 16px */
+  --font-size-lg: 1.125rem;      /* 18px */
+  --line-height-body: 1.7;
+  --line-height-heading: 1.25;
+  --max-text-width: 70ch;        /* ~60-80 Zeichen */
+  
+  /* Colors - Eine Akzentfarbe, sonst neutral */
+  --color-accent: #921bb2;
+  --color-accent-light: #cd20b2;
+  --color-text: #1a1a2e;
+  --color-text-muted: #64748b;
+  --color-bg: #ffffff;
+  --color-bg-subtle: #f8fafc;
+  --color-border: #e2e8f0;
+  --color-border-light: #f1f5f9;
+  
+  /* Existing variables */
   --font-size: 16px;
   --background: #ffffff;
   --foreground: oklch(0.145 0 0);
@@ -32,7 +64,7 @@
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
+  --radius: 0.5rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: #030213;
@@ -191,44 +223,127 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* ========================================
+   TYPOGRAPHY - Poliert & Professionell
+   ======================================== */
+
+/* Body Text: bessere Lesbarkeit */
+body {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-body);
+  color: var(--color-text);
+}
+
+/* Text-Container für optimale Zeilenlänge */
+.prose,
+.text-content {
+  max-width: var(--max-text-width);
+}
+
+/* Paragraph-Spacing */
+p {
+  line-height: var(--line-height-body);
+}
+
+p + p {
+  margin-top: var(--space-2);
+}
+
+/* ========================================
+   TRANSITIONS - Reduziert
+   ======================================== */
+
 * {
-  transition-property: color, background-color, border-color, transform, opacity, box-shadow;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
+  transition-property: color, background-color, border-color, opacity;
+  transition-timing-function: ease;
+  transition-duration: 150ms;
 }
 
 button, a {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 button:active, a:active {
   transform: scale(0.98);
 }
 
-/* Enhanced Button Animations */
+/* ========================================
+   BUTTONS - Einheitlich & Ruhig
+   ======================================== */
+
 .btn-animated {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
   transform-origin: center;
 }
 
 .btn-animated:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  opacity: 0.9;
 }
 
 .btn-animated:active {
-  transform: translateY(0) scale(0.98);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(0.98);
 }
 
-/* Card Hover Animations */
+/* Primärer Button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2) var(--space-4);
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(135deg, #921bb2 0%, #cd20b2 100%);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #921bb2 0%, #cd20b2 100%);
+}
+
+.bg-gradient-primary-reverse {
+  background: linear-gradient(135deg, #cd20b2 0%, #921bb2 100%);
+}
+
+/* Sekundärer Button */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2) var(--space-4);
+  font-size: 1rem;
+  font-weight: 500;
+  color: #921bb2;
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  border-color: #921bb2;
+}
+
+/* ========================================
+   CARDS - Border statt Shadow
+   ======================================== */
+
 .card-animated {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 0.2s ease;
+  border: 1px solid #e2e8f0;
 }
 
 .card-animated:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: #921bb2;
 }
 
 /* Link Animations */
