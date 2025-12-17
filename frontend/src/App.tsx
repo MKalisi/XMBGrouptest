@@ -47,14 +47,9 @@ export default function App() {
 
   const isMobile = useIsMobile();
   const [isLargeScreen, setIsLargeScreen] = useState<boolean>(false);
-  const [screenWidth, setScreenWidth] = useState<number>(
-    typeof window !== 'undefined' ? window.innerWidth : 1920
-  );
-
   useEffect(() => {
     const checkScreenSize = () => {
       const width = window.innerWidth;
-      setScreenWidth(width);
       setIsLargeScreen(width >= 1536);
     };
     checkScreenSize();
