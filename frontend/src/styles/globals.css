@@ -280,3 +280,24 @@ button:active, a:active {
 .stagger-item:nth-child(4) { animation-delay: 0.4s; }
 .stagger-item:nth-child(5) { animation-delay: 0.5s; }
 .stagger-item:nth-child(6) { animation-delay: 0.6s; }
+
+/* Hero Slide Animation */
+.hero-slide {
+  transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-slide[data-active="true"] {
+  transform: translateX(0%) !important;
+}
+
+.hero-slide[data-active="false"][data-direction="right"] {
+  transform: translateX(100%);
+}
+
+.hero-slide[data-active="false"][data-direction="left"] {
+  transform: translateX(-100%);
+}
+
+.hero-slide[data-active="false"][data-direction="center"] {
+  transform: translateX(0%);
+}
