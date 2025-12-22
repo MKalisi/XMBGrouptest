@@ -108,7 +108,7 @@ export function KontaktPage() {
                   </div>
                 </div>
               ))}
-            </div>
+              </div>
 
             <div className="p-4 bg-white rounded-lg border border-slate-200">
               <p className="text-sm text-slate-500 mb-1">Öffnungszeiten</p>
@@ -195,7 +195,8 @@ export function KontaktPage() {
               </div>
               <button
                 type="submit"
-                className="w-full rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
+                className="w-full rounded-lg bg-[#CB7CDF] px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
+                style={{ color: '#ffffff' }}
               >
                 Nachricht senden
               </button>
@@ -211,16 +212,16 @@ export function KontaktPage() {
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           <div className="overflow-hidden rounded-lg border border-slate-200">
             <div className="aspect-[16/9] w-full">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706.7061896011965!2d7.711772612290987!3d47.28099771028456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791d36ecda12f25%3A0xc7ca674e9d073569!2sEichengasse%203%2C%204702%20Oensingen!5e0!3m2!1sde!2sch!4v1764335987238!5m2!1sde!2sch"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="XMB Group AG Standort"
-              />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2706.7061896011965!2d7.711772612290987!3d47.28099771028456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791d36ecda12f25%3A0xc7ca674e9d073569!2sEichengasse%203%2C%204702%20Oensingen!5e0!3m2!1sde!2sch!4v1764335987238!5m2!1sde!2sch"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="XMB Group AG Standort"
+            />
             </div>
           </div>
         </div>

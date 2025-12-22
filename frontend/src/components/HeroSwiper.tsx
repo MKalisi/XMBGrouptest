@@ -142,15 +142,15 @@ export function HeroSwiper({
                 className="absolute top-0 bottom-0"
                 data-swiper-parallax={`-${parallaxOffset}`}
                 style={{
-                  left: "-10%",
-                  width: "120%",
-                  backgroundImage: `url(${section.image})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  transform: "scale(1.05) translateZ(0)",
-                  willChange: "transform",
-                }}
-              />
+                    left: "-10%",
+                    width: "120%",
+                    backgroundImage: `url(${section.image})`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    transform: "scale(1.05) translateZ(0)",
+                    willChange: "transform",
+  }}
+/>
               <div className="absolute inset-0 bg-black/50" />
             </div>
           </SwiperSlide>
@@ -179,9 +179,9 @@ export function HeroSwiper({
                     onMouseEnter={() => {
                       if (mainSwiper && !mainSwiper.destroyed) {
                         mainSwiper.slideTo(index);
-                      }
-                    }}
-                  >
+                        }
+                      }}                      
+                     >
                     <div
                       className="font-bold transition-all duration-500"
                       style={{

@@ -16,7 +16,7 @@ export function FuerITSpezialistenPage() {
           </a>
           <p className="uppercase tracking-wider text-sm text-black/80 font-medium mb-4">Für IT-Spezialisten</p>
           <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-4 text-black">
-            Werden Sie Teil unseres Talent-Pools
+              Werden Sie Teil unseres Talent-Pools
           </h1>
           <p className="text-black/90" style={{ lineHeight: '1.7' }}>
             Sie sind IT-Spezialist und möchten Ihre Fähigkeiten in anspruchsvollen Projekten einsetzen? Als Teil unseres Talent-Pools erhalten Sie Zugang zu einem Netzwerk, das auf Verlässlichkeit, fachliche Qualität und langfristige Zusammenarbeit setzt. Wir vermitteln Ihnen Einsätze, die Ihre Expertise zur Geltung bringen und Ihnen eine stabile berufliche Perspektive eröffnen.
@@ -38,11 +38,11 @@ export function FuerITSpezialistenPage() {
               <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">Ihre Karriere mit der XMB Group AG</h2>
               <div className="space-y-4" style={{ lineHeight: '1.7' }}>
                 <p className="text-slate-600">
-                  Als Zusammenschluss erfahrener Unternehmen verbinden wir tiefes Know-how aus Recruiting, Softwareentwicklung und Cybersecurity. Dieses Fundament ermöglicht es uns, IT-Fachkräfte gezielt und umsichtig mit passenden Projekten zu verbinden.
-                </p>
+                Als Zusammenschluss erfahrener Unternehmen verbinden wir tiefes Know-how aus Recruiting, Softwareentwicklung und Cybersecurity. Dieses Fundament ermöglicht es uns, IT-Fachkräfte gezielt und umsichtig mit passenden Projekten zu verbinden.
+              </p>
                 <p className="text-slate-600">
-                  Wir arbeiten mit Unternehmen zusammen, die klare Strukturen, sorgfältige Planung und solide Arbeitsweisen schätzen. Genau dort platzieren wir Spezialisten, deren Fähigkeiten einen echten Mehrwert schaffen. Ob Entwicklung, Engineering, Projektunterstützung oder Beratung – wir achten darauf, dass Aufgaben und Profile wirklich zueinander passen.
-                </p>
+                Wir arbeiten mit Unternehmen zusammen, die klare Strukturen, sorgfältige Planung und solide Arbeitsweisen schätzen. Genau dort platzieren wir Spezialisten, deren Fähigkeiten einen echten Mehrwert schaffen. Ob Entwicklung, Engineering, Projektunterstützung oder Beratung – wir achten darauf, dass Aufgaben und Profile wirklich zueinander passen.
+              </p>
               </div>
             </div>
           </div>
@@ -88,16 +88,16 @@ export function FuerITSpezialistenPage() {
                   <div className="flex items-start justify-between mb-4">
                     <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center">
                       <IconComponent className="w-5 h-5 text-white" />
-                    </div>
+                      </div>
                     <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
                       <span className="text-white font-semibold text-sm">
-                        {item.number}
-                      </span>
+                          {item.number}
+                        </span>
+                      </div>
                     </div>
-                  </div>
                   <p className="text-white/90 text-sm" style={{ lineHeight: '1.7' }}>
-                    {item.text}
-                  </p>
+                      {item.text}
+                    </p>
                 </div>
               );
             })}
@@ -105,8 +105,8 @@ export function FuerITSpezialistenPage() {
 
           <div className="text-center max-w-3xl mx-auto">
             <p className="text-white/90" style={{ lineHeight: '1.7' }}>
-              So schaffen wir eine Zusammenarbeit, die nicht nur fachlich überzeugt, sondern auch menschlich Bestand hat.
-            </p>
+                So schaffen wir eine Zusammenarbeit, die nicht nur fachlich überzeugt, sondern auch menschlich Bestand hat.
+              </p>
           </div>
         </div>
       </section>
@@ -114,7 +114,7 @@ export function FuerITSpezialistenPage() {
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-slate-900">
-            Ihre Vorteile
+              Ihre Vorteile
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div className="bg-white border border-slate-200 rounded-lg p-5">
@@ -161,17 +161,17 @@ export function FuerITSpezialistenPage() {
       <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-black">
-            Interessiert?
+              Interessiert?
           </h2>
           <p className="text-black/80 mb-6" style={{ lineHeight: '1.7' }}>
             Werden Sie Teil unseres Talent-Pools und entdecken Sie Projekte, die zu Ihrer beruflichen Ausrichtung und Ihrer Expertise passen. Wir freuen uns darauf, Sie kennenzulernen und gemeinsam die nächsten Schritte zu planen.
           </p>
-          <a
-            href="#/kontakt"
+            <a
+              href="#/kontakt"
             className="inline-block px-6 py-3 bg-white text-[#921bb2] font-medium rounded-lg hover:opacity-90 transition-opacity"
-          >
+            >
             Kontakt aufnehmen
-          </a>
+            </a>
         </div>
       </section>
 

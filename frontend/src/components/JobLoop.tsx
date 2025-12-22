@@ -209,7 +209,7 @@ export const JobLoop = React.memo<JobLoopProps>(
             </div>
             <a
               href={job.href}
-              className="w-full px-4 py-2.5 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity text-sm mt-auto text-center block"
+              className="w-full px-4 py-2.5 bg-[#CB7CDF] text-white font-medium rounded-lg hover:opacity-90 transition-opacity text-sm mt-auto text-center block"
             >
               Details ansehen
             </a>

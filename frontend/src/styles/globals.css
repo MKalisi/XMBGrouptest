@@ -283,6 +283,14 @@ section[class*="bg-gradient-to-r from-[#B84DD4]"] a[class*="bg-gradient"] {
   color: #ffffff !important;
 }
 
+/* Lila Buttons haben immer weißen Text */
+button[class*="bg-[#CB7CDF]"],
+a[class*="bg-[#CB7CDF]"],
+button[style*="#CB7CDF"],
+a[style*="#CB7CDF"] {
+  color: #ffffff !important;
+}
+
 /* ========================================
    TRANSITIONS - Reduziert
    ======================================== */
@@ -327,7 +335,7 @@ button:active, a:active {
   font-size: 1rem;
   font-weight: 500;
   color: white;
-  background: linear-gradient(135deg, #B84DD4 0%, #FDF5FA 100%);
+  background: #CB7CDF;
   border: none;
   border-radius: var(--radius);
   cursor: pointer;
@@ -340,11 +348,11 @@ button:active, a:active {
 
 /* Gradient Backgrounds */
 .bg-gradient-primary {
-  background: linear-gradient(135deg, #B84DD4 0%, #FDF5FA 100%);
+  background: #CB7CDF;
 }
 
 .bg-gradient-primary-reverse {
-  background: linear-gradient(135deg, #FDF5FA 0%, #B84DD4 100%);
+  background: #CB7CDF;
 }
 
 /* Sekundärer Button */

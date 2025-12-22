@@ -96,7 +96,7 @@ export function CybersecurityPage() {
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-8 text-center">
-            Herausforderungen im Cybersecurity-Bereich
+              Herausforderungen im Cybersecurity-Bereich
           </h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {challenges.map((challenge) => (
@@ -117,7 +117,7 @@ export function CybersecurityPage() {
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-black">
             Ihre Vorteile
-          </h2>
+            </h2>
           
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {advantages.map((advantage) => {
@@ -183,7 +183,7 @@ export function CybersecurityPage() {
               </ul>
               <a
                 href="#/kontakt"
-                className="inline-block px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity mt-4"
+                className="inline-block px-6 py-3 bg-[#CB7CDF] text-white font-medium rounded-lg hover:opacity-90 transition-opacity mt-4"
               >
                 Beratung anfragen
               </a>
@@ -203,17 +203,17 @@ export function CybersecurityPage() {
       <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-black">
-            Bereit, Ihr Unternehmen zu schützen?
+              Bereit, Ihr Unternehmen zu schützen?
           </h2>
           <p className="text-black/90 mb-6" style={{ lineHeight: '1.7' }}>
             Wir entwickeln ein maßgeschneidertes Cybersecurity-Konzept für Ihr Unternehmen.
           </p>
-          <a
-            href="#/kontakt"
+            <a
+              href="#/kontakt"
             className="inline-block px-6 py-3 bg-white text-[#921bb2] font-medium rounded-lg hover:bg-white/90 transition-colors"
-          >
-            Kontakt aufnehmen
-          </a>
+            >
+              Kontakt aufnehmen
+            </a>
         </div>
       </section>
 

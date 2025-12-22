@@ -114,21 +114,17 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
 
   if (!tool) {
     return (
-      <div className="bg-slate-950 text-white">
-        <section className="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-20 md:py-24 text-center">
-          <p className="uppercase tracking-[0.35em] text-white/40 text-xs sm:text-sm">
-            Tool Detail
-          </p>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mt-3 sm:mt-4">Tool nicht gefunden</h1>
-          <p className="mt-3 sm:mt-4 text-white/70 text-base sm:text-lg md:text-xl px-4">
-            Wähle ein Tool aus dem Menü „Softwareentwicklung", um Details zu
-            sehen.
+      <div className="bg-white text-slate-900">
+        <section className="max-w-6xl mx-auto px-6 md:px-8 py-16 md:py-20 text-center">
+          <h1 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4">Tool nicht gefunden</h1>
+          <p className="text-slate-600 mb-6" style={{ lineHeight: '1.7' }}>
+            Wählen Sie ein Tool aus dem Menü „Softwareentwicklung", um Details zu sehen.
           </p>
           <a
             href="#/softwareentwicklung"
-            className="mt-4 sm:mt-6 inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur-sm border border-white/30 px-6 sm:px-8 py-2.5 sm:py-3 text-white font-semibold text-sm sm:text-base hover:bg-white/30 hover:border-white/50 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#CB7CDF] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
           >
-            <ArrowLeft className="w-4 h-4 sm:w-5 sm:h-5" />
+            <ArrowLeft className="w-4 h-4" />
             <span>Zurück zur Übersicht</span>
           </a>
         </section>
@@ -139,172 +135,124 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
 
   return (
     <div className="bg-white text-slate-900">
-      <section
-        className="relative overflow-hidden px-4 sm:px-6 py-20 md:py-24 text-white"
-        style={{ 
-          background: tool.color === "#cd20b2" 
-            ? "linear-gradient(to bottom right, #B84DD4, #FDF5FA)" 
-            : "linear-gradient(to bottom right, #B84DD4, #B84DD4)"
-        }}
-      >
-        <div className="relative w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 space-y-4 sm:space-y-6">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-black">
+        <div className="max-w-4xl mx-auto px-6 md:px-8">
           <a
             href="#/softwareentwicklung"
-            className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full px-6 py-3 text-white font-semibold hover:bg-white/30 hover:border-white/50 transition-all duration-300 shadow-lg hover:shadow-xl mb-4 w-fit"
+            className="inline-flex items-center gap-2 text-black/80 hover:text-black text-sm mb-6 transition-colors"
           >
-            <ArrowLeft className="w-5 h-5" />
+            <ArrowLeft className="w-4 h-4" />
             <span>Zurück zur Übersicht</span>
           </a>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight whitespace-normal relative group max-w-[95vw] sm:max-w-[80vw]">
-            <span className="relative z-10 text-white tracking-tight">
-              {tool.title}
-            </span>
-            <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 blur-2xl group-hover:via-white/20 transition-all duration-500"></span>
-            <span className="absolute -inset-1 bg-gradient-to-r from-[#B84DD4]/20 via-[#FDF5FA]/30 to-[#B84DD4]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+          <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-4 text-black">
+            {tool.title}
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed 2xl:text-2xl">
+          <p className="text-black/90 mb-4" style={{ lineHeight: '1.7' }}>
             {tool.tagline}
           </p>
-          <p className="max-w-5xl text-base sm:text-lg md:text-xl text-white/90 leading-relaxed 2xl:text-2xl">
+          <p className="text-black/90" style={{ lineHeight: '1.7' }}>
             {tool.description}
           </p>
-          <div className="flex flex-wrap gap-3 sm:gap-4 mt-4 sm:mt-6">
-            <a
-              href="#/kontakt"
-              className="inline-flex rounded-full bg-white px-8 sm:px-10 py-4 sm:py-5 text-[#921bb2] font-semibold text-base sm:text-lg btn-animated"
-            >
-              Jetzt Demo anfragen
-            </a>
-          </div>
         </div>
       </section>
 
-      <section className="bg-white px-4 sm:px-6 py-12 sm:py-16">
-        <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
-          <div className="mx-auto grid max-w-6xl gap-5 sm:gap-6 md:grid-cols-3">
-            {tool.features.map((feature, index) => (
-              <article
-                key={feature}
-                className="rounded-2xl sm:rounded-3xl border border-slate-200 p-5 sm:p-6 hover:shadow-lg transition-shadow duration-300"
-              >
+      <section className="py-12 lg:py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6 md:px-8">
+          <div className="grid gap-6 md:grid-cols-3">
+            {tool.features.map((feature, index) => {
+              const Icon = featureIcons[index % featureIcons.length];
+              return (
                 <div
-                  className="mb-3 sm:mb-4 flex size-10 sm:size-12 items-center justify-center rounded-full"
-                  style={{ backgroundColor: `${tool.color}1a`, color: tool.color }}
+                  key={feature}
+                  className="bg-white border border-slate-200 rounded-lg p-5"
                 >
-                  {(() => {
-                    const Icon = featureIcons[index % featureIcons.length];
-                    return <Icon className="size-5 sm:size-6" />;
-                  })()}
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] flex items-center justify-center mb-4">
+                    <Icon className="w-5 h-5 text-white" />
+                  </div>
+                  <p className="text-slate-900" style={{ lineHeight: '1.7' }}>{feature}</p>
                 </div>
-                <p className="text-base sm:text-lg 2xl:text-xl">{feature}</p>
-              </article>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#B84DD4] via-[#B84DD4] to-[#FDF5FA] px-4 sm:px-6 py-12 sm:py-16 text-black">
-        <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
-          <div className="mx-auto max-w-6xl">
-            <h2 className="mb-4 sm:mb-5 md:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block group leading-snug">
-              <span className="relative z-10 text-black tracking-tight">
-                Live Demo
-              </span>
-            </h2>
-            <div className="relative h-64 sm:h-80 md:aspect-video w-full overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-black/30 bg-white/30 backdrop-blur-sm">
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center px-4">
-                  <p className="text-black/80 text-base sm:text-lg 2xl:text-xl">Live Demo wird geladen...</p>
-                  <p className="mt-2 text-black/70 text-sm sm:text-base 2xl:text-lg">
-                    Bitte kontaktieren Sie uns für Zugang zur Live Demo
-                  </p>
-                </div>
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
+        <div className="max-w-6xl mx-auto px-6 md:px-8">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-black">
+            Live Demo
+          </h2>
+          <div className="relative h-64 md:h-96 w-full overflow-hidden rounded-lg border border-black/20 bg-white/30">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center px-4">
+                <p className="text-black/80 mb-2">Live Demo wird geladen...</p>
+                <p className="text-black/70 text-sm">
+                  Bitte kontaktieren Sie uns für Zugang zur Live Demo
+                </p>
               </div>
-              {/* Platzhalter für iframe oder eingebettete Demo */}
-              {/* <iframe
-                src="https://demo.example.com"
-                className="h-full w-full"
-                title="Live Demo"
-                allowFullScreen
-              /> */}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-white px-4 sm:px-6 py-12 sm:py-16">
-        <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
-          <div className="mx-auto max-w-7xl space-y-4 sm:space-y-5 md:space-y-6">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block group leading-snug">
-              <span className="relative z-10 bg-gradient-to-r from-[#B84DD4] via-[#FDF5FA] to-[#B84DD4] bg-clip-text text-transparent tracking-tight">
-                Über {tool.title}
-              </span>
-              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#B84DD4] via-[#FDF5FA] to-[#B84DD4] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
-            </h2>
-            <div className="prose prose-slate max-w-none">
-              <p className="text-base sm:text-lg md:text-xl leading-relaxed text-slate-700 2xl:text-2xl">
-                {tool.description}
-              </p>
-              <p className="mt-3 sm:mt-4 text-slate-600 text-base sm:text-lg md:text-xl 2xl:text-2xl">
-                {tool.title} ist eine leistungsstarke Lösung, die speziell für
-                moderne Unternehmen entwickelt wurde. Mit fortschrittlichen
-                Funktionen und nahtlosen Integrationen unterstützt das Tool Ihre
-                Geschäftsprozesse und steigert die Effizienz in Ihrem Unternehmen.
-              </p>
-              <p className="mt-3 sm:mt-4 text-slate-600 text-base sm:text-lg md:text-xl 2xl:text-2xl">
-                Unsere Plattform bietet umfassende Möglichkeiten zur Automatisierung,
-                Analyse und Verwaltung Ihrer Geschäftsprozesse. Durch die intuitive
-                Benutzeroberfläche und die flexible Architektur können Sie das Tool
-                genau an Ihre individuellen Anforderungen anpassen.
-              </p>
-            </div>
+      <section className="py-12 lg:py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6 md:px-8">
+          <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-6">
+            Über {tool.title}
+          </h2>
+          <div className="space-y-4" style={{ lineHeight: '1.7' }}>
+            <p className="text-slate-600">
+              {tool.description}
+            </p>
+            <p className="text-slate-600">
+              {tool.title} ist eine leistungsstarke Lösung, die speziell für
+              moderne Unternehmen entwickelt wurde. Mit fortschrittlichen
+              Funktionen und nahtlosen Integrationen unterstützt das Tool Ihre
+              Geschäftsprozesse und steigert die Effizienz in Ihrem Unternehmen.
+            </p>
+            <p className="text-slate-600">
+              Unsere Plattform bietet umfassende Möglichkeiten zur Automatisierung,
+              Analyse und Verwaltung Ihrer Geschäftsprozesse. Durch die intuitive
+              Benutzeroberfläche und die flexible Architektur können Sie das Tool
+              genau an Ihre individuellen Anforderungen anpassen.
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#B84DD4] via-[#B84DD4] to-[#FDF5FA] px-4 sm:px-6 py-12 sm:py-16 text-black">
-        <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
-          <div className="mx-auto max-w-7xl grid gap-6 sm:gap-8 md:grid-cols-2">
-            <div className="rounded-2xl sm:rounded-3xl border-2 border-black/30 bg-white/30 backdrop-blur-sm p-5 sm:p-6 hover:bg-white/40 transition-all duration-300">
-              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-5 md:mb-6 leading-snug">Technische Spezifikationen</h2>
-              <dl className="mt-4 sm:mt-5 md:mt-6 space-y-3 sm:space-y-4">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
+        <div className="max-w-6xl mx-auto px-6 md:px-8">
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="bg-white/30 rounded-lg border border-black/20 p-6">
+              <h2 className="text-2xl md:text-3xl font-semibold text-black mb-6">Technische Spezifikationen</h2>
+              <dl className="space-y-4">
                 {tool.specs.map((spec) => (
                   <div
                     key={spec.label}
-                    className="flex flex-col rounded-xl border border-black/20 bg-white/20 p-3 sm:p-4"
+                    className="flex flex-col border-b border-black/10 pb-4 last:border-0"
                   >
-                    <dt className="uppercase tracking-[0.2em] text-black/70 text-xs sm:text-sm mb-1 sm:mb-2">
+                    <dt className="text-sm text-black/70 mb-1 uppercase tracking-wider">
                       {spec.label}
                     </dt>
-                    <dd className="text-black text-base sm:text-lg 2xl:text-xl">{spec.value}</dd>
+                    <dd className="text-black" style={{ lineHeight: '1.7' }}>{spec.value}</dd>
                   </div>
                 ))}
               </dl>
             </div>
-            <div className="rounded-2xl sm:rounded-3xl border-2 border-black/30 bg-white/30 backdrop-blur-sm p-5 sm:p-6 hover:bg-white/40 transition-all duration-300">
-              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-5 md:mb-6 leading-snug">Integrationen & Visuals</h2>
-              <p className="mt-2 sm:mt-3 text-black/80 text-base sm:text-lg md:text-xl 2xl:text-2xl">
+            <div className="bg-white/30 rounded-lg border border-black/20 p-6">
+              <h2 className="text-2xl md:text-3xl font-semibold text-black mb-6">Integrationen</h2>
+              <p className="text-black/80 mb-6" style={{ lineHeight: '1.7' }}>
                 Vorgefertigte Konnektoren und APIs verbinden das Tool mit Ihrer
                 Systemlandschaft.
               </p>
-              <div className="mt-4 sm:mt-5 md:mt-6 flex flex-wrap gap-2 sm:gap-3">
+              <div className="flex flex-wrap gap-3">
                 {tool.integrations.map((integration) => (
                   <span
                     key={integration}
-                    className="rounded-full border border-black/30 bg-white/20 px-3 sm:px-4 py-1.5 sm:py-2 text-black text-sm sm:text-base 2xl:text-lg"
+                    className="px-4 py-2 bg-white/40 border border-black/20 rounded-lg text-black text-sm"
                   >
                     {integration}
                   </span>
-                ))}
-              </div>
-              <div className="mt-6 sm:mt-8 grid gap-2 sm:gap-3 md:grid-cols-2">
-                {[1, 2, 3, 4].map((item) => (
-                  <div
-                    key={item}
-                    className="aspect-[4/3] rounded-xl sm:rounded-2xl bg-white/20 border border-black/20 text-center text-black/70 flex items-center justify-center text-sm sm:text-base 2xl:text-lg"
-                  >
-                    Screenshot {item}
-                  </div>
                 ))}
               </div>
             </div>
@@ -313,25 +261,20 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
       </section>
 
       {/* Call-to-Action */}
-      <section className="bg-white py-16 sm:py-20">
-        <div className="w-full flex flex-col gap-5 sm:gap-6 text-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block group max-w-[95vw] sm:max-w-[80vw] mx-auto px-2 leading-snug">
-            <span className="relative z-10 bg-gradient-to-r from-[#B84DD4] via-[#FDF5FA] to-[#B84DD4] bg-clip-text text-transparent tracking-tight">
-              Jetzt Demo anfragen
-            </span>
-            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] group-hover:w-40 transition-all duration-500"></span>
+      <section className="bg-white py-12 lg:py-16">
+        <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4">
+            Jetzt Demo anfragen
           </h2>
-          <p className="mx-auto max-w-4xl text-base sm:text-lg md:text-xl text-slate-700 2xl:text-2xl px-2">
+          <p className="text-slate-600 mb-6" style={{ lineHeight: '1.7' }}>
             Wir zeigen Live Use-Cases und binden Ihre Integrationen mit ein.
           </p>
-          <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-3 sm:mt-4">
-            <a
-              href="#/kontakt"
-              className="rounded-full bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] px-8 sm:px-10 py-4 sm:py-5 text-white font-semibold text-base sm:text-lg btn-animated"
-            >
-              Kontakt aufnehmen
-            </a>
-          </div>
+          <a
+            href="#/kontakt"
+            className="inline-block px-6 py-3 bg-[#CB7CDF] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+          >
+            Kontakt aufnehmen
+          </a>
         </div>
       </section>
 

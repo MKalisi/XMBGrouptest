@@ -267,28 +267,28 @@ export default function App() {
               </p>
 
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-slate-900 leading-tight">
-                Qualifiziertes Personal für Ihr Projekt
+                  Qualifiziertes Personal für Ihr Projekt
               </h2>
 
               <div className="max-w-prose space-y-4 text-slate-600" style={{ lineHeight: '1.7' }}>
                 <p>
-                  XMB Group AG begleitet Ihre Projekte und stellt Ihnen sorgfältig ausgewählte IT-Fachkräfte zur Verfügung – präzise abgestimmt auf Ihre Anforderungen.
-                </p>
+                XMB Group AG begleitet Ihre Projekte und stellt Ihnen sorgfältig ausgewählte IT-Fachkräfte zur Verfügung – präzise abgestimmt auf Ihre Anforderungen.
+              </p>
 
                 <p>
                   Wir vermitteln erfahrene IT-Spezialisten, Entwickler und Projektmanager, die Ihre Teams zuverlässig verstärken und Verantwortung übernehmen.
-                </p>
+              </p>
 
                 <p className="font-medium text-slate-800">Unser Ansatz ist klar:</p>
 
                 <p>
                   Wir analysieren den Bedarf, wählen passende Profile aus und kümmern uns um die gesamte organisatorische Abwicklung. So können Sie sich auf das Wesentliche konzentrieren.
-                </p>
+              </p>
               </div>
 
               <button
                 onClick={() => navigateTo('personalverleih')}
-                className="mt-6 px-6 py-3 text-white font-medium rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] hover:opacity-90 transition-opacity"
+                className="mt-6 px-6 py-3 text-white font-medium rounded-lg bg-[#CB7CDF] hover:opacity-90 transition-opacity"
               >
                 Mehr erfahren
               </button>
@@ -339,7 +339,7 @@ export default function App() {
                   </div>
                 </div>
               ))}
-            </div>
+              </div>
           </div>
         </div>
       </section>
@@ -360,16 +360,16 @@ export default function App() {
               <div className="max-w-prose space-y-4 text-slate-600" style={{ lineHeight: '1.7' }}>
                 <p>
                   Wir entwickeln Software, die sich an bewährten Abläufen orientiert und Unternehmen zuverlässig unterstützt. Unsere Lösungen fügen sich sauber in bestehende Strukturen ein.
-                </p>
+              </p>
 
                 <p>
                   Mit technischer Kompetenz sorgen wir dafür, dass Digitalisierung zur nachhaltigen Weiterentwicklung Ihrer Arbeitswelt wird.
-                </p>
+              </p>
               </div>
 
               <button
                 onClick={() => navigateTo('softwareentwicklung')}
-                className="mt-6 px-6 py-3 text-white font-medium rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] hover:opacity-90 transition-opacity"
+                className="mt-6 px-6 py-3 text-white font-medium rounded-lg bg-[#CB7CDF] hover:opacity-90 transition-opacity"
               >
                 Mehr erfahren
               </button>
@@ -415,7 +415,7 @@ export default function App() {
 
               <p className="text-black/80 max-w-prose" style={{ lineHeight: '1.7' }}>
                 Am einfachsten erreichen Sie uns über das Formular oder per E-Mail. Wir melden uns zeitnah bei Ihnen.
-              </p>
+                </p>
 
               <div className="space-y-4 pt-4">
                 <div className="flex items-center gap-4">
@@ -542,7 +542,7 @@ export default function App() {
 
                 <button
                   type="submit"
-                  className="w-full rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
+                  className="w-full rounded-lg bg-[#CB7CDF] px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
                 >
                   Nachricht senden
                 </button>

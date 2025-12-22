@@ -122,7 +122,7 @@ export function SoftwareentwicklungPage() {
       <section className="py-12 lg:py-16 bg-white">
         <div className="max-w-4xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-6">
-            Warum individuelle Softwareentwicklung?
+              Warum individuelle Softwareentwicklung?
           </h2>
           <div className="space-y-4 text-slate-600" style={{ lineHeight: '1.7' }}>
             <p>
@@ -142,7 +142,7 @@ export function SoftwareentwicklungPage() {
       <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-black">
-            Leistungsspektrum
+              Leistungsspektrum
           </h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {serviceSpectrum.map((service, index) => {
@@ -172,7 +172,7 @@ export function SoftwareentwicklungPage() {
               {processSteps.map((step, index) => (
                 <div key={index} className="flex gap-4 bg-slate-50 rounded-lg p-5">
                   <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white flex items-center justify-center text-sm font-semibold flex-shrink-0">
-                    {step.number}
+                      {step.number}
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-1">{step.title}</h3>
@@ -213,8 +213,8 @@ export function SoftwareentwicklungPage() {
               />
               <div className="flex-1">
                 <h3 className="text-xl font-semibold text-black mb-2">
-                  {tools[activeIndex].title}
-                </h3>
+                    {tools[activeIndex].title}
+                  </h3>
                 <p className="text-black/80 mb-4" style={{ lineHeight: '1.7' }}>
                   {tools[activeIndex].description}
                 </p>
@@ -260,7 +260,7 @@ export function SoftwareentwicklungPage() {
                 Von Idee zu Produkt
               </h2>
               <p className="text-slate-600" style={{ lineHeight: '1.7' }}>
-                Wir begleiten Sie von der ersten Idee bis zum erfolgreichen Produkt-Launch.
+                Wir begleiten Sie von der ersten Idee bis zum erfolgreichen Produkt-Launch. 
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-3">
@@ -296,17 +296,17 @@ export function SoftwareentwicklungPage() {
       <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-black">
-            Bereit für Ihre individuelle Softwarelösung?
+              Bereit für Ihre individuelle Softwarelösung?
           </h2>
           <p className="text-black/80 mb-6" style={{ lineHeight: '1.7' }}>
-            Lassen Sie uns gemeinsam Ihre Idee in eine erfolgreiche Softwarelösung verwandeln.
+            Lassen Sie uns gemeinsam Ihre Idee in eine erfolgreiche Softwarelösung verwandeln. 
           </p>
-          <a
-            href="#/kontakt"
+            <a
+              href="#/kontakt"
             className="inline-block px-6 py-3 bg-white text-[#921bb2] font-medium rounded-lg hover:bg-white/90 transition-colors"
-          >
-            Kontakt aufnehmen
-          </a>
+            >
+              Kontakt aufnehmen
+            </a>
         </div>
       </section>
 

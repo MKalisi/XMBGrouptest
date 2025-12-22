@@ -20,7 +20,7 @@ export function PersonalverleihPage() {
         <div className="max-w-4xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-6">
             Ihr Partner für qualifizierte IT-Fachkräfte
-          </h2>
+            </h2>
           <div className="space-y-4 text-slate-600" style={{ lineHeight: '1.7' }}>
             <p>
               Als vereintes Unternehmen bündeln wir unsere Stärken in Recruiting, Softwareentwicklung und Cybersecurity. Dadurch können wir IT-Spezialisten und Projektteams präzise und bedarfsgerecht zusammenbringen.
@@ -36,22 +36,22 @@ export function PersonalverleihPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="relative overflow-hidden rounded-lg h-64 lg:h-80">
-              <ImageWithFallback
-                src="it-contracting-page-section.jpg"
-                alt="Team"
+          <ImageWithFallback
+            src="it-contracting-page-section.jpg"
+            alt="Team"
                 className="h-full w-full object-cover"
-              />
-            </div>
+          />
+        </div>
             <div className="space-y-4">
               <p className="uppercase tracking-wider text-sm text-black/80 font-medium">Expertise</p>
               <h2 className="text-2xl md:text-3xl font-semibold leading-tight text-black">Talente, die Projekte voranbringen</h2>
               <div className="space-y-4 text-black/90" style={{ lineHeight: '1.7' }}>
                 <p>
-                  Mit einem breiten Netzwerk an erfahrenen IT-Spezialisten decken wir sämtliche Bereiche von IT-Transformation, Softwareentwicklung und technischer Projektunterstützung ab.
-                </p>
+            Mit einem breiten Netzwerk an erfahrenen IT-Spezialisten decken wir sämtliche Bereiche von IT-Transformation, Softwareentwicklung und technischer Projektunterstützung ab.
+          </p>
                 <p>
                   Alle Profile werden sorgfältig ausgewählt und geprüft. Wir arbeiten mit klaren Skill-Matrizen und einem strukturierten Auswahlverfahren.
-                </p>
+          </p>
               </div>
             </div>
           </div>
@@ -67,16 +67,16 @@ export function PersonalverleihPage() {
               className="group bg-white border border-slate-200 hover:border-[#921bb2] rounded-lg p-6 transition-colors"
             >
               <h3 className="text-xl font-semibold text-[#921bb2] mb-3">
-                Für unsere Kunden
-              </h3>
+                  Für unsere Kunden
+                </h3>
               <p className="text-slate-600 text-sm mb-4" style={{ lineHeight: '1.7' }}>
                 Sie benötigen qualifizierte IT-Fachkräfte für ein Projekt? Wir unterstützen Sie dabei, die richtigen Spezialisten zu finden.
-              </p>
+                </p>
               <span className="text-[#921bb2] text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
                 Mehr erfahren
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
               </span>
             </a>
 
@@ -85,16 +85,16 @@ export function PersonalverleihPage() {
               className="group bg-white border border-slate-200 hover:border-[#921bb2] rounded-lg p-6 transition-colors"
             >
               <h3 className="text-xl font-semibold text-[#921bb2] mb-3">
-                Für IT-Spezialisten
-              </h3>
+                  Für IT-Spezialisten
+                </h3>
               <p className="text-slate-600 text-sm mb-4" style={{ lineHeight: '1.7' }}>
                 Sie sind IT-Fachkraft und suchen neue Projekte? Wir bieten Ihnen Zugang zu spannenden Einsatzmöglichkeiten.
-              </p>
+                </p>
               <span className="text-[#921bb2] text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
                 Mehr erfahren
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
               </span>
             </a>
           </div>
@@ -107,7 +107,7 @@ export function PersonalverleihPage() {
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4">
               Offene Jobs
-            </h2>
+          </h2>
             <p className="max-w-3xl mx-auto text-slate-600" style={{ lineHeight: '1.7' }}>
               Aktuelle Stellenausschreibungen für IT-Spezialisten. Werden Sie Teil unseres Teams oder finden Sie den passenden Kandidaten für Ihr Projekt.
             </p>
@@ -155,7 +155,7 @@ export function PersonalverleihPage() {
           <div className="text-center mt-8">
             <a
               href="#/personalverleih/fuer-unsere-kunden"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#CB7CDF] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
             >
               <span>Mehr anzeigen</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

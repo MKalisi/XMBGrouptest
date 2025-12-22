@@ -85,7 +85,7 @@ export function FuerUnsereKundenPage() {
           </a>
           <p className="uppercase tracking-wider text-sm text-black/80 font-medium mb-4">Für unsere Kunden</p>
           <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-4 text-black">
-            Qualifizierte IT-Fachkräfte für Ihr Projekt
+              Qualifizierte IT-Fachkräfte für Ihr Projekt
           </h1>
           <p className="text-black/90" style={{ lineHeight: '1.7' }}>
             Sie benötigen Spezialisten für Ihr IT-Projekt? Wir vermitteln Ihnen sorgfältig ausgewählte Fachkräfte, die präzise zu Ihren Anforderungen passen und Ihr Team zuverlässig unterstützen.
@@ -100,11 +100,11 @@ export function FuerUnsereKundenPage() {
               <h2 className="text-2xl md:text-3xl font-semibold text-slate-900">Unser Service für Sie</h2>
               <div className="space-y-4" style={{ lineHeight: '1.7' }}>
                 <p className="text-slate-600">
-                  Als Ihr IT-Contracting-Partner übernehmen wir die gesamte Abwicklung der Personalvermittlung. Wir klären den Bedarf, identifizieren passende Kandidaten und kümmern uns um alle organisatorischen Schritte – bis zur erfolgreichen Einsatzplanung.
-                </p>
+                Als Ihr IT-Contracting-Partner übernehmen wir die gesamte Abwicklung der Personalvermittlung. Wir klären den Bedarf, identifizieren passende Kandidaten und kümmern uns um alle organisatorischen Schritte – bis zur erfolgreichen Einsatzplanung.
+              </p>
                 <p className="text-slate-600">
-                  Unser Talent-Pool umfasst eine breite Auswahl erfahrener IT-Spezialisten, darunter Softwareentwickler, Cloud-Engineers, Projektmanager und Experten aus vielen weiteren Bereichen. Alle Profile werden fortlaufend geprüft und aktuell gehalten, damit Sie jederzeit die richtige Unterstützung erhalten.
-                </p>
+                Unser Talent-Pool umfasst eine breite Auswahl erfahrener IT-Spezialisten, darunter Softwareentwickler, Cloud-Engineers, Projektmanager und Experten aus vielen weiteren Bereichen. Alle Profile werden fortlaufend geprüft und aktuell gehalten, damit Sie jederzeit die richtige Unterstützung erhalten.
+              </p>
               </div>
             </div>
             <div className="relative h-64 sm:h-80 md:h-96 lg:min-h-[400px] overflow-hidden rounded-lg">
@@ -121,7 +121,7 @@ export function FuerUnsereKundenPage() {
       <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-black">
-            Ihre Vorteile
+              Ihre Vorteile
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div className="bg-white/30 rounded-lg p-5 border border-black/20">
@@ -169,7 +169,7 @@ export function FuerUnsereKundenPage() {
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4">
-              Offene Jobs
+                Offene Jobs
             </h2>
             <p className="max-w-3xl mx-auto text-slate-600" style={{ lineHeight: '1.7' }}>
               Aktuelle Stellenausschreibungen für IT-Spezialisten. Werden Sie Teil unseres Teams oder finden Sie den passenden Kandidaten für Ihr Projekt.
@@ -182,7 +182,7 @@ export function FuerUnsereKundenPage() {
               <div className="flex items-center gap-2">
                 <Filter className="w-5 h-5 text-[#921bb2]" />
                 <span className="font-medium text-slate-900">Filter:</span>
-              </div>
+                  </div>
               
               <div className="flex flex-wrap items-center gap-4">
                 {/* Job-Typ Filter */}
@@ -223,7 +223,7 @@ export function FuerUnsereKundenPage() {
                   >
                     <X className="w-4 h-4" />
                     <span>Zurücksetzen</span>
-                  </button>
+                </button>
                 )}
               </div>
             </div>
@@ -238,14 +238,14 @@ export function FuerUnsereKundenPage() {
                 )}
               </div>
             )}
-          </div>
+            </div>
 
           {/* Job-Liste - Grid Layout */}
           {filteredJobs.length > 0 ? (
             <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
               {filteredJobs.map((job) => (
                 <div key={job.id} className="group bg-white border border-slate-200 hover:border-[#921bb2] rounded-lg p-6 transition-colors flex flex-col h-full">
-                  <div className="flex items-start justify-between mb-4">
+                <div className="flex items-start justify-between mb-4">
                     <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] flex items-center justify-center">
                       <Briefcase className="w-5 h-5 text-white" />
                     </div>
@@ -255,29 +255,29 @@ export function FuerUnsereKundenPage() {
                   </div>
                   <h3 className="text-lg font-semibold text-slate-900 mb-2">
                     {job.title}
-                  </h3>
+                </h3>
                   <p className="text-slate-600 text-sm mb-4 flex-grow" style={{ lineHeight: '1.7' }}>
                     {job.description}
-                  </p>
+                </p>
                   <div className="space-y-2 mb-4">
-                    <div className="flex items-center gap-2 text-slate-600 text-sm">
-                      <MapPin className="w-4 h-4 text-[#921bb2] flex-shrink-0" />
+                  <div className="flex items-center gap-2 text-slate-600 text-sm">
+                    <MapPin className="w-4 h-4 text-[#921bb2] flex-shrink-0" />
                       <span>{job.location}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-slate-600 text-sm">
-                      <Calendar className="w-4 h-4 text-[#921bb2] flex-shrink-0" />
+                  </div>
+                  <div className="flex items-center gap-2 text-slate-600 text-sm">
+                    <Calendar className="w-4 h-4 text-[#921bb2] flex-shrink-0" />
                       <span>{job.startDate}</span>
                     </div>
                   </div>
                   <a
                     href={job.href}
-                    className="w-full px-4 py-2.5 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity text-sm mt-auto text-center block"
+                    className="w-full px-4 py-2.5 bg-[#CB7CDF] text-white font-medium rounded-lg hover:opacity-90 transition-opacity text-sm mt-auto text-center block"
                   >
                     Details ansehen
                   </a>
                 </div>
               ))}
-            </div>
+              </div>
           ) : (
             <div className="text-center py-12">
               <p className="text-slate-600">Keine Jobs gefunden.</p>
@@ -290,17 +290,17 @@ export function FuerUnsereKundenPage() {
       <section className="bg-white py-12 lg:py-16">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4">
-            Bereit für neue Fachkräfte?
+              Bereit für neue Fachkräfte?
           </h2>
           <p className="text-slate-600 mb-6" style={{ lineHeight: '1.7' }}>
             Kontaktieren Sie uns – gemeinsam finden wir die passenden IT-Spezialisten für Ihr Projekt.
           </p>
-          <a
-            href="#/kontakt"
-            className="inline-block px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
-          >
+            <a
+              href="#/kontakt"
+            className="inline-block px-6 py-3 bg-[#CB7CDF] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+            >
             Kontakt aufnehmen
-          </a>
+            </a>
         </div>
       </section>
 

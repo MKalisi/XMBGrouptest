@@ -1,5 +1,5 @@
 import { Footer } from "./Footer";
-import { ArrowLeft, MapPin, Calendar, Briefcase, Clock, Users, CheckCircle } from "lucide-react";
+import { ArrowLeft, MapPin, Calendar, Briefcase, Users, CheckCircle } from "lucide-react";
 
 type JobInfo = {
   id: string;
@@ -139,7 +139,7 @@ export function JobDetailPage({ jobId }: JobDetailPageProps) {
           </p>
           <a
             href="#/personalverleih/fuer-unsere-kunden"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#CB7CDF] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Zurück zu den Jobs</span>
@@ -236,58 +236,6 @@ export function JobDetailPage({ jobId }: JobDetailPageProps) {
         </div>
       </section>
 
-      {/* Benefits Section */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
-        <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-black mb-8 text-center">
-            Ihre Vorteile
-          </h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {job.benefits.map((benefit, index) => (
-              <div
-                key={index}
-                className="bg-white/30 rounded-lg p-5 border border-black/20"
-              >
-                <div className="w-10 h-10 rounded-lg bg-black/10 flex items-center justify-center mb-4">
-                  <Clock className="w-5 h-5 text-black" />
-                </div>
-                <p className="text-black/80 text-sm" style={{ lineHeight: '1.7' }}>
-                  {benefit}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Job Details */}
-      <section className="py-12 lg:py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-6 md:px-8">
-          <div className="bg-slate-50 rounded-lg p-6 md:p-8 border border-slate-200">
-            <h3 className="text-xl font-semibold text-slate-900 mb-6">
-              Weitere Informationen
-            </h3>
-            <div className="grid gap-4 md:grid-cols-2">
-              <div>
-                <p className="text-sm text-slate-500 mb-1">Abteilung</p>
-                <p className="text-slate-900 font-medium">{job.department}</p>
-              </div>
-              <div>
-                <p className="text-sm text-slate-500 mb-1">Erfahrung</p>
-                <p className="text-slate-900 font-medium">{job.experience}</p>
-              </div>
-              <div>
-                <p className="text-sm text-slate-500 mb-1">Arbeitszeit</p>
-                <p className="text-slate-900 font-medium">{job.type}</p>
-              </div>
-              <div>
-                <p className="text-sm text-slate-500 mb-1">Standort</p>
-                <p className="text-slate-900 font-medium">{job.location}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Call-to-Action */}
       <section className="bg-white py-12 lg:py-16">
@@ -301,7 +249,7 @@ export function JobDetailPage({ jobId }: JobDetailPageProps) {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="#/kontakt"
-              className="inline-block px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+              className="inline-block px-6 py-3 bg-[#CB7CDF] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
             >
               Jetzt bewerben
             </a>
