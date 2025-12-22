@@ -1,7 +1,7 @@
 import { useState, useMemo } from "react";
 import { Footer } from "./Footer";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { ArrowLeft, CheckCircle, Clock, Users, Shield, Briefcase, MapPin, Calendar, ArrowRight, Filter, X } from "lucide-react";
+import { ArrowLeft, CheckCircle, Clock, Users, Shield, Briefcase, MapPin, Calendar, Filter, X } from "lucide-react";
 
 type Job = {
   id: string;
