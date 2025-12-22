@@ -98,7 +98,7 @@ export function KontaktPage() {
             <div className="space-y-4">
               {contactChannels.map((channel) => (
                 <div key={channel.label} className="flex items-start gap-4 p-4 bg-white rounded-lg border border-slate-200">
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center flex-shrink-0 text-white">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] flex items-center justify-center flex-shrink-0 text-white">
                     {channel.icon}
                   </div>
                   <div>
@@ -195,7 +195,7 @@ export function KontaktPage() {
               </div>
               <button
                 type="submit"
-                className="w-full rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#E866D4] px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
+                className="w-full rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
               >
                 Nachricht senden
               </button>

@@ -113,7 +113,7 @@ export function CybersecurityPage() {
       </section>
 
       {/* Vorteile */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#E866D4] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
             Ihre Vorteile
@@ -145,7 +145,7 @@ export function CybersecurityPage() {
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {serviceModules.map((card) => (
               <div key={card.title} className="bg-white rounded-lg border border-slate-200 p-5">
-                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center mb-4">
+                <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] flex items-center justify-center mb-4">
                   <card.icon className="w-5 h-5 text-white" />
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-2">{card.title}</h3>
@@ -183,7 +183,7 @@ export function CybersecurityPage() {
               </ul>
               <a
                 href="#/kontakt"
-                className="inline-block px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#E866D4] text-white font-medium rounded-lg hover:opacity-90 transition-opacity mt-4"
+                className="inline-block px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity mt-4"
               >
                 Beratung anfragen
               </a>
@@ -200,7 +200,7 @@ export function CybersecurityPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#E866D4] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
             Bereit, Ihr Unternehmen zu schützen?

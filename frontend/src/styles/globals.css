@@ -26,11 +26,11 @@
   
   /* Colors - Eine Akzentfarbe, sonst neutral */
   --color-accent: #B84DD4;
-  --color-accent-light: #E866D4;
+  --color-accent-light: #FDF5FA;
   --color-accent-old: #921bb2;
   --color-accent-light-old: #cd20b2;
-  --color-text: #1a1a2e;
-  --color-text-muted: #64748b;
+  --color-text: #000000;
+  --color-text-muted: #000000;
   --color-bg: #E0DFE0;
   --color-bg-subtle: #f1f5f9;
   --color-border: #e2e8f0;
@@ -38,7 +38,7 @@
   
   /* Existing variables */
   --font-size: 16px;
-  --background: #E0DFE0;
+  --background: #ffffff;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
   --card-foreground: oklch(0.145 0 0);
@@ -258,6 +258,15 @@ h1, h2, h3, h4, h5, h6, p, span, div {
   overflow-wrap: break-word;
 }
 
+/* Textfarbe: Schwarz für alle Texte */
+.text-slate-900,
+.text-slate-800,
+.text-slate-700,
+.text-slate-600,
+.text-slate-500 {
+  color: #000000 !important;
+}
+
 /* ========================================
    TRANSITIONS - Reduziert
    ======================================== */
@@ -302,7 +311,7 @@ button:active, a:active {
   font-size: 1rem;
   font-weight: 500;
   color: white;
-  background: linear-gradient(135deg, #B84DD4 0%, #E866D4 100%);
+  background: linear-gradient(135deg, #B84DD4 0%, #FDF5FA 100%);
   border: none;
   border-radius: var(--radius);
   cursor: pointer;
@@ -315,11 +324,11 @@ button:active, a:active {
 
 /* Gradient Backgrounds */
 .bg-gradient-primary {
-  background: linear-gradient(135deg, #B84DD4 0%, #E866D4 100%);
+  background: linear-gradient(135deg, #B84DD4 0%, #FDF5FA 100%);
 }
 
 .bg-gradient-primary-reverse {
-  background: linear-gradient(135deg, #E866D4 0%, #B84DD4 100%);
+  background: linear-gradient(135deg, #FDF5FA 0%, #B84DD4 100%);
 }
 
 /* Sekundärer Button */
@@ -430,10 +439,6 @@ button:active, a:active {
    BACKGROUND COLOR - Weiß-gräulich
    ======================================== */
 
-/* Überschreibe alle bg-white Klassen mit weiß-gräulichem Hintergrund */
-.bg-white {
-  background-color: #E0DFE0 !important;
-}
 
 /* ========================================
    BACKGROUND COLOR - Cremefarben statt Weiß

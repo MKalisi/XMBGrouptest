@@ -139,7 +139,7 @@ export function JobDetailPage({ jobId }: JobDetailPageProps) {
           </p>
           <a
             href="#/personalverleih/fuer-unsere-kunden"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#E866D4] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Zurück zu den Jobs</span>
@@ -153,7 +153,7 @@ export function JobDetailPage({ jobId }: JobDetailPageProps) {
   return (
     <div className="bg-white text-slate-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#E866D4] py-16 md:py-20 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-white">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <a
             href="#/personalverleih/fuer-unsere-kunden"
@@ -237,7 +237,7 @@ export function JobDetailPage({ jobId }: JobDetailPageProps) {
       </section>
 
       {/* Benefits Section */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#E866D4] py-12 lg:py-16 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-white">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-white mb-8 text-center">
             Ihre Vorteile
@@ -301,7 +301,7 @@ export function JobDetailPage({ jobId }: JobDetailPageProps) {
           <div className="flex flex-wrap justify-center gap-4">
             <a
               href="#/kontakt"
-              className="inline-block px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#E866D4] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+              className="inline-block px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
             >
               Jetzt bewerben
             </a>

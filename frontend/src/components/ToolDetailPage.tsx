@@ -143,7 +143,7 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
         className="relative overflow-hidden px-4 sm:px-6 py-20 md:py-24 text-white"
         style={{ 
           background: tool.color === "#cd20b2" 
-            ? "linear-gradient(to bottom right, #B84DD4, #E866D4)" 
+            ? "linear-gradient(to bottom right, #B84DD4, #FDF5FA)" 
             : "linear-gradient(to bottom right, #B84DD4, #B84DD4)"
         }}
       >
@@ -160,7 +160,7 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
               {tool.title}
             </span>
             <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 blur-2xl group-hover:via-white/20 transition-all duration-500"></span>
-            <span className="absolute -inset-1 bg-gradient-to-r from-[#B84DD4]/20 via-[#E866D4]/30 to-[#B84DD4]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+            <span className="absolute -inset-1 bg-gradient-to-r from-[#B84DD4]/20 via-[#FDF5FA]/30 to-[#B84DD4]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-white/90 leading-relaxed 2xl:text-2xl">
             {tool.tagline}
@@ -203,7 +203,7 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#B84DD4] via-[#B84DD4] to-[#E866D4] px-4 sm:px-6 py-12 sm:py-16">
+      <section className="bg-gradient-to-br from-[#B84DD4] via-[#B84DD4] to-[#FDF5FA] px-4 sm:px-6 py-12 sm:py-16">
         <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
           <div className="mx-auto max-w-6xl">
             <h2 className="mb-4 sm:mb-5 md:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block group leading-snug">
@@ -211,7 +211,7 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
                 Live Demo
               </span>
               <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 blur-2xl group-hover:via-white/20 transition-all duration-500"></span>
-              <span className="absolute -inset-1 bg-gradient-to-r from-[#B84DD4]/20 via-[#E866D4]/30 to-[#B84DD4]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+              <span className="absolute -inset-1 bg-gradient-to-r from-[#B84DD4]/20 via-[#FDF5FA]/30 to-[#B84DD4]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
             </h2>
             <div className="relative h-64 sm:h-80 md:aspect-video w-full overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-white/30 bg-white/10 backdrop-blur-sm">
               <div className="absolute inset-0 flex items-center justify-center">
@@ -238,10 +238,10 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
         <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
           <div className="mx-auto max-w-7xl space-y-4 sm:space-y-5 md:space-y-6">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block group leading-snug">
-              <span className="relative z-10 bg-gradient-to-r from-[#B84DD4] via-[#E866D4] to-[#B84DD4] bg-clip-text text-transparent tracking-tight">
+              <span className="relative z-10 bg-gradient-to-r from-[#B84DD4] via-[#FDF5FA] to-[#B84DD4] bg-clip-text text-transparent tracking-tight">
                 Über {tool.title}
               </span>
-              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#B84DD4] via-[#E866D4] to-[#B84DD4] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#B84DD4] via-[#FDF5FA] to-[#B84DD4] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
             </h2>
             <div className="prose prose-slate max-w-none">
               <p className="text-base sm:text-lg md:text-xl leading-relaxed text-slate-700 2xl:text-2xl">
@@ -264,7 +264,7 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#B84DD4] via-[#B84DD4] to-[#E866D4] px-4 sm:px-6 py-12 sm:py-16">
+      <section className="bg-gradient-to-br from-[#B84DD4] via-[#B84DD4] to-[#FDF5FA] px-4 sm:px-6 py-12 sm:py-16">
         <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
           <div className="mx-auto max-w-7xl grid gap-6 sm:gap-8 md:grid-cols-2">
             <div className="rounded-2xl sm:rounded-3xl border-2 border-white/30 bg-white/10 backdrop-blur-sm p-5 sm:p-6 hover:bg-white/20 transition-all duration-300">
@@ -318,10 +318,10 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
       <section className="bg-white py-16 sm:py-20">
         <div className="w-full flex flex-col gap-5 sm:gap-6 text-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block group max-w-[95vw] sm:max-w-[80vw] mx-auto px-2 leading-snug">
-            <span className="relative z-10 bg-gradient-to-r from-[#B84DD4] via-[#E866D4] to-[#B84DD4] bg-clip-text text-transparent tracking-tight">
+            <span className="relative z-10 bg-gradient-to-r from-[#B84DD4] via-[#FDF5FA] to-[#B84DD4] bg-clip-text text-transparent tracking-tight">
               Jetzt Demo anfragen
             </span>
-            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-[#B84DD4] to-[#E866D4] group-hover:w-40 transition-all duration-500"></span>
+            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] group-hover:w-40 transition-all duration-500"></span>
           </h2>
           <p className="mx-auto max-w-4xl text-base sm:text-lg md:text-xl text-slate-700 2xl:text-2xl px-2">
             Wir zeigen Live Use-Cases und binden Ihre Integrationen mit ein.
@@ -329,7 +329,7 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-3 sm:mt-4">
             <a
               href="#/kontakt"
-              className="rounded-full bg-gradient-to-r from-[#B84DD4] to-[#E866D4] px-8 sm:px-10 py-4 sm:py-5 text-white font-semibold text-base sm:text-lg btn-animated"
+              className="rounded-full bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] px-8 sm:px-10 py-4 sm:py-5 text-white font-semibold text-base sm:text-lg btn-animated"
             >
               Kontakt aufnehmen
             </a>

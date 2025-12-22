@@ -5,7 +5,7 @@ import { ArrowLeft, Briefcase, TrendingUp, Heart, Star, Target, Handshake, FileT
 export function FuerITSpezialistenPage() {
   return (
     <div className="bg-white text-slate-900">
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#E866D4] py-16 md:py-20 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-white">
         <div className="max-w-4xl mx-auto px-6 md:px-8">
           <a
             href="#/personalverleih"
@@ -50,7 +50,7 @@ export function FuerITSpezialistenPage() {
       </section>
 
       {/* Prozess Abschnitt */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#E866D4] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
             Während des gesamten Prozesses stehen wir Ihnen zur Seite
@@ -118,7 +118,7 @@ export function FuerITSpezialistenPage() {
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             <div className="bg-white border border-slate-200 rounded-lg p-5">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] flex items-center justify-center mb-4">
                 <Briefcase className="w-5 h-5 text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2 text-slate-900">Spannende Projekte</h3>
@@ -127,7 +127,7 @@ export function FuerITSpezialistenPage() {
               </p>
             </div>
             <div className="bg-white border border-slate-200 rounded-lg p-5">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] flex items-center justify-center mb-4">
                 <TrendingUp className="w-5 h-5 text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2 text-slate-900">Karriereentwicklung</h3>
@@ -136,7 +136,7 @@ export function FuerITSpezialistenPage() {
               </p>
             </div>
             <div className="bg-white border border-slate-200 rounded-lg p-5">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] flex items-center justify-center mb-4">
                 <Heart className="w-5 h-5 text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2 text-slate-900">Persönliche Betreuung</h3>
@@ -145,7 +145,7 @@ export function FuerITSpezialistenPage() {
               </p>
             </div>
             <div className="bg-white border border-slate-200 rounded-lg p-5">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center mb-4">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] flex items-center justify-center mb-4">
                 <Star className="w-5 h-5 text-white" />
               </div>
               <h3 className="font-semibold text-lg mb-2 text-slate-900">Flexible Gestaltung</h3>
@@ -158,7 +158,7 @@ export function FuerITSpezialistenPage() {
       </section>
 
       {/* Call-to-Action */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#E866D4] py-12 lg:py-16 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-white">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">
             Interessiert?

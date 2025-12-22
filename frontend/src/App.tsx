@@ -288,7 +288,7 @@ export default function App() {
 
               <button
                 onClick={() => navigateTo('personalverleih')}
-                className="mt-6 px-6 py-3 text-white font-medium rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#E866D4] hover:opacity-90 transition-opacity"
+                className="mt-6 px-6 py-3 text-white font-medium rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] hover:opacity-90 transition-opacity"
               >
                 Mehr erfahren
               </button>
@@ -298,7 +298,7 @@ export default function App() {
       </section>
 
       {/* Cybersecurity Section */}
-      <section className={`${isMobile ? 'py-12' : 'py-16 lg:py-24'} bg-gradient-to-br from-[#B84DD4] to-[#E866D4]`} id="cybersecurity">
+      <section className={`${isMobile ? 'py-12' : 'py-16 lg:py-24'} bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA]`} id="cybersecurity">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className={`grid grid-cols-1 lg:grid-cols-2 ${isMobile ? 'gap-8' : 'gap-12'}`}>
             <div className="text-white space-y-4">
@@ -330,7 +330,7 @@ export default function App() {
                 { icon: BarChart3, title: 'Management Consulting', desc: 'Transformation, Digitalisierung und Sourcing.' },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-lg border border-slate-200 p-5 flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] flex items-center justify-center flex-shrink-0">
                     <item.icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
@@ -369,7 +369,7 @@ export default function App() {
 
               <button
                 onClick={() => navigateTo('softwareentwicklung')}
-                className="mt-6 px-6 py-3 text-white font-medium rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#E866D4] hover:opacity-90 transition-opacity"
+                className="mt-6 px-6 py-3 text-white font-medium rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] hover:opacity-90 transition-opacity"
               >
                 Mehr erfahren
               </button>
@@ -403,7 +403,7 @@ export default function App() {
       </section>
 
       {/* Contact Section */}
-      <section className={`${isMobile ? 'py-12' : 'py-16 lg:py-24'} bg-gradient-to-br from-[#B84DD4] to-[#E866D4]`} id="kontakt">
+      <section className={`${isMobile ? 'py-12' : 'py-16 lg:py-24'} bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA]`} id="kontakt">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className={`grid grid-cols-1 lg:grid-cols-2 items-start ${isMobile ? 'gap-8' : 'gap-12'}`}>
             <div className="text-white space-y-6">
@@ -542,7 +542,7 @@ export default function App() {
 
                 <button
                   type="submit"
-                  className="w-full rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#E866D4] px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
+                  className="w-full rounded-lg bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] px-6 py-3 text-white font-medium hover:opacity-90 transition-opacity"
                 >
                   Nachricht senden
                 </button>

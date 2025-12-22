@@ -74,7 +74,7 @@ export function FuerUnsereKundenPage() {
 
   return (
     <div className="bg-white text-slate-900">
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#E866D4] py-16 md:py-20 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-white">
         <div className="max-w-4xl mx-auto px-6 md:px-8">
           <a
             href="#/personalverleih"
@@ -118,7 +118,7 @@ export function FuerUnsereKundenPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#E866D4] py-12 lg:py-16 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-white">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
             Ihre Vorteile
@@ -246,7 +246,7 @@ export function FuerUnsereKundenPage() {
               {filteredJobs.map((job) => (
                 <div key={job.id} className="group bg-white border border-slate-200 hover:border-[#921bb2] rounded-lg p-6 transition-colors flex flex-col h-full">
                   <div className="flex items-start justify-between mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] flex items-center justify-center">
                       <Briefcase className="w-5 h-5 text-white" />
                     </div>
                     <span className="px-3 py-1 text-xs font-medium rounded-full bg-[#921bb2]/10 text-[#921bb2] border border-[#921bb2]/20">
@@ -271,7 +271,7 @@ export function FuerUnsereKundenPage() {
                   </div>
                   <a
                     href={job.href}
-                    className="w-full px-4 py-2.5 bg-gradient-to-r from-[#B84DD4] to-[#E866D4] text-white font-medium rounded-lg hover:opacity-90 transition-opacity text-sm mt-auto text-center block"
+                    className="w-full px-4 py-2.5 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity text-sm mt-auto text-center block"
                   >
                     Details ansehen
                   </a>
@@ -297,7 +297,7 @@ export function FuerUnsereKundenPage() {
           </p>
           <a
             href="#/kontakt"
-            className="inline-block px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#E866D4] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+            className="inline-block px-6 py-3 bg-gradient-to-r from-[#B84DD4] to-[#FDF5FA] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
           >
             Kontakt aufnehmen
           </a>

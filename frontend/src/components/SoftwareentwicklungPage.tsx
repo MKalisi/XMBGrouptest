@@ -139,7 +139,7 @@ export function SoftwareentwicklungPage() {
       </section>
 
       {/* Leistungsspektrum */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#E866D4] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8">
             Leistungsspektrum
@@ -171,7 +171,7 @@ export function SoftwareentwicklungPage() {
             <div className="space-y-4">
               {processSteps.map((step, index) => (
                 <div key={index} className="flex gap-4 bg-slate-50 rounded-lg p-5">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#B84DD4] to-[#E866D4] text-white flex items-center justify-center text-sm font-semibold flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white flex items-center justify-center text-sm font-semibold flex-shrink-0">
                     {step.number}
                   </div>
                   <div>
@@ -193,7 +193,7 @@ export function SoftwareentwicklungPage() {
       </section>
 
       {/* Unsere Software-Lösungen */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#E866D4] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-2">
             Unsere Software-Lösungen
@@ -293,7 +293,7 @@ export function SoftwareentwicklungPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#E866D4] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
             Bereit für Ihre individuelle Softwarelösung?
