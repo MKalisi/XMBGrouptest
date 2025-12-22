@@ -85,7 +85,14 @@ export function HeroSwiper({
                 >
                   {section.number}
                 </div>
-                <h2 className="text-white uppercase tracking-wider text-sm font-semibold mb-3">
+                <h2 
+                  className="text-white uppercase tracking-wider text-sm font-semibold mb-3"
+                  style={{
+                    maxWidth: "200px",
+                    wordBreak: "break-word",
+                    hyphens: "auto",
+                  }}
+                >
                   {section.title}
                 </h2>
                 <button
@@ -196,6 +203,11 @@ export function HeroSwiper({
                         fontSize: isLargeScreen ? "1.25rem" : "1rem",
                         opacity: isActive ? 1 : 0.6,
                         fontWeight: isActive ? 600 : 400,
+                        maxWidth: "100%",
+                        wordBreak: "break-word",
+                        hyphens: "auto",
+                        marginLeft: "auto",
+                        marginRight: "auto",
                       }}
                     >
                       {section.title}

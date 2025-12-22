@@ -249,6 +249,13 @@ p + p {
   margin-top: var(--space-2);
 }
 
+/* Text-Alignment: Konsistente rechte Kante für mehrzeilige Texte */
+h1, h2, h3, h4, h5, h6, p, span, div {
+  word-break: break-word;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
 /* ========================================
    TRANSITIONS - Reduziert
    ======================================== */
@@ -416,3 +423,8 @@ button:active, a:active {
 .hero-slide[data-active="false"][data-direction="center"] {
   transform: translateX(0%);
 }
+
+/* ========================================
+   BACKGROUND COLOR - Cremefarben statt Weiß
+   ======================================== */
+

@@ -19,6 +19,7 @@ import { CybersecurityPage } from './components/CybersecurityPage';
 import { SoftwareentwicklungPage } from './components/SoftwareentwicklungPage';
 import { KontaktPage } from './components/KontaktPage';
 import { ToolDetailPage } from './components/ToolDetailPage';
+import { JobDetailPage } from './components/JobDetailPage';
 import { UeberUnsPage } from './components/UeberUnsPage';
 import { ImpressumPage } from './components/ImpressumPage';
 import { DatenschutzPage } from './components/DatenschutzPage';
@@ -36,6 +37,7 @@ export default function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
   const [currentPage, setCurrentPage] = useState<string>('home');
   const [toolId, setToolId] = useState<string | null>(null);
+  const [jobId, setJobId] = useState<string | null>(null);
   const [showSoftwareSubmenu, setShowSoftwareSubmenu] = useState<boolean>(false);
   const [showPersonalverleihSubmenu, setShowPersonalverleihSubmenu] =
     useState<boolean>(false);
@@ -99,19 +101,30 @@ export default function App() {
       if (hash.startsWith('tools/')) {
         const id = hash.split('/')[1];
         setToolId(id);
+        setJobId(null);
         setCurrentPage('tool-detail');
         setActiveMenu('softwareentwicklung');
         setShowSoftwareSubmenu(true);
+      } else if (hash.startsWith('jobs/')) {
+        const id = hash.split('/')[1];
+        setJobId(id);
+        setToolId(null);
+        setCurrentPage('job-detail');
+        setActiveMenu('personalverleih');
+        setShowPersonalverleihSubmenu(true);
       } else if (hash.startsWith('personalverleih/')) {
         const subpage = hash.split('/')[1];
         setCurrentPage(hash);
         setActiveMenu('personalverleih');
         setShowPersonalverleihSubmenu(true);
+        setToolId(null);
+        setJobId(null);
         if (subpage === 'fuer-unsere-kunden' || subpage === 'fuer-it-spezialisten') {
           // ok
         }
       } else {
         setToolId(null);
+        setJobId(null);
         setCurrentPage(hash);
         setActiveMenu(hash);
 
@@ -209,6 +222,8 @@ export default function App() {
         return <KontaktPage />;
       case 'tool-detail':
         return <ToolDetailPage toolId={toolId} />;
+      case 'job-detail':
+        return <JobDetailPage jobId={jobId} />;
       case 'ueber-uns':
         return <UeberUnsPage />;
       case 'impressum':

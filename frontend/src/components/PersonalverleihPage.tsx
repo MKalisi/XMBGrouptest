@@ -1,6 +1,7 @@
 import { Footer } from "./Footer";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { VideoHero } from "./VideoHero";
+import { JobLoop } from "./JobLoop";
 
 export function PersonalverleihPage() {
   return (
@@ -95,6 +96,71 @@ export function PersonalverleihPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Offene Jobs Bereich */}
+      <section className="bg-white py-12 lg:py-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 mb-4">
+              Offene Jobs
+            </h2>
+            <p className="max-w-3xl mx-auto text-slate-600" style={{ lineHeight: '1.7' }}>
+              Aktuelle Stellenausschreibungen für IT-Spezialisten. Werden Sie Teil unseres Teams oder finden Sie den passenden Kandidaten für Ihr Projekt.
+            </p>
+          </div>
+
+          {/* Job-Loop */}
+          <JobLoop
+            jobs={[
+              {
+                id: 'senior-fullstack-entwickler',
+                title: 'Senior Full-Stack Entwickler',
+                type: 'Vollzeit',
+                location: 'Zürich / Remote',
+                startDate: 'Ab sofort',
+                description: 'Wir suchen einen erfahrenen Full-Stack Entwickler für spannende Projekte im Bereich Cloud-native Anwendungen.',
+                href: '#/jobs/senior-fullstack-entwickler',
+              },
+              {
+                id: 'cloud-engineer',
+                title: 'Cloud Engineer (AWS/Azure)',
+                type: 'Teilzeit',
+                location: 'Bern / Hybrid',
+                startDate: 'Ab Januar 2025',
+                description: 'Verstärken Sie unser Team als Cloud Engineer mit Fokus auf moderne Cloud-Infrastrukturen und DevOps-Praktiken.',
+                href: '#/jobs/cloud-engineer',
+              },
+              {
+                id: 'it-projektmanager',
+                title: 'IT-Projektmanager',
+                type: 'Vollzeit',
+                location: 'Basel / Remote',
+                startDate: 'Ab sofort',
+                description: 'Verantworten Sie komplexe IT-Projekte und führen Sie agile Teams erfolgreich zum Ziel.',
+                href: '#/jobs/it-projektmanager',
+              },
+            ]}
+            speed={30}
+            direction="left"
+            gap={24}
+            pauseOnHover={true}
+            cardWidth={380}
+          />
+
+          {/* Mehr anzeigen Button */}
+          <div className="text-center mt-8">
+            <a
+              href="#/personalverleih/fuer-unsere-kunden"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#921bb2] to-[#cd20b2] text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+            >
+              <span>Mehr anzeigen</span>
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </a>
           </div>
         </div>
