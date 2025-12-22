@@ -35,7 +35,7 @@ export function UeberUnsPage() {
   return (
     <div className="bg-white text-slate-900 min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-black">
+      <section className="bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-black">
         <div className="max-w-4xl mx-auto px-6 md:px-8 text-center">
           <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-4 text-black">
             XMB Group AG – Ihre ganzheitliche IT-Unterstützung aus einer Hand
@@ -211,7 +211,7 @@ export function UeberUnsPage() {
       </section>
 
       {/* Managing Team Section */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 sm:py-20 text-black">
+      <section className="bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] py-16 sm:py-20 text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-12 text-center text-black">
             Managing Team
@@ -386,7 +386,7 @@ export function UeberUnsPage() {
       </section>
 
       {/* Call-to-Action */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
+      <section className="bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-black">
             Bereit für Ihre digitale Zukunft?

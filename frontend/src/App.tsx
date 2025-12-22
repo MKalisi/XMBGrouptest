@@ -298,7 +298,7 @@ export default function App() {
       </section>
 
       {/* Cybersecurity Section */}
-      <section className={`${isMobile ? 'py-12' : 'py-16 lg:py-24'} bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black`} id="cybersecurity">
+      <section className={`${isMobile ? 'py-12' : 'py-16 lg:py-24'} bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] text-black`} id="cybersecurity">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className={`grid grid-cols-1 lg:grid-cols-2 ${isMobile ? 'gap-8' : 'gap-12'}`}>
             <div className="text-black space-y-4">
@@ -403,7 +403,7 @@ export default function App() {
       </section>
 
       {/* Contact Section */}
-      <section className={`${isMobile ? 'py-12' : 'py-16 lg:py-24'} bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black`} id="kontakt">
+      <section className={`${isMobile ? 'py-12' : 'py-16 lg:py-24'} bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] text-black`} id="kontakt">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className={`grid grid-cols-1 lg:grid-cols-2 items-start ${isMobile ? 'gap-8' : 'gap-12'}`}>
             <div className="text-black space-y-6">

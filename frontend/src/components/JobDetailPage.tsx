@@ -153,7 +153,7 @@ export function JobDetailPage({ jobId }: JobDetailPageProps) {
   return (
     <div className="bg-white text-slate-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-black">
+      <section className="bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <a
             href="#/personalverleih/fuer-unsere-kunden"

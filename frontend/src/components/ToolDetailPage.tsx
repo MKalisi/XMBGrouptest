@@ -135,7 +135,7 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
 
   return (
     <div className="bg-white text-slate-900">
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-black">
+      <section className="bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-black">
         <div className="max-w-4xl mx-auto px-6 md:px-8">
           <a
             href="#/softwareentwicklung"
@@ -177,7 +177,7 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
+      <section className="bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-black">
             Live Demo
@@ -220,7 +220,7 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
+      <section className="bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <div className="grid gap-8 md:grid-cols-2">
             <div className="bg-white/30 rounded-lg border border-black/20 p-6">

@@ -139,7 +139,7 @@ export function SoftwareentwicklungPage() {
       </section>
 
       {/* Leistungsspektrum */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
+      <section className="py-12 lg:py-16 bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-black">
               Leistungsspektrum
@@ -193,7 +193,7 @@ export function SoftwareentwicklungPage() {
       </section>
 
       {/* Unsere Software-Lösungen */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
+      <section className="py-12 lg:py-16 bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold text-center mb-2 text-black">
             Unsere Software-Lösungen
@@ -293,7 +293,7 @@ export function SoftwareentwicklungPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
+      <section className="py-12 lg:py-16 bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-black">
               Bereit für Ihre individuelle Softwarelösung?

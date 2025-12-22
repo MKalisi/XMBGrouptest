@@ -268,16 +268,20 @@ h1, h2, h3, h4, h5, h6, p, span, div {
 }
 
 /* Textfarbe in rosa Gradient-Sektionen: Schwarz statt Weiß */
+section[class*="bg-gradient-to-b from-[#B84DD4]"],
 section[class*="bg-gradient-to-br from-[#B84DD4]"],
 section[class*="bg-gradient-to-r from-[#B84DD4]"],
+section[class*="bg-gradient-to-b from-[#B84DD4]"] *,
 section[class*="bg-gradient-to-br from-[#B84DD4]"] *,
 section[class*="bg-gradient-to-r from-[#B84DD4]"] * {
   color: #000000 !important;
 }
 
 /* Buttons in Gradient-Sektionen bleiben weiß */
+section[class*="bg-gradient-to-b from-[#B84DD4]"] button[class*="bg-gradient"],
 section[class*="bg-gradient-to-br from-[#B84DD4]"] button[class*="bg-gradient"],
 section[class*="bg-gradient-to-r from-[#B84DD4]"] button[class*="bg-gradient"],
+section[class*="bg-gradient-to-b from-[#B84DD4]"] a[class*="bg-gradient"],
 section[class*="bg-gradient-to-br from-[#B84DD4]"] a[class*="bg-gradient"],
 section[class*="bg-gradient-to-r from-[#B84DD4]"] a[class*="bg-gradient"] {
   color: #ffffff !important;
