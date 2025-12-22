@@ -184,7 +184,7 @@ export const JobLoop = React.memo<JobLoopProps>(
         >
           <div className="group bg-white border border-slate-200 hover:border-[#921bb2] rounded-lg p-6 transition-colors flex flex-col h-full">
             <div className="flex items-start justify-between mb-4">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center">
                 <Briefcase className="w-5 h-5 text-white" />
               </div>
               <span className="px-3 py-1 text-xs font-medium rounded-full bg-[#921bb2]/10 text-[#921bb2] border border-[#921bb2]/20">
@@ -209,7 +209,7 @@ export const JobLoop = React.memo<JobLoopProps>(
             </div>
             <a
               href={job.href}
-              className="w-full px-4 py-2.5 bg-gradient-to-r from-[#921bb2] to-[#cd20b2] text-white font-medium rounded-lg hover:opacity-90 transition-opacity text-sm mt-auto text-center block"
+              className="w-full px-4 py-2.5 bg-gradient-to-r from-[#B84DD4] to-[#E866D4] text-white font-medium rounded-lg hover:opacity-90 transition-opacity text-sm mt-auto text-center block"
             >
               Details ansehen
             </a>

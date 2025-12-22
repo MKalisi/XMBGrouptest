@@ -43,7 +43,7 @@ export function UeberUnsPage() {
           alt="Über uns"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-[#921bb2] via-[#921bb2] to-[#cd20b2] opacity-40"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#B84DD4] via-[#B84DD4] to-[#E866D4] opacity-40"></div>
         <div className="absolute inset-0 opacity-20">
           <div 
             className="absolute inset-0 blur-3xl"
@@ -56,7 +56,7 @@ export function UeberUnsPage() {
               XMB Group AG – Ihre ganzheitliche IT-Unterstützung aus einer Hand
             </span>
             <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 blur-2xl group-hover:via-white/20 transition-all duration-500"></span>
-            <span className="absolute -inset-1 bg-gradient-to-r from-[#921bb2]/20 via-[#cd20b2]/30 to-[#921bb2]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+            <span className="absolute -inset-1 bg-gradient-to-r from-[#B84DD4]/20 via-[#E866D4]/30 to-[#B84DD4]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </h1>
           <p className="max-w-5xl mx-auto text-base sm:text-lg md:text-xl text-white/90 leading-relaxed 2xl:text-2xl">
             Wir verbinden Recruiting, Softwareentwicklung und Cybersecurity zu stabilen Lösungen, die Unternehmen zuverlässig in ihrer digitalen Entwicklung begleiten.
@@ -68,11 +68,11 @@ export function UeberUnsPage() {
       <section className="px-4 sm:px-6 py-16 sm:py-20 bg-white overflow-x-hidden">
         <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-10 sm:mb-12 md:mb-16 text-center relative inline-block group max-w-[95vw] sm:max-w-[90vw] mx-auto px-2 leading-snug">
-            <span className="relative z-10 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] bg-clip-text text-transparent tracking-tight">
+            <span className="relative z-10 bg-gradient-to-r from-[#B84DD4] via-[#E866D4] to-[#B84DD4] bg-clip-text text-transparent tracking-tight">
               Über uns
             </span>
-            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-[#921bb2] to-[#cd20b2] group-hover:w-32 transition-all duration-500"></span>
-            <span className="absolute inset-0 bg-gradient-to-r from-[#921bb2]/0 via-[#cd20b2]/10 to-[#921bb2]/0 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-[#B84DD4] to-[#E866D4] group-hover:w-32 transition-all duration-500"></span>
+            <span className="absolute inset-0 bg-gradient-to-r from-[#B84DD4]/0 via-[#E866D4]/10 to-[#B84DD4]/0 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
               </h2>
           
           {/* Grid Layout: Mindmap & Timeline */}
@@ -96,7 +96,7 @@ export function UeberUnsPage() {
 
             {/* Center Node - XMB Group AG */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 group">
-              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center shadow-2xl transform transition-all duration-500 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(146,27,178,0.5)]">
+              <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center shadow-2xl transform transition-all duration-500 group-hover:scale-110 group-hover:shadow-[0_0_60px_rgba(146,27,178,0.5)]">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/20 to-transparent"></div>
                 <div className="text-center px-2 sm:px-3 md:px-4">
                   <h3 className="text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-white mb-1">XMB Group</h3>
@@ -110,7 +110,7 @@ export function UeberUnsPage() {
             {/* Top Left Node - Recruiting */}
             <div className="absolute top-0 left-0 sm:left-[2%] md:left-[5%] group cursor-pointer" style={{ zIndex: 10 }}>
               <div className="relative bg-white rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl border-2 border-transparent group-hover:border-[#921bb2] transform transition-all duration-500 group-hover:scale-110 group-hover:shadow-2xl w-36 sm:w-44 md:w-56 lg:w-64">
-                <div className="absolute -bottom-2 -right-2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition-transform duration-300">
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition-transform duration-300">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                   </svg>
@@ -123,7 +123,7 @@ export function UeberUnsPage() {
             {/* Top Right Node - Softwareentwicklung */}
             <div className="absolute top-0 right-0 sm:right-[2%] md:right-[5%] group cursor-pointer" style={{ zIndex: 10 }}>
               <div className="relative bg-white rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl border-2 border-transparent group-hover:border-[#921bb2] transform transition-all duration-500 group-hover:scale-110 group-hover:shadow-2xl w-36 sm:w-44 md:w-56 lg:w-64">
-                <div className="absolute -bottom-2 -right-2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition-transform duration-300">
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition-transform duration-300">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
@@ -136,7 +136,7 @@ export function UeberUnsPage() {
             {/* Bottom Center Node - Cybersecurity */}
             <div className="absolute bottom-[-5px] sm:bottom-[-10px] md:bottom-[-20px] left-1/2 transform -translate-x-1/2 group cursor-pointer" style={{ zIndex: 10 }}>
               <div className="relative bg-white rounded-2xl p-3 sm:p-4 md:p-6 shadow-xl border-2 border-transparent group-hover:border-[#921bb2] transform transition-all duration-500 group-hover:scale-110 group-hover:shadow-2xl w-36 sm:w-44 md:w-56 lg:w-64">
-                <div className="absolute -bottom-2 -right-2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition-transform duration-300">
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center shadow-lg transform group-hover:rotate-12 transition-transform duration-300">
                   <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
@@ -150,16 +150,16 @@ export function UeberUnsPage() {
             {/* Right Side - Timeline */}
             <div className="lg:sticky lg:top-24 mt-6 sm:mt-8 lg:mt-0 order-2 lg:order-1">
               <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8 md:mb-12 relative inline-block group leading-snug">
-                <span className="relative z-10 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] bg-clip-text text-transparent tracking-tight">
+                <span className="relative z-10 bg-gradient-to-r from-[#B84DD4] via-[#E866D4] to-[#B84DD4] bg-clip-text text-transparent tracking-tight">
                   Unsere Geschichte
                 </span>
-                <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-to-r from-[#921bb2] to-[#cd20b2] group-hover:w-full transition-all duration-500"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-to-r from-[#B84DD4] to-[#E866D4] group-hover:w-full transition-all duration-500"></span>
               </h3>
               
               {/* Timeline Container */}
               <div className="relative">
                 {/* Vertical Line */}
-                <div className="absolute left-20 sm:left-24 md:left-28 lg:left-32 xl:left-36 top-0 bottom-6 w-0.5 bg-gradient-to-b from-[#921bb2]/20 via-[#cd20b2]/40 to-[#921bb2]/20" style={{ transform: 'translateX(-50%)' }}></div>
+                <div className="absolute left-20 sm:left-24 md:left-28 lg:left-32 xl:left-36 top-0 bottom-6 w-0.5 bg-gradient-to-b from-[#B84DD4]/20 via-[#E866D4]/40 to-[#B84DD4]/20" style={{ transform: 'translateX(-50%)' }}></div>
                 
                 {/* Timeline Items */}
                 <div className="space-y-6 sm:space-y-8 md:space-y-10">
@@ -175,14 +175,14 @@ export function UeberUnsPage() {
                       <div key={index} className="relative flex items-center gap-3 sm:gap-4 md:gap-6 lg:gap-8">
                         {/* Year - Left Side */}
                         <div className="w-12 sm:w-14 md:w-16 lg:w-20 flex-shrink-0 text-right z-10 relative">
-                          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-[#921bb2] to-[#cd20b2] bg-clip-text text-transparent">
+                          <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-[#B84DD4] to-[#E866D4] bg-clip-text text-transparent">
                             {item.year}
                           </div>
                         </div>
                         
                         {/* Icon Circle on Line */}
                         <div className="absolute left-20 sm:left-24 md:left-28 lg:left-32 xl:left-36 z-20 flex-shrink-0" style={{ transform: 'translateX(-50%)' }}>
-                          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-gradient-to-br from-[#921bb2] to-[#cd20b2] border-2 sm:border-3 md:border-4 border-white shadow-lg flex items-center justify-center group hover:scale-110 transition-all duration-300">
+                          <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-gradient-to-br from-[#B84DD4] to-[#E866D4] border-2 sm:border-3 md:border-4 border-white shadow-lg flex items-center justify-center group hover:scale-110 transition-all duration-300">
                             <IconComponent className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-white" />
                           </div>
                         </div>
@@ -212,7 +212,7 @@ export function UeberUnsPage() {
                 className="relative bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 md:p-6 border-2 border-slate-200 shadow-sm"
               >
                 <div className="flex items-start gap-3 sm:gap-4">
-                  <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full mt-1.5 sm:mt-2 flex-shrink-0 bg-gradient-to-br from-[#921bb2] to-[#cd20b2]"></div>
+                  <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full mt-1.5 sm:mt-2 flex-shrink-0 bg-gradient-to-br from-[#B84DD4] to-[#E866D4]"></div>
                   <p className="text-slate-700 text-sm sm:text-base leading-relaxed">{milestone}</p>
                 </div>
               </div>
@@ -250,14 +250,14 @@ export function UeberUnsPage() {
       </section>
 
       {/* Managing Team Section */}
-      <section className="px-4 sm:px-6 py-16 sm:py-20 bg-gradient-to-br from-[#921bb2] to-[#cd20b2] text-white">
+      <section className="px-4 sm:px-6 py-16 sm:py-20 bg-gradient-to-br from-[#B84DD4] to-[#E866D4] text-white">
         <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 relative inline-block group leading-snug">
             <span className="relative z-10 text-white tracking-tight">
               Managing Team
             </span>
             <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 blur-2xl group-hover:via-white/20 transition-all duration-500"></span>
-            <span className="absolute -inset-1 bg-gradient-to-r from-[#921bb2]/20 via-[#cd20b2]/30 to-[#921bb2]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+            <span className="absolute -inset-1 bg-gradient-to-r from-[#B84DD4]/20 via-[#E866D4]/30 to-[#B84DD4]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </h2>
           <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
             {managingTeam.map((member) => (
@@ -309,7 +309,7 @@ export function UeberUnsPage() {
       {/* Drive and Goals Section */}
       <section className="px-4 sm:px-6 py-16 sm:py-20 bg-white">
         <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] bg-clip-text text-transparent leading-snug">Antrieb und Ziele</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 bg-gradient-to-r from-[#B84DD4] via-[#E866D4] to-[#B84DD4] bg-clip-text text-transparent leading-snug">Antrieb und Ziele</h2>
           <p className="text-slate-700 text-base sm:text-lg md:text-xl leading-relaxed mb-8 sm:mb-10 md:mb-12 max-w-5xl 2xl:text-2xl">
             Wir sind der strategische Digitalisierungspartner für erfolgreiche Unternehmen der Zukunft. 
             Der Erfolg unserer Kunden ist unser grösster Ansporn. Für Ihren Erfolg wachsen wir weiter!
@@ -382,11 +382,11 @@ export function UeberUnsPage() {
       <section className="px-4 sm:px-6 py-16 sm:py-20 bg-white">
         <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-10 sm:mb-14 md:mb-16 relative inline-block group max-w-[95vw] sm:max-w-[90vw] mx-auto px-2 leading-snug">
-            <span className="relative z-10 bg-gradient-to-r from-[#921bb2] via-[#cd20b2] to-[#921bb2] bg-clip-text text-transparent tracking-tight">
+            <span className="relative z-10 bg-gradient-to-r from-[#B84DD4] via-[#E866D4] to-[#B84DD4] bg-clip-text text-transparent tracking-tight">
               Werte & Grundprinzipien
             </span>
-            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-[#921bb2] to-[#cd20b2] group-hover:w-40 transition-all duration-500"></span>
-            <span className="absolute inset-0 bg-gradient-to-r from-[#921bb2]/0 via-[#cd20b2]/10 to-[#921bb2]/0 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-[#B84DD4] to-[#E866D4] group-hover:w-40 transition-all duration-500"></span>
+            <span className="absolute inset-0 bg-gradient-to-r from-[#B84DD4]/0 via-[#E866D4]/10 to-[#B84DD4]/0 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </h2>
           
           <div className="grid gap-6 sm:gap-8 md:grid-cols-3 max-w-6xl mx-auto">
@@ -419,13 +419,13 @@ export function UeberUnsPage() {
                   <div className="relative z-10">
                     {/* Icon Circle */}
                     <div className="mb-4 sm:mb-5 md:mb-6 flex justify-center">
-                      <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-[#921bb2] to-[#cd20b2] flex items-center justify-center shadow-lg border-2 sm:border-3 md:border-4 border-white">
+                      <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-[#B84DD4] to-[#E866D4] flex items-center justify-center shadow-lg border-2 sm:border-3 md:border-4 border-white">
                         <IconComponent className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white" />
                       </div>
                     </div>
                     
                     {/* Title */}
-                    <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-slate-900 via-[#921bb2] to-slate-900 bg-clip-text text-transparent leading-snug">
+                    <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-slate-900 via-[#B84DD4] to-slate-900 bg-clip-text text-transparent leading-snug">
                       {value.title}
                     </h3>
                     
@@ -442,14 +442,14 @@ export function UeberUnsPage() {
       </section>
 
       {/* Call-to-Action */}
-      <section className="bg-gradient-to-br from-[#921bb2] to-[#cd20b2] py-16 sm:py-20 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#E866D4] py-16 sm:py-20 text-white">
         <div className="w-full flex flex-col gap-5 sm:gap-6 text-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block group max-w-[95vw] sm:max-w-[80vw] mx-auto px-2 leading-snug">
             <span className="relative z-10 text-white tracking-tight">
               Bereit für Ihre digitale Zukunft?
             </span>
             <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 blur-2xl group-hover:via-white/20 transition-all duration-500"></span>
-            <span className="absolute -inset-1 bg-gradient-to-r from-[#921bb2]/20 via-[#cd20b2]/30 to-[#921bb2]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+            <span className="absolute -inset-1 bg-gradient-to-r from-[#B84DD4]/20 via-[#E866D4]/30 to-[#B84DD4]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </h2>
           <p className="mx-auto max-w-4xl text-base sm:text-lg md:text-xl text-white/90 2xl:text-2xl px-2">
             Lassen Sie uns gemeinsam Ihre IT-Herausforderungen meistern. Wir verbinden Recruiting, Softwareentwicklung und Cybersecurity zu einer maßgeschneiderten Lösung für Ihr Unternehmen.

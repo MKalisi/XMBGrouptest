@@ -25,18 +25,20 @@
   --max-text-width: 70ch;        /* ~60-80 Zeichen */
   
   /* Colors - Eine Akzentfarbe, sonst neutral */
-  --color-accent: #921bb2;
-  --color-accent-light: #cd20b2;
+  --color-accent: #B84DD4;
+  --color-accent-light: #E866D4;
+  --color-accent-old: #921bb2;
+  --color-accent-light-old: #cd20b2;
   --color-text: #1a1a2e;
   --color-text-muted: #64748b;
-  --color-bg: #ffffff;
-  --color-bg-subtle: #f8fafc;
+  --color-bg: #E0DFE0;
+  --color-bg-subtle: #f1f5f9;
   --color-border: #e2e8f0;
   --color-border-light: #f1f5f9;
   
   /* Existing variables */
   --font-size: 16px;
-  --background: #ffffff;
+  --background: #E0DFE0;
   --foreground: oklch(0.145 0 0);
   --card: #ffffff;
   --card-foreground: oklch(0.145 0 0);
@@ -300,7 +302,7 @@ button:active, a:active {
   font-size: 1rem;
   font-weight: 500;
   color: white;
-  background: linear-gradient(135deg, #921bb2 0%, #cd20b2 100%);
+  background: linear-gradient(135deg, #B84DD4 0%, #E866D4 100%);
   border: none;
   border-radius: var(--radius);
   cursor: pointer;
@@ -313,11 +315,11 @@ button:active, a:active {
 
 /* Gradient Backgrounds */
 .bg-gradient-primary {
-  background: linear-gradient(135deg, #921bb2 0%, #cd20b2 100%);
+  background: linear-gradient(135deg, #B84DD4 0%, #E866D4 100%);
 }
 
 .bg-gradient-primary-reverse {
-  background: linear-gradient(135deg, #cd20b2 0%, #921bb2 100%);
+  background: linear-gradient(135deg, #E866D4 0%, #B84DD4 100%);
 }
 
 /* Sekundärer Button */
@@ -422,6 +424,15 @@ button:active, a:active {
 
 .hero-slide[data-active="false"][data-direction="center"] {
   transform: translateX(0%);
+}
+
+/* ========================================
+   BACKGROUND COLOR - Weiß-gräulich
+   ======================================== */
+
+/* Überschreibe alle bg-white Klassen mit weiß-gräulichem Hintergrund */
+.bg-white {
+  background-color: #E0DFE0 !important;
 }
 
 /* ========================================

@@ -119,7 +119,7 @@ export const CookieBanner = ({ menuWidth = 90, isMenuExpanded = false }: CookieB
                 className={`text-white uppercase tracking-wider font-semibold transition-all duration-300 hover:opacity-90 btn-animated ${
                   isMobile ? 'px-6 py-3 text-sm w-full' : 'px-8 py-3'
                 }`}
-                style={{ background: 'linear-gradient(to right, #921bb2, #cd20b2)' }}
+                style={{ background: 'linear-gradient(to right, #B84DD4, #E866D4)' }}
               >
                 Akzeptieren
               </button>

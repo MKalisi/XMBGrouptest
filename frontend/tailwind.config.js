@@ -14,6 +14,7 @@ export default {
     },
     extend: {
       colors: {
+        white: "#E0DFE0",
         border: "var(--border)",
         input: "var(--input)",
         ring: "var(--ring)",

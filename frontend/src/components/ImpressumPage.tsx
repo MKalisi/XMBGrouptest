@@ -4,7 +4,7 @@ export function ImpressumPage() {
   return (
     <div className="bg-white text-slate-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#921bb2] to-[#cd20b2] py-16 md:py-20">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#E866D4] py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-6 md:px-8 text-center text-white">
           <p className="uppercase tracking-wider text-sm text-white/80 font-medium mb-4">Rechtliches</p>
           <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-4">
