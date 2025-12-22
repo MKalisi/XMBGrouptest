@@ -203,21 +203,19 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#B84DD4] via-[#B84DD4] to-[#FDF5FA] px-4 sm:px-6 py-12 sm:py-16">
+      <section className="bg-gradient-to-br from-[#B84DD4] via-[#B84DD4] to-[#FDF5FA] px-4 sm:px-6 py-12 sm:py-16 text-black">
         <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
           <div className="mx-auto max-w-6xl">
             <h2 className="mb-4 sm:mb-5 md:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block group leading-snug">
-              <span className="relative z-10 text-white tracking-tight">
+              <span className="relative z-10 text-black tracking-tight">
                 Live Demo
               </span>
-              <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 blur-2xl group-hover:via-white/20 transition-all duration-500"></span>
-              <span className="absolute -inset-1 bg-gradient-to-r from-[#B84DD4]/20 via-[#FDF5FA]/30 to-[#B84DD4]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
             </h2>
-            <div className="relative h-64 sm:h-80 md:aspect-video w-full overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-white/30 bg-white/10 backdrop-blur-sm">
+            <div className="relative h-64 sm:h-80 md:aspect-video w-full overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-black/30 bg-white/30 backdrop-blur-sm">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center px-4">
-                  <p className="text-white/90 text-base sm:text-lg 2xl:text-xl">Live Demo wird geladen...</p>
-                  <p className="mt-2 text-white/70 text-sm sm:text-base 2xl:text-lg">
+                  <p className="text-black/80 text-base sm:text-lg 2xl:text-xl">Live Demo wird geladen...</p>
+                  <p className="mt-2 text-black/70 text-sm sm:text-base 2xl:text-lg">
                     Bitte kontaktieren Sie uns für Zugang zur Live Demo
                   </p>
                 </div>
@@ -264,28 +262,28 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#B84DD4] via-[#B84DD4] to-[#FDF5FA] px-4 sm:px-6 py-12 sm:py-16">
+      <section className="bg-gradient-to-br from-[#B84DD4] via-[#B84DD4] to-[#FDF5FA] px-4 sm:px-6 py-12 sm:py-16 text-black">
         <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
           <div className="mx-auto max-w-7xl grid gap-6 sm:gap-8 md:grid-cols-2">
-            <div className="rounded-2xl sm:rounded-3xl border-2 border-white/30 bg-white/10 backdrop-blur-sm p-5 sm:p-6 hover:bg-white/20 transition-all duration-300">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-5 md:mb-6 leading-snug">Technische Spezifikationen</h2>
+            <div className="rounded-2xl sm:rounded-3xl border-2 border-black/30 bg-white/30 backdrop-blur-sm p-5 sm:p-6 hover:bg-white/40 transition-all duration-300">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-5 md:mb-6 leading-snug">Technische Spezifikationen</h2>
               <dl className="mt-4 sm:mt-5 md:mt-6 space-y-3 sm:space-y-4">
                 {tool.specs.map((spec) => (
                   <div
                     key={spec.label}
-                    className="flex flex-col rounded-xl border border-white/20 bg-white/5 p-3 sm:p-4"
+                    className="flex flex-col rounded-xl border border-black/20 bg-white/20 p-3 sm:p-4"
                   >
-                    <dt className="uppercase tracking-[0.2em] text-white/70 text-xs sm:text-sm mb-1 sm:mb-2">
+                    <dt className="uppercase tracking-[0.2em] text-black/70 text-xs sm:text-sm mb-1 sm:mb-2">
                       {spec.label}
                     </dt>
-                    <dd className="text-white text-base sm:text-lg 2xl:text-xl">{spec.value}</dd>
+                    <dd className="text-black text-base sm:text-lg 2xl:text-xl">{spec.value}</dd>
                   </div>
                 ))}
               </dl>
             </div>
-            <div className="rounded-2xl sm:rounded-3xl border-2 border-white/30 bg-white/10 backdrop-blur-sm p-5 sm:p-6 hover:bg-white/20 transition-all duration-300">
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-5 md:mb-6 leading-snug">Integrationen & Visuals</h2>
-              <p className="mt-2 sm:mt-3 text-white/90 text-base sm:text-lg md:text-xl 2xl:text-2xl">
+            <div className="rounded-2xl sm:rounded-3xl border-2 border-black/30 bg-white/30 backdrop-blur-sm p-5 sm:p-6 hover:bg-white/40 transition-all duration-300">
+              <h2 className="text-2xl sm:text-3xl font-bold text-black mb-4 sm:mb-5 md:mb-6 leading-snug">Integrationen & Visuals</h2>
+              <p className="mt-2 sm:mt-3 text-black/80 text-base sm:text-lg md:text-xl 2xl:text-2xl">
                 Vorgefertigte Konnektoren und APIs verbinden das Tool mit Ihrer
                 Systemlandschaft.
               </p>
@@ -293,7 +291,7 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
                 {tool.integrations.map((integration) => (
                   <span
                     key={integration}
-                    className="rounded-full border border-white/30 bg-white/10 px-3 sm:px-4 py-1.5 sm:py-2 text-white text-sm sm:text-base 2xl:text-lg"
+                    className="rounded-full border border-black/30 bg-white/20 px-3 sm:px-4 py-1.5 sm:py-2 text-black text-sm sm:text-base 2xl:text-lg"
                   >
                     {integration}
                   </span>
@@ -303,7 +301,7 @@ export function ToolDetailPage({ toolId }: ToolDetailPageProps) {
                 {[1, 2, 3, 4].map((item) => (
                   <div
                     key={item}
-                    className="aspect-[4/3] rounded-xl sm:rounded-2xl bg-white/10 border border-white/20 text-center text-white/70 flex items-center justify-center text-sm sm:text-base 2xl:text-lg"
+                    className="aspect-[4/3] rounded-xl sm:rounded-2xl bg-white/20 border border-black/20 text-center text-black/70 flex items-center justify-center text-sm sm:text-base 2xl:text-lg"
                   >
                     Screenshot {item}
                   </div>

@@ -250,10 +250,10 @@ export function UeberUnsPage() {
       </section>
 
       {/* Managing Team Section */}
-      <section className="px-4 sm:px-6 py-16 sm:py-20 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
+      <section className="px-4 sm:px-6 py-16 sm:py-20 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="w-full px-2 sm:px-4 md:px-8 lg:px-12 xl:px-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-10 md:mb-12 relative inline-block group leading-snug">
-            <span className="relative z-10 text-white tracking-tight">
+            <span className="relative z-10 text-black tracking-tight">
               Managing Team
             </span>
             <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 blur-2xl group-hover:via-white/20 transition-all duration-500"></span>
@@ -281,20 +281,20 @@ export function UeberUnsPage() {
                   
                   {/* Name und Role */}
                   <div className="transition-all duration-300">
-                    <p className="text-lg sm:text-xl font-bold mb-1 transition-colors duration-300 text-white">
+                    <p className="text-lg sm:text-xl font-bold mb-1 transition-colors duration-300 text-black">
                       {member.name}
                     </p>
-                    <p className="text-white/80 font-medium text-sm sm:text-base 2xl:text-lg transition-colors duration-300">
+                    <p className="text-black/80 font-medium text-sm sm:text-base 2xl:text-lg transition-colors duration-300">
                       {member.role}
                     </p>
                   </div>
                   
                   {/* Beschreibung Panel - erscheint beim Hover */}
-                  <div className="relative mt-4 sm:mt-5 md:mt-6 overflow-hidden rounded-lg sm:rounded-xl bg-white/10 backdrop-blur-sm border-2 border-white/30 group-hover:border-white/50 shadow-lg transition-all duration-500 ease-out max-h-0 opacity-0 translate-y-[-20px] group-hover:max-h-[280px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:shadow-[0_20px_40px_rgba(255,255,255,0.2)]">
+                  <div className="relative mt-4 sm:mt-5 md:mt-6 overflow-hidden rounded-lg sm:rounded-xl bg-white/30 backdrop-blur-sm border-2 border-black/30 group-hover:border-black/50 shadow-lg transition-all duration-500 ease-out max-h-0 opacity-0 translate-y-[-20px] group-hover:max-h-[280px] group-hover:opacity-100 group-hover:translate-y-0 group-hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)]">
                     {/* Content */}
                     <div className="relative p-4 sm:p-5 md:p-6 text-left">
                       {/* Text mit Animation */}
-                      <p className="text-white/90 text-xs sm:text-sm leading-relaxed 2xl:text-base transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                      <p className="text-black/80 text-xs sm:text-sm leading-relaxed 2xl:text-base transform translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
                         {member.bio}
                       </p>
                     </div>
@@ -442,16 +442,14 @@ export function UeberUnsPage() {
       </section>
 
       {/* Call-to-Action */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 sm:py-20 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 sm:py-20 text-black">
         <div className="w-full flex flex-col gap-5 sm:gap-6 text-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold relative inline-block group max-w-[95vw] sm:max-w-[80vw] mx-auto px-2 leading-snug">
-            <span className="relative z-10 text-white tracking-tight">
+            <span className="relative z-10 text-black tracking-tight">
               Bereit für Ihre digitale Zukunft?
             </span>
-            <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 blur-2xl group-hover:via-white/20 transition-all duration-500"></span>
-            <span className="absolute -inset-1 bg-gradient-to-r from-[#B84DD4]/20 via-[#FDF5FA]/30 to-[#B84DD4]/20 rounded-lg blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
           </h2>
-          <p className="mx-auto max-w-4xl text-base sm:text-lg md:text-xl text-white/90 2xl:text-2xl px-2">
+          <p className="mx-auto max-w-4xl text-base sm:text-lg md:text-xl text-black/80 2xl:text-2xl px-2">
             Lassen Sie uns gemeinsam Ihre IT-Herausforderungen meistern. Wir verbinden Recruiting, Softwareentwicklung und Cybersecurity zu einer maßgeschneiderten Lösung für Ihr Unternehmen.
           </p>
           <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mt-3 sm:mt-4">

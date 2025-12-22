@@ -139,21 +139,21 @@ export function SoftwareentwicklungPage() {
       </section>
 
       {/* Leistungsspektrum */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8 text-black">
             Leistungsspektrum
           </h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {serviceSpectrum.map((service, index) => {
               const IconComponent = service.icon;
               return (
-                <div key={index} className="bg-white/10 rounded-lg p-5 border border-white/20">
-                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
-                    <IconComponent className="w-5 h-5 text-white" />
+                <div key={index} className="bg-white/30 rounded-lg p-5 border border-black/20">
+                  <div className="w-10 h-10 rounded-lg bg-black/10 flex items-center justify-center mb-4">
+                    <IconComponent className="w-5 h-5 text-black" />
                   </div>
-                  <h3 className="font-semibold text-white mb-2">{service.title}</h3>
-                  <p className="text-white/80 text-sm" style={{ lineHeight: '1.7' }}>{service.description}</p>
+                  <h3 className="font-semibold text-black mb-2">{service.title}</h3>
+                  <p className="text-black/80 text-sm" style={{ lineHeight: '1.7' }}>{service.description}</p>
                 </div>
               );
             })}
@@ -193,18 +193,18 @@ export function SoftwareentwicklungPage() {
       </section>
 
       {/* Unsere Software-Lösungen */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-5xl mx-auto px-6 md:px-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-center mb-2">
+          <h2 className="text-2xl md:text-3xl font-semibold text-center mb-2 text-black">
             Unsere Software-Lösungen
           </h2>
-          <p className="text-center text-white/80 mb-8">
+          <p className="text-center text-black/80 mb-8">
             Bewährte Tools für verschiedene Branchen
           </p>
           <div
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
-            className="bg-white/10 rounded-lg border border-white/20 p-6"
+            className="bg-white/30 rounded-lg border border-black/20 p-6"
           >
             <div className="flex flex-col lg:flex-row lg:items-center gap-6">
               <div
@@ -212,10 +212,10 @@ export function SoftwareentwicklungPage() {
                 style={{ backgroundColor: tools[activeIndex].color }}
               />
               <div className="flex-1">
-                <h3 className="text-xl font-semibold text-white mb-2">
+                <h3 className="text-xl font-semibold text-black mb-2">
                   {tools[activeIndex].title}
                 </h3>
-                <p className="text-white/80 mb-4" style={{ lineHeight: '1.7' }}>
+                <p className="text-black/80 mb-4" style={{ lineHeight: '1.7' }}>
                   {tools[activeIndex].description}
                 </p>
                 <div className="flex flex-wrap gap-3">
@@ -228,7 +228,7 @@ export function SoftwareentwicklungPage() {
                   </a>
                   <a
                     href="#/kontakt"
-                    className="px-5 py-2.5 border border-white/30 text-white font-medium rounded-lg hover:bg-white/10 transition-colors text-sm"
+                    className="px-5 py-2.5 border border-black/30 text-black font-medium rounded-lg hover:bg-black/10 transition-colors text-sm"
                   >
                     Demo anfragen
                   </a>
@@ -240,7 +240,7 @@ export function SoftwareentwicklungPage() {
                       aria-label={`Slide ${index + 1}`}
                       onClick={() => setActiveIndex(index)}
                       className={`h-1.5 rounded-full transition-all ${
-                        activeIndex === index ? "w-8 bg-white" : "w-3 bg-white/30"
+                        activeIndex === index ? "w-8 bg-black" : "w-3 bg-black/30"
                       }`}
                     />
                   ))}
@@ -293,12 +293,12 @@ export function SoftwareentwicklungPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-black">
             Bereit für Ihre individuelle Softwarelösung?
           </h2>
-          <p className="text-white/90 mb-6" style={{ lineHeight: '1.7' }}>
+          <p className="text-black/80 mb-6" style={{ lineHeight: '1.7' }}>
             Lassen Sie uns gemeinsam Ihre Idee in eine erfolgreiche Softwarelösung verwandeln.
           </p>
           <a

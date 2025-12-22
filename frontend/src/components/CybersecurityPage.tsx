@@ -113,9 +113,9 @@ export function CybersecurityPage() {
       </section>
 
       {/* Vorteile */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-black">
             Ihre Vorteile
           </h2>
           
@@ -123,12 +123,12 @@ export function CybersecurityPage() {
             {advantages.map((advantage) => {
               const IconComponent = advantage.icon;
               return (
-                <div key={advantage.title} className="bg-white/10 rounded-lg p-5 border border-white/20">
-                  <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
-                    <IconComponent className="w-5 h-5 text-white" />
+                <div key={advantage.title} className="bg-white/20 rounded-lg p-5 border border-black/20">
+                  <div className="w-10 h-10 rounded-lg bg-black/10 flex items-center justify-center mb-4">
+                    <IconComponent className="w-5 h-5 text-black" />
                   </div>
-                  <h3 className="font-semibold text-white mb-2">{advantage.title}</h3>
-                  <p className="text-white/80 text-sm" style={{ lineHeight: '1.7' }}>{advantage.description}</p>
+                  <h3 className="font-semibold text-black mb-2">{advantage.title}</h3>
+                  <p className="text-black/80 text-sm" style={{ lineHeight: '1.7' }}>{advantage.description}</p>
                 </div>
               );
             })}
@@ -200,12 +200,12 @@ export function CybersecurityPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-black">
             Bereit, Ihr Unternehmen zu schützen?
           </h2>
-          <p className="text-white/90 mb-6" style={{ lineHeight: '1.7' }}>
+          <p className="text-black/90 mb-6" style={{ lineHeight: '1.7' }}>
             Wir entwickeln ein maßgeschneidertes Cybersecurity-Konzept für Ihr Unternehmen.
           </p>
           <a

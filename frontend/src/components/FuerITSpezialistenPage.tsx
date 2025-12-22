@@ -5,20 +5,20 @@ import { ArrowLeft, Briefcase, TrendingUp, Heart, Star, Target, Handshake, FileT
 export function FuerITSpezialistenPage() {
   return (
     <div className="bg-white text-slate-900">
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-black">
         <div className="max-w-4xl mx-auto px-6 md:px-8">
           <a
             href="#/personalverleih"
-            className="inline-flex items-center gap-2 text-white/80 hover:text-white text-sm mb-6 transition-colors"
+            className="inline-flex items-center gap-2 text-black/80 hover:text-black text-sm mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Zurück zu IT Contracting</span>
           </a>
-          <p className="uppercase tracking-wider text-sm text-white/80 font-medium mb-4">Für IT-Spezialisten</p>
-          <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-4 text-white">
+          <p className="uppercase tracking-wider text-sm text-black/80 font-medium mb-4">Für IT-Spezialisten</p>
+          <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-4 text-black">
             Werden Sie Teil unseres Talent-Pools
           </h1>
-          <p className="text-white/90" style={{ lineHeight: '1.7' }}>
+          <p className="text-black/90" style={{ lineHeight: '1.7' }}>
             Sie sind IT-Spezialist und möchten Ihre Fähigkeiten in anspruchsvollen Projekten einsetzen? Als Teil unseres Talent-Pools erhalten Sie Zugang zu einem Netzwerk, das auf Verlässlichkeit, fachliche Qualität und langfristige Zusammenarbeit setzt. Wir vermitteln Ihnen Einsätze, die Ihre Expertise zur Geltung bringen und Ihnen eine stabile berufliche Perspektive eröffnen.
           </p>
         </div>
@@ -50,7 +50,7 @@ export function FuerITSpezialistenPage() {
       </section>
 
       {/* Prozess Abschnitt */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
             Während des gesamten Prozesses stehen wir Ihnen zur Seite
@@ -158,12 +158,12 @@ export function FuerITSpezialistenPage() {
       </section>
 
       {/* Call-to-Action */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-white">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-black">
             Interessiert?
           </h2>
-          <p className="text-white/90 mb-6" style={{ lineHeight: '1.7' }}>
+          <p className="text-black/80 mb-6" style={{ lineHeight: '1.7' }}>
             Werden Sie Teil unseres Talent-Pools und entdecken Sie Projekte, die zu Ihrer beruflichen Ausrichtung und Ihrer Expertise passen. Wir freuen uns darauf, Sie kennenzulernen und gemeinsam die nächsten Schritte zu planen.
           </p>
           <a

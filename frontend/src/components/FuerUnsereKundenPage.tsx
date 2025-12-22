@@ -74,20 +74,20 @@ export function FuerUnsereKundenPage() {
 
   return (
     <div className="bg-white text-slate-900">
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-black">
         <div className="max-w-4xl mx-auto px-6 md:px-8">
           <a
             href="#/personalverleih"
-            className="inline-flex items-center gap-2 text-white/80 hover:text-white text-sm mb-6 transition-colors"
+            className="inline-flex items-center gap-2 text-black/80 hover:text-black text-sm mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Zurück zu IT Contracting</span>
           </a>
-          <p className="uppercase tracking-wider text-sm text-white/80 font-medium mb-4">Für unsere Kunden</p>
-          <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-4 text-white">
+          <p className="uppercase tracking-wider text-sm text-black/80 font-medium mb-4">Für unsere Kunden</p>
+          <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-4 text-black">
             Qualifizierte IT-Fachkräfte für Ihr Projekt
           </h1>
-          <p className="text-white/90" style={{ lineHeight: '1.7' }}>
+          <p className="text-black/90" style={{ lineHeight: '1.7' }}>
             Sie benötigen Spezialisten für Ihr IT-Projekt? Wir vermitteln Ihnen sorgfältig ausgewählte Fachkräfte, die präzise zu Ihren Anforderungen passen und Ihr Team zuverlässig unterstützen.
           </p>
         </div>
@@ -118,45 +118,45 @@ export function FuerUnsereKundenPage() {
         </div>
       </section>
 
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-black">
             Ihre Vorteile
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            <div className="bg-white/10 rounded-lg p-5 border border-white/20">
-              <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
-                <Clock className="w-5 h-5 text-white" />
+            <div className="bg-white/30 rounded-lg p-5 border border-black/20">
+              <div className="w-10 h-10 rounded-lg bg-black/10 flex items-center justify-center mb-4">
+                <Clock className="w-5 h-5 text-black" />
               </div>
-              <h3 className="font-semibold text-lg mb-2 text-white">Schnelle Vermittlung</h3>
-              <p className="text-white/90 text-sm" style={{ lineHeight: '1.7' }}>
+              <h3 className="font-semibold text-lg mb-2 text-black">Schnelle Vermittlung</h3>
+              <p className="text-black/80 text-sm" style={{ lineHeight: '1.7' }}>
                 Wir liefern innerhalb kurzer Zeit passende Kandidaten – strukturiert, abgestimmt und mit aussagekräftigen Profilen.
               </p>
             </div>
-            <div className="bg-white/10 rounded-lg p-5 border border-white/20">
-              <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
-                <CheckCircle className="w-5 h-5 text-white" />
+            <div className="bg-white/30 rounded-lg p-5 border border-black/20">
+              <div className="w-10 h-10 rounded-lg bg-black/10 flex items-center justify-center mb-4">
+                <CheckCircle className="w-5 h-5 text-black" />
               </div>
-              <h3 className="font-semibold text-lg mb-2 text-white">Geprüfte Qualität</h3>
-              <p className="text-white/90 text-sm" style={{ lineHeight: '1.7' }}>
+              <h3 className="font-semibold text-lg mb-2 text-black">Geprüfte Qualität</h3>
+              <p className="text-black/80 text-sm" style={{ lineHeight: '1.7' }}>
                 Alle Fachkräfte werden hinsichtlich Qualifikation, Erfahrung und Eignung sorgfältig bewertet.
               </p>
             </div>
-            <div className="bg-white/10 rounded-lg p-5 border border-white/20">
-              <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
-                <Users className="w-5 h-5 text-white" />
+            <div className="bg-white/30 rounded-lg p-5 border border-black/20">
+              <div className="w-10 h-10 rounded-lg bg-black/10 flex items-center justify-center mb-4">
+                <Users className="w-5 h-5 text-black" />
               </div>
-              <h3 className="font-semibold text-lg mb-2 text-white">Breites Portfolio</h3>
-              <p className="text-white/90 text-sm" style={{ lineHeight: '1.7' }}>
+              <h3 className="font-semibold text-lg mb-2 text-black">Breites Portfolio</h3>
+              <p className="text-black/80 text-sm" style={{ lineHeight: '1.7' }}>
                 Von Entwicklern über Engineers bis hin zu Projektleitern – wir decken alle wesentlichen IT-Bereiche ab.
               </p>
             </div>
-            <div className="bg-white/10 rounded-lg p-5 border border-white/20">
-              <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
-                <Shield className="w-5 h-5 text-white" />
+            <div className="bg-white/30 rounded-lg p-5 border border-black/20">
+              <div className="w-10 h-10 rounded-lg bg-black/10 flex items-center justify-center mb-4">
+                <Shield className="w-5 h-5 text-black" />
               </div>
-              <h3 className="font-semibold text-lg mb-2 text-white">Compliance & Rechtssicherheit</h3>
-              <p className="text-white/90 text-sm" style={{ lineHeight: '1.7' }}>
+              <h3 className="font-semibold text-lg mb-2 text-black">Compliance & Rechtssicherheit</h3>
+              <p className="text-black/80 text-sm" style={{ lineHeight: '1.7' }}>
                 Wir übernehmen die gesamte Vertragsabwicklung und sorgen für klare, regelkonforme Prozesse.
               </p>
             </div>

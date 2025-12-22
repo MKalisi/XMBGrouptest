@@ -32,7 +32,7 @@ export function PersonalverleihPage() {
         </div>
       </section>
 
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-white">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] text-black">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="relative overflow-hidden rounded-lg h-64 lg:h-80">
@@ -43,9 +43,9 @@ export function PersonalverleihPage() {
               />
             </div>
             <div className="space-y-4">
-              <p className="uppercase tracking-wider text-sm text-white/80 font-medium">Expertise</p>
-              <h2 className="text-2xl md:text-3xl font-semibold leading-tight">Talente, die Projekte voranbringen</h2>
-              <div className="space-y-4 text-white/90" style={{ lineHeight: '1.7' }}>
+              <p className="uppercase tracking-wider text-sm text-black/80 font-medium">Expertise</p>
+              <h2 className="text-2xl md:text-3xl font-semibold leading-tight text-black">Talente, die Projekte voranbringen</h2>
+              <div className="space-y-4 text-black/90" style={{ lineHeight: '1.7' }}>
                 <p>
                   Mit einem breiten Netzwerk an erfahrenen IT-Spezialisten decken wir sämtliche Bereiche von IT-Transformation, Softwareentwicklung und technischer Projektunterstützung ab.
                 </p>
@@ -167,7 +167,7 @@ export function PersonalverleihPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
         <div className="max-w-3xl mx-auto px-6 md:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-4">
             Bereit für eine neue Fachkraft?

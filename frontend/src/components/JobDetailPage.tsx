@@ -153,27 +153,27 @@ export function JobDetailPage({ jobId }: JobDetailPageProps) {
   return (
     <div className="bg-white text-slate-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <a
             href="#/personalverleih/fuer-unsere-kunden"
-            className="inline-flex items-center gap-2 text-white/80 hover:text-white text-sm mb-6 transition-colors"
+            className="inline-flex items-center gap-2 text-black/80 hover:text-black text-sm mb-6 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Zurück zu den Jobs</span>
           </a>
           <div className="flex items-start gap-4 mb-6">
-            <div className="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center flex-shrink-0">
-              <Briefcase className="w-6 h-6 text-white" />
+            <div className="w-12 h-12 rounded-lg bg-black/10 flex items-center justify-center flex-shrink-0">
+              <Briefcase className="w-6 h-6 text-black" />
             </div>
             <div className="flex-1">
-              <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-white/20 text-white border border-white/30 mb-4">
+              <span className="inline-block px-3 py-1 text-xs font-medium rounded-full bg-black/10 text-black border border-black/30 mb-4">
                 {job.type}
               </span>
-              <h1 className="text-3xl md:text-4xl font-semibold text-white mb-4">
+              <h1 className="text-3xl md:text-4xl font-semibold text-black mb-4">
                 {job.title}
               </h1>
-              <div className="flex flex-wrap gap-4 text-white/90 text-sm">
+              <div className="flex flex-wrap gap-4 text-black/80 text-sm">
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
                   <span>{job.location}</span>
@@ -237,21 +237,21 @@ export function JobDetailPage({ jobId }: JobDetailPageProps) {
       </section>
 
       {/* Benefits Section */}
-      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-white">
+      <section className="bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] py-12 lg:py-16 text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
-          <h2 className="text-2xl md:text-3xl font-semibold text-white mb-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-semibold text-black mb-8 text-center">
             Ihre Vorteile
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {job.benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="bg-white/10 rounded-lg p-5 border border-white/20"
+                className="bg-white/30 rounded-lg p-5 border border-black/20"
               >
-                <div className="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center mb-4">
-                  <Clock className="w-5 h-5 text-white" />
+                <div className="w-10 h-10 rounded-lg bg-black/10 flex items-center justify-center mb-4">
+                  <Clock className="w-5 h-5 text-black" />
                 </div>
-                <p className="text-white/90 text-sm" style={{ lineHeight: '1.7' }}>
+                <p className="text-black/80 text-sm" style={{ lineHeight: '1.7' }}>
                   {benefit}
                 </p>
               </div>
