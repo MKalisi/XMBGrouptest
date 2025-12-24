@@ -1,5 +1,6 @@
 {
-  "buildCommand": "sh -c 'cd frontend && npm install && npm run build'",
-  "outputDirectory": "frontend/dist"
+  "buildCommand": "npm run build",
+  "outputDirectory": "frontend/dist",
+  "installCommand": "npm run install-deps"
 }
 
