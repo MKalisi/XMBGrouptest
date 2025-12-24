@@ -4,7 +4,7 @@ export function DatenschutzPage() {
   return (
     <div className="bg-white text-slate-900">
       {/* Hero Section */}
-      <section className="bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20">
+      <section className="bg-[#5E3B83] py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-6 md:px-8 text-center text-white">
           <p className="uppercase tracking-wider text-sm text-white/80 font-medium mb-4">Rechtliches</p>
           <h1 className="text-3xl md:text-4xl font-semibold leading-tight mb-4">

@@ -98,7 +98,7 @@ export function KontaktPage() {
             <div className="space-y-4">
               {contactChannels.map((channel) => (
                 <div key={channel.label} className="flex items-start gap-4 p-4 bg-white rounded-lg border border-slate-200">
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#B84DD4] to-[#FDF5FA] flex items-center justify-center flex-shrink-0 text-white">
+                  <div className="w-10 h-10 rounded-lg bg-[#5E3B83] flex items-center justify-center flex-shrink-0 text-white">
                     {channel.icon}
                   </div>
                   <div>

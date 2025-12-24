@@ -25,10 +25,10 @@
   --max-text-width: 70ch;        /* ~60-80 Zeichen */
   
   /* Colors - Eine Akzentfarbe, sonst neutral */
-  --color-accent: #B84DD4;
+  --color-accent: #5E3B83;
   --color-accent-light: #FDF5FA;
   --color-accent-old: #921bb2;
-  --color-accent-light-old: #cd20b2;
+  --color-accent-light-old: #5E3B83;
   --color-text: #000000;
   --color-text-muted: #000000;
   --color-bg: #E0DFE0;
@@ -471,4 +471,19 @@ button:active, a:active {
 /* ========================================
    BACKGROUND COLOR - Cremefarben statt Weiß
    ======================================== */
+
+/* Swiper: Nahtlose Transitions ohne Hintergrund */
+.hero-swiper-main,
+.hero-swiper-main .swiper-wrapper,
+.hero-swiper-main .swiper-slide {
+  background: transparent !important;
+}
+
+.hero-swiper-main .swiper-wrapper {
+  background-color: transparent !important;
+}
+
+.hero-swiper-main .swiper-slide {
+  background-color: transparent !important;
+}
 

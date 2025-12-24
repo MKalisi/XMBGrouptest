@@ -32,7 +32,7 @@ export function PersonalverleihPage() {
         </div>
       </section>
 
-      <section className="py-12 lg:py-16 bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] text-black">
+      <section className="py-12 lg:py-16 bg-[#5E3B83] text-black">
         <div className="max-w-7xl mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="relative overflow-hidden rounded-lg h-64 lg:h-80">

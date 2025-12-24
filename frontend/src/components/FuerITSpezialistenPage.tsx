@@ -5,7 +5,7 @@ import { ArrowLeft, Briefcase, TrendingUp, Heart, Star, Target, Handshake, FileT
 export function FuerITSpezialistenPage() {
   return (
     <div className="bg-white text-slate-900">
-      <section className="bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] py-16 md:py-20 text-black">
+      <section className="bg-[#5E3B83] py-16 md:py-20 text-black">
         <div className="max-w-4xl mx-auto px-6 md:px-8">
           <a
             href="#/personalverleih"
@@ -50,7 +50,7 @@ export function FuerITSpezialistenPage() {
       </section>
 
       {/* Prozess Abschnitt */}
-      <section className="py-12 lg:py-16 bg-gradient-to-b from-[#B84DD4] to-[#FDF5FA] text-black">
+      <section className="py-12 lg:py-16 bg-[#5E3B83] text-black">
         <div className="max-w-6xl mx-auto px-6 md:px-8">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-center text-white">
             Während des gesamten Prozesses stehen wir Ihnen zur Seite

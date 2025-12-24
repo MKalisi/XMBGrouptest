@@ -125,10 +125,12 @@ export function HeroSwiper({
       {/* MAIN / Background Swiper */}
       <Swiper
         modules={[Thumbs, Parallax]}
-        className="absolute inset-0 bg-black"
+        className="absolute inset-0 hero-swiper-main"
         speed={900}
         parallax
         allowTouchMove={true}
+        slidesPerView={1}
+        spaceBetween={0}
         onSwiper={setMainSwiper}
         onSlideChange={(s) => setActiveIndex(s.activeIndex)}
         thumbs={{
@@ -137,9 +139,9 @@ export function HeroSwiper({
       >
         {sections.map((section) => (
           <SwiperSlide key={section.id}>
-            <div className="relative w-full h-full bg-black overflow-hidden">
+            <div className="relative w-full h-full overflow-hidden">
               <div
-                className="absolute top-0 bottom-0"
+                className="absolute inset-0"
                 data-swiper-parallax={`-${parallaxOffset}`}
                 style={{
                     left: "-10%",
@@ -149,8 +151,8 @@ export function HeroSwiper({
                     backgroundPosition: "center",
                     transform: "scale(1.05) translateZ(0)",
                     willChange: "transform",
-  }}
-/>
+                }}
+              />
               <div className="absolute inset-0 bg-black/50" />
             </div>
           </SwiperSlide>
